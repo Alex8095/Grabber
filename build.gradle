@@ -34,6 +34,7 @@ repositories {
 ext {
     jacksonVersion = "2.2.3"
     springVersion = "4.0.1.RELEASE"
+    springSecurityVersion = "3.2.5.RELEASE"
     tomcatVersion = "7.0.50"
 }
 
@@ -52,6 +53,10 @@ dependencies {
     compile "org.springframework:spring-webmvc:$springVersion"
     compile "org.springframework:spring-orm:$springVersion"
     compile "org.springframework:spring-tx:$springVersion"
+
+    compile "org.springframework.security:spring-security-core:$springSecurityVersion"
+    compile "org.springframework.security:spring-security-web:$springSecurityVersion"
+    compile "org.springframework.security:spring-security-config:$springSecurityVersion"
 
     compile "com.fasterxml.jackson.core:jackson-core:$jacksonVersion"
     compile "com.fasterxml.jackson.core:jackson-databind:$jacksonVersion"
@@ -78,4 +83,11 @@ dependencies {
     tomcat("org.apache.tomcat.embed:tomcat-embed-jasper:$tomcatVersion") {
         exclude group: 'org.eclipse.jdt.core.compiler', module: 'ecj'
     }
+}
+
+tomcatRun{
+    daemon = true
+    httpPort = 8080
+    stopPort = 8009
+    stopKey = 'G'
 }
