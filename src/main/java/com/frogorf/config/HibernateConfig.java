@@ -71,6 +71,7 @@ public class HibernateConfig {
         hibernateProperties.setProperty("hibernate.dialect", env.getProperty("hibernate.dialect"));
         hibernateProperties.setProperty("hibernate.show_sql", "true");
         hibernateProperties.setProperty("hibernate.format_sql", "true");
+        hibernateProperties.setProperty("hibernate.hbm2ddl.import_files", env.getProperty("hibernate.import_files"));
         // hibernateProperties.setProperty("hibernate.globally_quoted_identifiers", "true");
         return hibernateProperties;
     }

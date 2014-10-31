@@ -49,6 +49,9 @@
           <element id="library" level="project" name="Gradle: spring-security-core-3.2.5.RELEASE" />
           <element id="library" level="project" name="Gradle: spring-security-web-3.2.5.RELEASE" />
           <element id="library" level="project" name="Gradle: spring-security-config-3.2.5.RELEASE" />
+          <element id="library" level="project" name="Gradle: spring-security-core-3.2.4.RELEASE" />
+          <element id="library" level="project" name="Gradle: spring-security-web-3.2.4.RELEASE" />
+          <element id="library" level="project" name="Gradle: spring-security-config-3.2.4.RELEASE" />
         </element>
       </element>
       <element id="dir-copy" path="$PROJECT_DIR$/src/main/webapp" />

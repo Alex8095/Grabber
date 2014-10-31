@@ -34,7 +34,7 @@ repositories {
 ext {
     jacksonVersion = "2.2.3"
     springVersion = "4.0.1.RELEASE"
-    springSecurityVersion = "3.2.5.RELEASE"
+    springSecurityVersion = "3.2.4.RELEASE"
     tomcatVersion = "7.0.50"
 }
 

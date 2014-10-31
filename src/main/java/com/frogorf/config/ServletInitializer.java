@@ -1,7 +1,5 @@
 package com.frogorf.config;
 
-import com.frogorf.AppConfig;
-import com.frogorf.WebConfig;
 import org.springframework.web.filter.CharacterEncodingFilter;
 import org.springframework.web.filter.HiddenHttpMethodFilter;
 import org.springframework.web.filter.HttpPutFormContentFilter;
