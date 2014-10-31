@@ -2,22 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d9b5d374-f857-4bc3-a8be-81545628c980" name="Default" comment="">
-      <change type="DELETED" beforePath="D:\java\frogorf\Alfabrok\Grabber\.idea\libraries\Gradle__spring_security_config_3_2_5_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\java\frogorf\Alfabrok\Grabber\.idea\libraries\Gradle__spring_security_core_3_2_5_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\java\frogorf\Alfabrok\Grabber\.idea\libraries\Gradle__spring_security_web_3_2_5_RELEASE.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Grabber.iml" afterPath="$PROJECT_DIR$/Grabber.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/frogorf/config/HibernateConfig.java" afterPath="$PROJECT_DIR$/src/main/java/com/frogorf/config/HibernateConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/frogorf/config/ServletInitializer.java" afterPath="$PROJECT_DIR$/src/main/java/com/frogorf/config/ServletInitializer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/grabber_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/grabber_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/persistence-mysql.properties" afterPath="$PROJECT_DIR$/src/main/resources/persistence-mysql.properties" />
+      <change type="DELETED" beforePath="D:\java\frogorf\Alfabrok\Grabber\src\main\resources\i18n\messages.properties" afterPath="" />
+      <change type="DELETED" beforePath="D:\java\frogorf\Alfabrok\Grabber\src\main\resources\i18n\messages_en_US.properties" afterPath="" />
+      <change type="DELETED" beforePath="D:\java\frogorf\Alfabrok\Grabber\src\main\webapp\resources\i18n\messages.properties" afterPath="" />
+      <change type="DELETED" beforePath="D:\java\frogorf\Alfabrok\Grabber\src\main\webapp\resources\i18n\messages_en_US.properties" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/frogorf/config/WebConfig.java" afterPath="$PROJECT_DIR$/src/main/java/com/frogorf/config/WebConfig.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="D:\java\frogorf\Alfabrok\Grabber\src\main\java\com\frogorf\AppConfig.java" afterPath="$PROJECT_DIR$/src/main/java/com/frogorf/config/AppConfig.java" />
-      <change type="MOVED" beforePath="D:\java\frogorf\Alfabrok\Grabber\src\main\java\com\frogorf\WebConfig.java" afterPath="$PROJECT_DIR$/src/main/java/com/frogorf/config/WebConfig.java" />
-      <change type="MOVED" beforePath="D:\java\frogorf\Alfabrok\Grabber\src\main\java\com\frogorf\controller\HomeController.java" afterPath="$PROJECT_DIR$/src/main/java/com/frogorf/web/controller/HomeController.java" />
-      <change type="MOVED" beforePath="D:\java\frogorf\Alfabrok\Grabber\src\main\java\com\frogorf\security\service\impl\CustomUserDetailsServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/frogorf/security/service/impl/CustomAuthenticationServiceImpl.java" />
-      <change type="MOVED" beforePath="D:\java\frogorf\Alfabrok\Grabber\src\main\webapp\WEB-INF\views\home.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/thymeleaf/home.html" />
-      <change type="MOVED" beforePath="D:\java\frogorf\Alfabrok\Grabber\src\main\webapp\WEB-INF\views\layout.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/thymeleaf/fragments/layout.html" />
     </list>
     <ignored path="Grabber.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -119,52 +109,25 @@
       <file leaf-file-name="home.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/thymeleaf/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="56" column="17" selection-start="2351" selection-end="2351" vertical-scroll-proportion="-7.1923075" vertical-offset="765" max-vertical-offset="5457">
+            <state line="55" column="45" selection-start="2309" selection-end="2321" vertical-scroll-proportion="-6.5384617" vertical-offset="765" max-vertical-offset="5457">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WebConfig.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="WebConfig.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/config/WebConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="46" selection-start="1948" selection-end="1948" vertical-scroll-proportion="0.0" vertical-offset="414" max-vertical-offset="1360">
+            <state line="72" column="88" selection-start="2872" selection-end="2952" vertical-scroll-proportion="0.72425246" vertical-offset="567" max-vertical-offset="1360">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="messages.properties" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/i18n/messages.properties">
-          <provider editor-type-id="ResourceBundle">
-            <state />
-          </provider>
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/messages/messages.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="102">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="messages_en_US.properties" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/i18n/messages_en_US.properties">
-          <provider editor-type-id="ResourceBundle">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="577">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="messages.properties" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/i18n/messages.properties">
-          <provider editor-type-id="ResourceBundle">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="25" selection-start="25" selection-end="25" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="102">
+            <state line="0" column="23" selection-start="23" selection-end="23" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
               <folding />
             </state>
           </provider>
@@ -435,6 +398,7 @@
         <option value="$PROJECT_DIR$/src/main/resources/i18n/messages.properties" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/i18n/messages.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/frogorf/config/WebConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/messages/messages.properties" />
       </list>
     </option>
   </component>
@@ -626,6 +590,36 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="messages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Grabber" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Grabber" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -650,36 +644,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Grabber" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Grabber" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="i18n" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resource Bundle 'messages'" />
-              <option name="myItemType" value="com.intellij.lang.properties.projectView.ResourceBundleNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -795,11 +759,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\java\frogorf\Alfabrok\Grabber\src\main\resources\messages" />
+      <recent name="D:\java\frogorf\Alfabrok\Grabber\src\main\webapp\resources\messages" />
       <recent name="D:\java\frogorf\Alfabrok\Grabber\src\main\resources" />
       <recent name="D:\java\frogorf\Alfabrok\Grabber\src\main\webapp\resources\i18n" />
       <recent name="D:\java\frogorf\Alfabrok\Grabber\src\main\resources\i18n" />
-      <recent name="D:\java\frogorf\Alfabrok\Grabber\src\main\webapp\WEB-INF\thymeleaf" />
-      <recent name="D:\java\frogorf\Alfabrok\Grabber\src\main\webapp\WEB-INF\views" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\java\frogorf\Alfabrok\Grabber\src\main\webapp\resources" />
@@ -1203,7 +1167,7 @@
       <workItem from="1414740743837" duration="1202000" />
       <workItem from="1414744228899" duration="2230000" />
       <workItem from="1414753028068" duration="1665000" />
-      <workItem from="1414755153636" duration="9165000" />
+      <workItem from="1414755153636" duration="9841000" />
     </task>
     <task id="LOCAL-00001" summary="1. security dao &#10;2. semantic ui">
       <created>1414746285026</created>
@@ -1213,7 +1177,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16705000" />
+    <option name="totallyTimeSpent" value="17381000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1237,7 +1201,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905984" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1262,7 +1226,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905984" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19542067" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32905984" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905984" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1292,16 +1256,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/security/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="52" selection-start="127" selection-end="127" vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="544" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/security/domain/Role.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="18" selection-start="181" selection-end="181" vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="969" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/web/controller/HomeController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="21" selection-start="566" selection-end="566" vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="357">
@@ -1577,16 +1531,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/i18n/messages_en_US.properties">
-      <provider editor-type-id="ResourceBundle">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="25" selection-start="25" selection-end="25" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="577">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/thymeleaf/fragments/layout.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="0" selection-start="996" selection-end="996" vertical-scroll-proportion="0.5017361" vertical-offset="0" max-vertical-offset="578">
@@ -1594,46 +1538,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/thymeleaf/home.html">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/messages/messages.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="17" selection-start="2351" selection-end="2351" vertical-scroll-proportion="-7.1923075" vertical-offset="765" max-vertical-offset="5457">
+        <state line="0" column="23" selection-start="23" selection-end="23" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="602">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/i18n/messages.properties">
-      <provider editor-type-id="ResourceBundle">
-        <state />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/thymeleaf/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="25" selection-start="25" selection-end="25" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="577">
+        <state line="55" column="45" selection-start="2309" selection-end="2321" vertical-scroll-proportion="-6.5384617" vertical-offset="765" max-vertical-offset="5457">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/config/WebConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="46" selection-start="1948" selection-end="1948" vertical-scroll-proportion="0.0" vertical-offset="414" max-vertical-offset="1360">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/i18n/messages.properties">
-      <provider editor-type-id="ResourceBundle">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="577">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/i18n/messages_en_US.properties">
-      <provider editor-type-id="ResourceBundle">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="577">
+        <state line="72" column="88" selection-start="2872" selection-end="2952" vertical-scroll-proportion="0.72425246" vertical-offset="567" max-vertical-offset="1360">
           <folding />
         </state>
       </provider>
