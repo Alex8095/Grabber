@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: tomcat-juli-8.0.8">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/artifacts-26/filestore/org.apache.tomcat/tomcat-juli/8.0.8/jar/d72349f21695c9e92e3ea4112b541f2ff8e469e2/tomcat-juli-8.0.8.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/artifacts-26/filestore/org.apache.tomcat/tomcat-juli/8.0.8/source/5dd8d66bc45450bbdcb181f5aa1645a14757429f/tomcat-juli-8.0.8-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
