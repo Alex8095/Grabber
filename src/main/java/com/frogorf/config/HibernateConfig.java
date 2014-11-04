@@ -18,8 +18,8 @@ import java.util.Properties;
 
 
 /**
- * Created by alex on 29.10.14.
- */
+* Created by alex on 29.10.14.
+*/
 @Configuration
 @EnableTransactionManagement
 @PropertySource({"classpath:persistence-mysql.properties"})

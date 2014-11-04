@@ -4,9 +4,9 @@
     <exclude-output />
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/main/resources" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/test/resources" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/test/resources" type="java-test-resource" />
       <excludeFolder url="file://$MODULE_DIR$/.gradle" />
       <excludeFolder url="file://$MODULE_DIR$/build" />
     </content>
@@ -18,16 +18,24 @@
     <orderEntry type="library" exported="" name="Gradle: spring-webmvc-4.0.1.RELEASE" level="project" />
     <orderEntry type="library" exported="" name="Gradle: spring-orm-4.0.1.RELEASE" level="project" />
     <orderEntry type="library" exported="" name="Gradle: spring-tx-4.0.1.RELEASE" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: jackson-core-2.2.3" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: jackson-databind-2.2.3" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: jackson-annotations-2.2.3" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: spring-security-core-3.2.4.RELEASE" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: spring-security-web-3.2.4.RELEASE" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: spring-security-config-3.2.4.RELEASE" level="project" />
     <orderEntry type="library" exported="" name="Gradle: hibernate-core-4.3.6.Final" level="project" />
     <orderEntry type="library" exported="" name="Gradle: javassist-3.18.1-GA" level="project" />
     <orderEntry type="library" exported="" name="Gradle: tomcat-dbcp-8.0.8" level="project" />
     <orderEntry type="library" exported="" name="Gradle: mysql-connector-java-5.1.32" level="project" />
     <orderEntry type="library" exported="" name="Gradle: slf4j-api-1.7.5" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: thymeleaf-2.1.3.RELEASE" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: thymeleaf-spring4-2.1.3.RELEASE" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: thymeleaf-testing-2.1.3.RELEASE" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: thymeleaf-extras-springsecurity3-2.1.1.RELEASE" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: datatables-thymeleaf-0.10.1" level="project" />
     <orderEntry type="library" exported="" name="Gradle: javax.servlet-api-3.1.0" level="project" />
     <orderEntry type="library" exported="" name="Gradle: jsp-api-2.1" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: jackson-core-2.3.1" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: jackson-annotations-2.3.1" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: jackson-databind-2.3.1" level="project" />
     <orderEntry type="library" exported="" name="Gradle: commons-logging-1.1.1" level="project" />
     <orderEntry type="library" exported="" name="Gradle: spring-beans-4.0.1.RELEASE" level="project" />
     <orderEntry type="library" exported="" name="Gradle: aopalliance-1.0" level="project" />
@@ -46,24 +54,24 @@
     <orderEntry type="library" exported="" name="Gradle: tomcat-juli-8.0.8" level="project" />
     <orderEntry type="library" exported="" name="Gradle: ognl-3.0.6" level="project" />
     <orderEntry type="library" exported="" name="Gradle: unbescape-1.0" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: thymeleaf-2.1.3.RELEASE" level="project" />
-    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: jstl-1.2" level="project" />
-    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: slf4j-log4j12-1.7.5" level="project" />
-    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: log4j-1.2.17" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: junit-4.11" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: spring-test-4.0.1.RELEASE" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: hamcrest-core-1.3" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: spring-security-core-3.2.4.RELEASE" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: spring-security-web-3.2.4.RELEASE" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: spring-security-config-3.2.4.RELEASE" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: thymeleaf-spring4-2.1.3.RELEASE" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: thymeleaf-testing-2.1.3.RELEASE" level="project" />
     <orderEntry type="library" exported="" name="Gradle: attoparser-1.2" level="project" />
     <orderEntry type="library" exported="" name="Gradle: servlet-api-2.5" level="project" />
     <orderEntry type="library" exported="" name="Gradle: hamcrest-core-1.1" level="project" />
     <orderEntry type="library" exported="" name="Gradle: objenesis-1.0" level="project" />
     <orderEntry type="library" exported="" name="Gradle: mockito-core-1.9.5" level="project" />
     <orderEntry type="library" exported="" name="Gradle: commons-lang3-3.1" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: dandelion-core-0.10.1" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: junit-4.10" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: json-simple-1.1.1" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: commons-beanutils-1.8.3" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: datatables-core-0.10.1" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: dandelion-thymeleaf-0.10.1" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: jstl-1.2" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: slf4j-log4j12-1.7.5" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: log4j-1.2.17" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: junit-4.11" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: spring-test-4.0.1.RELEASE" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: hamcrest-core-1.3" level="project" />
   </component>
 </module>
 

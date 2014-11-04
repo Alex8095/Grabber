@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: thymeleaf-extras-springsecurity3-2.1.1.RELEASE">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/artifacts-26/filestore/org.thymeleaf.extras/thymeleaf-extras-springsecurity3/2.1.1.RELEASE/jar/da0d116c514849d3cbe650f2d124767eb19783b9/thymeleaf-extras-springsecurity3-2.1.1.RELEASE.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/artifacts-26/filestore/org.thymeleaf.extras/thymeleaf-extras-springsecurity3/2.1.1.RELEASE/source/d20a6934d748ece300354140d38a8a151991f264/thymeleaf-extras-springsecurity3-2.1.1.RELEASE-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
