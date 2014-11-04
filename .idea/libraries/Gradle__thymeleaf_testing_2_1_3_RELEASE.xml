@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: thymeleaf-testing-2.1.3.RELEASE">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/artifacts-26/filestore/org.thymeleaf/thymeleaf-testing/2.1.3.RELEASE/jar/8415be6dec13ab615c59213500b7290079cb83a0/thymeleaf-testing-2.1.3.RELEASE.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/artifacts-26/filestore/org.thymeleaf/thymeleaf-testing/2.1.3.RELEASE/source/891c72f38157a9fafb05284e1aed6b4b1ce86338/thymeleaf-testing-2.1.3.RELEASE-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

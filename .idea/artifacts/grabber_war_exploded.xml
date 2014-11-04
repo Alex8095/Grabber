@@ -2,6 +2,7 @@
   <artifact type="exploded-war" name="grabber.war exploded">
     <output-path>$PROJECT_DIR$/build/classes/artifacts/grabber_war_exploded</output-path>
     <root id="root">
+      <element id="dir-copy" path="$PROJECT_DIR$/src/main/webapp" />
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
           <element id="module-output" name="Grabber" />
@@ -46,15 +47,60 @@
           <element id="library" level="project" name="Gradle: jstl-1.2" />
           <element id="library" level="project" name="Gradle: slf4j-log4j12-1.7.5" />
           <element id="library" level="project" name="Gradle: log4j-1.2.17" />
-          <element id="library" level="project" name="Gradle: spring-security-core-3.2.5.RELEASE" />
-          <element id="library" level="project" name="Gradle: spring-security-web-3.2.5.RELEASE" />
-          <element id="library" level="project" name="Gradle: spring-security-config-3.2.5.RELEASE" />
           <element id="library" level="project" name="Gradle: spring-security-core-3.2.4.RELEASE" />
           <element id="library" level="project" name="Gradle: spring-security-web-3.2.4.RELEASE" />
           <element id="library" level="project" name="Gradle: spring-security-config-3.2.4.RELEASE" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-26/filestore/org.springframework/spring-context/4.0.1.RELEASE/jar/cb996939c8d48ae55ec933041f17e7fba4d9e27d/spring-context-4.0.1.RELEASE.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-26/filestore/org.springframework/spring-core/4.0.1.RELEASE/jar/e39774d97c9dadfe49e6dfd16e3868bc1e390554/spring-core-4.0.1.RELEASE.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-26/filestore/org.springframework/spring-web/4.0.1.RELEASE/jar/2ace92025f042e1d3ddfdbba093172e3572ac130/spring-web-4.0.1.RELEASE.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-26/filestore/org.springframework/spring-webmvc/4.0.1.RELEASE/jar/2dbc91a6413115f7ffbe94f0fa9bc9fda3281d90/spring-webmvc-4.0.1.RELEASE.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-26/filestore/org.springframework/spring-orm/4.0.1.RELEASE/jar/18b2d6b7d65315545adae9d797a2ea1467a958bf/spring-orm-4.0.1.RELEASE.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-26/filestore/org.springframework/spring-tx/4.0.1.RELEASE/jar/b93b2c39b09ff858a42db85a0a9a8ce232a6779/spring-tx-4.0.1.RELEASE.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-26/filestore/org.springframework.security/spring-security-core/3.2.4.RELEASE/jar/493bc57396a821e8ffa7d99fac77cc79c15e9b7f/spring-security-core-3.2.4.RELEASE.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-26/filestore/org.springframework.security/spring-security-web/3.2.4.RELEASE/jar/197d803ab63dd3523d9df186505fc1cc93044334/spring-security-web-3.2.4.RELEASE.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-26/filestore/org.springframework.security/spring-security-config/3.2.4.RELEASE/jar/952da051fc959b215c8e5882a7ab1ca5137af036/spring-security-config-3.2.4.RELEASE.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-26/filestore/com.fasterxml.jackson.core/jackson-core/2.2.3/jar/1a0113da2cab5f4c216b4e5e7c1dbfaa67087e14/jackson-core-2.2.3.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-26/filestore/com.fasterxml.jackson.core/jackson-databind/2.2.3/jar/3ae380888029daefb91d3ecdca3a37d8cb92bc9/jackson-databind-2.2.3.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-26/filestore/com.fasterxml.jackson.core/jackson-annotations/2.2.3/jar/527fece4f23a457070a36c371a26d6c0208e1c3/jackson-annotations-2.2.3.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-26/filestore/org.hibernate/hibernate-core/4.3.6.Final/jar/e6f1e89880e645c66ef9c30d60a68f7e26f3152d/hibernate-core-4.3.6.Final.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-26/filestore/org.javassist/javassist/3.18.1-GA/bundle/d9a09f7732226af26bf99f19e2cffe0ae219db5b/javassist-3.18.1-GA.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-26/filestore/org.apache.tomcat/tomcat-dbcp/8.0.8/jar/4800cfde9d1f5d63ace8a1082e46c4bab1bc5e78/tomcat-dbcp-8.0.8.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-26/filestore/mysql/mysql-connector-java/5.1.32/jar/d28c9a6cf0810fd0e2180e44029c10a54ca26de8/mysql-connector-java-5.1.32.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-26/filestore/org.slf4j/slf4j-api/1.7.5/jar/6b262da268f8ad9eff941b25503a9198f0a0ac93/slf4j-api-1.7.5.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-26/filestore/org.thymeleaf/thymeleaf/2.1.3.RELEASE/jar/2712ec998d7b4065e041146d01d4202da20009b7/thymeleaf-2.1.3.RELEASE.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-26/filestore/org.thymeleaf/thymeleaf-spring4/2.1.3.RELEASE/jar/245c44aa3f2735f6f8346bbd5028a20652215dbf/thymeleaf-spring4-2.1.3.RELEASE.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-26/filestore/org.thymeleaf/thymeleaf-testing/2.1.3.RELEASE/jar/8415be6dec13ab615c59213500b7290079cb83a0/thymeleaf-testing-2.1.3.RELEASE.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-26/filestore/javax.servlet/javax.servlet-api/3.1.0/jar/3cd63d075497751784b2fa84be59432f4905bf7c/javax.servlet-api-3.1.0.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-26/filestore/javax.servlet.jsp/jsp-api/2.1/jar/63f943103f250ef1f3a4d5e94d145a0f961f5316/jsp-api-2.1.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-26/filestore/commons-logging/commons-logging/1.1.1/jar/5043bfebc3db072ed80fbd362e7caf00e885d8ae/commons-logging-1.1.1.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-26/filestore/org.springframework/spring-beans/4.0.1.RELEASE/jar/605582e95fb62b43fb4a843babdcf739f3497e92/spring-beans-4.0.1.RELEASE.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-26/filestore/aopalliance/aopalliance/1.0/jar/235ba8b489512805ac13a8f9ea77a1ca5ebe3e8/aopalliance-1.0.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-26/filestore/org.springframework/spring-aop/4.0.1.RELEASE/jar/ff68e4cfdbb2be3e8d8a7f34e7cbacc1860dfe75/spring-aop-4.0.1.RELEASE.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-26/filestore/org.springframework/spring-expression/4.0.1.RELEASE/jar/452cb22401e868a1e79677dd22b6a3097fc603fa/spring-expression-4.0.1.RELEASE.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-26/filestore/org.springframework/spring-jdbc/4.0.1.RELEASE/jar/7d46d07d44f56af7cdcbba53ff671c5487f9547/spring-jdbc-4.0.1.RELEASE.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-26/filestore/org.jboss.logging/jboss-logging/3.1.3.GA/jar/64499e907f19e5e1b3fdc02f81440c1832fe3545/jboss-logging-3.1.3.GA.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-26/filestore/org.jboss.logging/jboss-logging-annotations/1.2.0.Beta1/jar/2f437f37bb265d9f8f1392823dbca12d2bec06d6/jboss-logging-annotations-1.2.0.Beta1.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-26/filestore/org.jboss.spec.javax.transaction/jboss-transaction-api_1.2_spec/1.0.0.Final/jar/1f9fef7a9fcbb41cc390fc370a291cf30729e094/jboss-transaction-api_1.2_spec-1.0.0.Final.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-26/filestore/xml-apis/xml-apis/1.0.b2/jar/3136ca936f64c9d68529f048c2618bd356bf85c9/xml-apis-1.0.b2.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-26/filestore/dom4j/dom4j/1.6.1/jar/5d3ccc056b6f056dbf0dddfdf43894b9065a8f94/dom4j-1.6.1.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-26/filestore/org.hibernate.common/hibernate-commons-annotations/4.0.5.Final/jar/2a581b9edb8168e45060d8bad8b7f46712d2c52c/hibernate-commons-annotations-4.0.5.Final.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-26/filestore/org.hibernate.javax.persistence/hibernate-jpa-2.1-api/1.0.0.Final/jar/5e731d961297e5a07290bfaf3db1fbc8bbbf405a/hibernate-jpa-2.1-api-1.0.0.Final.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-26/filestore/antlr/antlr/2.7.7/jar/83cd2cd674a217ade95a4bb83a8a14f351f48bd0/antlr-2.7.7.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-26/filestore/org.jboss/jandex/1.1.0.Final/jar/e84a2122e76f0b6503be78094ddf2108057ac15f/jandex-1.1.0.Final.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-26/filestore/org.apache.tomcat/tomcat-juli/8.0.8/jar/d72349f21695c9e92e3ea4112b541f2ff8e469e2/tomcat-juli-8.0.8.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-26/filestore/ognl/ognl/3.0.6/jar/a3665cf8e3426686ee751790f3d1e1ec5705e9dc/ognl-3.0.6.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-26/filestore/org.unbescape/unbescape/1.0/jar/4d6208849cec8ae8c16467c285df1e6272bff2ce/unbescape-1.0.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-26/filestore/org.attoparser/attoparser/1.2/jar/5adbf0d1a7f03cd5f80adb3ff9910fb3b5590d97/attoparser-1.2.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-26/filestore/javax.servlet/servlet-api/2.5/jar/5959582d97d8b61f4d154ca9e495aafd16726e34/servlet-api-2.5.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-26/filestore/org.hamcrest/hamcrest-core/1.1/jar/860340562250678d1a344907ac75754e259cdb14/hamcrest-core-1.1.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-26/filestore/org.objenesis/objenesis/1.0/jar/9b473564e792c2bdf1449da1f0b1b5bff9805704/objenesis-1.0.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-26/filestore/org.mockito/mockito-core/1.9.5/jar/c3264abeea62c4d2f367e21484fbb40c7e256393/mockito-core-1.9.5.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-26/filestore/org.apache.commons/commons-lang3/3.1/jar/905075e6c80f206bbe6cf1e809d2caa69f420c76/commons-lang3-3.1.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-26/filestore/javax.servlet/jstl/1.2/jar/74aca283cd4f4b4f3e425f5820cda58f44409547/jstl-1.2.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-26/filestore/org.slf4j/slf4j-log4j12/1.7.5/jar/6edffc576ce104ec769d954618764f39f0f0f10d/slf4j-log4j12-1.7.5.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-26/filestore/log4j/log4j/1.2.17/bundle/5af35056b4d257e4b64b9e8069c0746e8b08629f/log4j-1.2.17.jar" />
         </element>
       </element>
-      <element id="dir-copy" path="$PROJECT_DIR$/src/main/webapp" />
     </root>
   </artifact>
 </component>

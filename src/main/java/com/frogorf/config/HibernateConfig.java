@@ -23,7 +23,7 @@ import java.util.Properties;
 @Configuration
 @EnableTransactionManagement
 @PropertySource({"classpath:persistence-mysql.properties"})
-@ComponentScan({"com.frogorf.person", "com.frogorf.security"})
+@ComponentScan({"com.frogorf.security"})
 public class HibernateConfig {
 
     @Autowired

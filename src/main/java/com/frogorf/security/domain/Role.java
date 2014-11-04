@@ -10,7 +10,7 @@ import java.util.Set;
  * @author Tsurkin Alex
  */
 @Entity
-@Table(name = "roles")
+@Table(name = "role")
 public class Role {
 
 
@@ -22,7 +22,7 @@ public class Role {
     private String role;
 
     @OneToMany(cascade = CascadeType.ALL)
-    @JoinTable(name = "user_roles", joinColumns = {@JoinColumn(name = "role_id", referencedColumnName = "id")}, inverseJoinColumns = {@JoinColumn(name = "user_id", referencedColumnName = "id")})
+    @JoinTable(name = "user_role", joinColumns = {@JoinColumn(name = "role_id", referencedColumnName = "id")}, inverseJoinColumns = {@JoinColumn(name = "user_id", referencedColumnName = "id")})
     private Set<User> userRoles;
 
     public Integer getId() {

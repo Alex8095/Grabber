@@ -21,8 +21,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Autowired
     public void configureGlobal(AuthenticationManagerBuilder aut) throws Exception {
         aut.userDetailsService(userDetailsService);
-        //userService.getUser(aut.getN)
-        //auth.inMemoryAuthentication().withUser("1").password("1").roles("USER");
     }
 
     @Override
@@ -35,7 +33,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .antMatchers("/admin/**").authenticated();
         http
                 .csrf().disable()
-                .formLogin().loginPage("/login")
+                .formLogin().loginPage("/security/login")
                 .permitAll()
                 .and()
                 .logout()
