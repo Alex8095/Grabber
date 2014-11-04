@@ -1,10 +1,9 @@
 package com.frogorf.config;
 
-import org.springframework.context.MessageSource;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.support.ReloadableResourceBundleMessageSource;
+import org.springframework.context.support.ResourceBundleMessageSource;
 import org.springframework.util.StringUtils;
 import org.springframework.web.servlet.LocaleResolver;
 import org.springframework.web.servlet.config.annotation.*;
@@ -42,13 +41,12 @@ public class WebConfig extends WebMvcConfigurerAdapter {
     }
 
     @Bean
-    public MessageSource messageSource() {
-        ReloadableResourceBundleMessageSource messageSource = new ReloadableResourceBundleMessageSource();
-        messageSource.setBasenames("/WEB-INF/messages/messages", "messages/validation");
-        messageSource.setUseCodeAsDefaultMessage(true);
-        messageSource.setDefaultEncoding("UTF-8");
-        messageSource.setCacheSeconds(0);
-        return messageSource;
+    public ResourceBundleMessageSource messageSource() {
+        ResourceBundleMessageSource source = new ResourceBundleMessageSource();
+        source.setBasenames("i18n/messages", "i18n/validation");
+        source.setDefaultEncoding("UTF-8");
+        source.setCacheSeconds(0);
+        return source;
     }
 
     @Override
