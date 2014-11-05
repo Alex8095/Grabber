@@ -3,46 +3,63 @@
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
 <head th:include="fragments/layout :: head"></head>
-<body>
+<body id="grabber">
 <div th:replace="fragments/layout :: header"></div>
+<div class="segment">
+    <div class="container">
+        <div class="introduction">
+            <h1 class="ui dividing header">
+                Ua.Alfabrok.Grabber
+            </h1>
+        </div>
+    </div>
+</div>
+<div class="main container">
+    <div class="ui two column middle aligned relaxed grid basic segment">
+        <div class="column">
+            <div class="ui form segment">
+                <form xmlns:th="http://www.thymeleaf.org" action="authentication" th:action="@{/security/login}"
+                      method="post">
+                    <h3 class="ui header">Log-in</h3>
+                    <div class="field">
+                        <label>Username</label>
 
-<div class="ui form segment">
-    <form xmlns:th="http://www.thymeleaf.org" action="authentication" th:action="@{/security/login}"
-          method="post">
-        <div class="field">
-            <label>Username</label>
-            <div class="ui left labeled icon input">
-                <input type="text" id="username" name="username" th:placeholder="#{security.signin_login}"/>
-                <i class="user icon"></i>
+                        <div class="ui left labeled icon input">
+                            <input type="text" id="username" name="username" th:placeholder="#{security.signin_login}"/>
+                            <i class="user icon"></i>
 
-                <div class="ui corner label">
-                    <i class="icon asterisk"></i>
-                </div>
+                            <div class="ui corner label">
+                                <i class="icon asterisk"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label>Password</label>
+
+                        <div class="ui left labeled icon input">
+                            <input type="password" id="password" name="password"
+                                   th:placeholder="#{security.signin_password}"/>
+                            <i class="lock icon"></i>
+
+                            <div class="ui corner label">
+                                <i class="icon asterisk"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inline field">
+                        <div class="ui checkbox">
+                            <input type="checkbox" id="remember_me" value="remember-me"/>
+                            <label for="remember_me" th:text="#{security.signin_remember_me}">Checkbox</label>
+                        </div>
+                    </div>
+                    <div th:if="${param.error}" style="display: block" class="ui error message">
+                        <div class="header">We noticed some issues</div>
+                    </div>
+                    <button class="ui blue submit button" type="submit" th:text="#{security.signin}">Sign in</button>
+                </form>
             </div>
         </div>
-        <div class="field">
-            <label>Password</label>
-
-            <div class="ui left labeled icon input">
-                <input type="password" id="password" name="password" th:placeholder="#{security.signin_password}"/>
-                <i class="lock icon"></i>
-
-                <div class="ui corner label">
-                    <i class="icon asterisk"></i>
-                </div>
-            </div>
-        </div>
-        <div class="inline field">
-            <div class="ui checkbox">
-                <input type="checkbox" id="remember_me" value="remember-me"/>
-                <label for="remember_me" th:text="#{security.signin_remember_me}">Checkbox</label>
-            </div>
-        </div>
-        <div th:if="${param.error}" style="display: block" class="ui error message">
-            <div class="header">We noticed some issues</div>
-        </div>
-        <button class="ui blue submit button" type="submit" th:text="#{security.signin}">Sign in</button>
-    </form>
+    </div>
 </div>
 </body>
 </html>
