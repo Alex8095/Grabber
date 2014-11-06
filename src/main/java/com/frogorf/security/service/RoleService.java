@@ -9,5 +9,9 @@ import com.frogorf.security.domain.Role;
  * @version */
 public interface RoleService {
 
-	public Role getRole(int id);
+	Role getRole(int id);
+
+    void saveRole(Role role);
+
+    void deleteRole(int id);
 }

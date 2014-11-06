@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head th:fragment="head (title)">
+    <title th:text="${title}"></title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="author" content="Alex Tsurkin"/>
+
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Open+Sans:300italic,400,300,700'
+          rel='stylesheet' type='text/css'/>
+    <link rel="stylesheet" type="text/css" href="/resources/css/semantic-imports.css"/>
+    <link rel="stylesheet" type="text/css" href="/resources/css/semantic.css"/>
+    <link rel="stylesheet" type="text/css" href="/resources/css/body.css"/>
+    <link rel="stylesheet" type="text/css" href="/resources/css/grabber.css"/>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://semantic-ui.com/javascript/library/waypoints.js"></script>
+    <script src="http://semantic-ui.com/javascript/library/history.js"></script>
+    <script src="http://semantic-ui.com/javascript/library/easing.js"></script>
+    <script src="http://semantic-ui.com/javascript/library/ace/ace.js"></script>
+    <script src="http://semantic-ui.com/javascript/library/tablesort.js"></script>
+    <script src="http://semantic-ui.com/javascript/library/waypoints.js"></script>
+    <script src="/resources/js/semantic/semantic.min.js"></script>
+    <script src="/resources/js/semantic.js"></script>
+    <script src="/resources/js/homepage.js"></script>
+</head>
+<body>
+<div th:fragment="header" class="ui fixed transparent inverted main menu">
+    <div class="container">
+        <a class="launch item"><i class="icon list layout"></i> Content</a>
+
+        <div class="title item">
+            <b>UA.Alfabrok.</b>Grabber
+        </div>
+        <div class="disabled icon item"><i class="left arrow icon"></i></div>
+        <div class="section ui dropdown link item">
+            <span class="count">1 of 5</span>
+
+            <div class="menu hide">
+                <div class="active item">
+                    <a href="/introduction/definitions.html">1. Definitions</a>
+                </div>
+                <div class="item">
+                    <a href="/introduction/overview.html">2. Overview</a>
+                </div>
+                <div class="item">
+                    <a href="/introduction/types.html">3. Types</a>
+                </div>
+                <div class="item">
+                    <a href="/introduction/variations.html">4. Variations</a>
+                </div>
+                <div class="item">
+                    <a href="/introduction.html">5. What's Different</a>
+                </div>
+            </div>
+        </div>
+        <a class="icon item" href="/introduction/overview.html"><i class="right arrow icon"></i></a>
+
+        <div sec:authorize="isAuthenticated()" class="right menu">
+            <div class="vertically fitted borderless item" th:inline="text">
+                Hello [[${#httpServletRequest.remoteUser}]]!
+            </div>
+            <a class="popup icon github item" data-content="Exit"
+               href="../logout" th:href="@{/logout}">
+                <i class="sign out icon"></i>
+            </a>
+        </div>
+    </div>
+</div>
+<div th:fragment="sidebar" class="ui large vertical inverted labeled icon sidebar menu" id="menu">
+    <a class="hide item">
+        <i class="close icon"></i> Close Menu
+    </a>
+
+    <div class="item">
+        <a href="/">
+            <b th:text="#{menu.administration}">administration</b>
+        </a>
+
+        <div class="menu">
+            <a class="active item" href="../admin/role/" th:href="@{/admin/role/}"
+               th:text="#{menu.settings.user.roles}">user roles</a>
+        </div>
+    </div>
+    <div class="item">
+        <a href="../admin/user/" th:href="@{/admin/user/}">
+            <b th:text="#{menu.users}">users</b>
+        </a>
+    </div>
+</div>
+<div th:fragment="sidebar-launch" class="ui black huge launch right attached button" style="width: 70px;">
+    <i class="icon list layout"></i>
+    <span class="text" style="display: none;">Menu</span>
+</div>
+<div th:fragment="footer">
+    <p>Footer</p>
+</div>
+</body>
+</html>

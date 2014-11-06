@@ -2,102 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d9b5d374-f857-4bc3-a8be-81545628c980" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Grabber.iml" afterPath="" />
+      <change type="DELETED" beforePath="D:\java\frogorf\Grabber\src\main\java\com\frogorf\web\controller\AdminHomeController.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\java\frogorf\Grabber\src\main\webapp\WEB-INF\thymeleaf\home.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\java\frogorf\Grabber\src\main\webapp\WEB-INF\thymeleaf\home2.html" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/frogorf/security/service/impl/CustomAuthenticationServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/frogorf/security/service/impl/CustomAuthenticationServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Grabber.iml" afterPath="$PROJECT_DIR$/Grabber.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/frogorf/web/controller/HomeController.java" afterPath="$PROJECT_DIR$/src/main/java/com/frogorf/web/controller/HomeController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/frogorf/config/ThymeleafConfig.java" afterPath="$PROJECT_DIR$/src/main/java/com/frogorf/config/ThymeleafConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/frogorf/config/WebConfig.java" afterPath="$PROJECT_DIR$/src/main/java/com/frogorf/config/WebConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/modules/accordion.css" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/modules/accordion.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/modules/accordion.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/modules/accordion.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/js/semantic/modules/accordion.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/semantic/modules/accordion.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/thymeleaf/admin.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/thymeleaf/admin.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/modules/behavior/api.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/modules/behavior/api.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/js/semantic/behavior/api.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/semantic/behavior/api.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/elements/basic.icon.css" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/elements/basic.icon.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/fonts/basic.icons.svg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/fonts/basic.icons.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/collections/breadcrumb.css" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/collections/breadcrumb.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/elements/button.css" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/elements/button.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/modules/chatroom.css" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/modules/chatroom.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/modules/chatroom.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/modules/chatroom.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/js/semantic/modules/chatroom.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/semantic/modules/chatroom.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/modules/checkbox.css" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/modules/checkbox.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/modules/checkbox.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/modules/checkbox.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/js/semantic/modules/checkbox.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/semantic/modules/checkbox.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/modules/behavior/colorize.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/modules/behavior/colorize.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/js/semantic/behavior/colorize.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/semantic/behavior/colorize.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/views/comment.css" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/views/comment.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/modules/dimmer.css" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/modules/dimmer.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/modules/dimmer.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/modules/dimmer.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/js/semantic/modules/dimmer.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/semantic/modules/dimmer.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/elements/divider.css" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/elements/divider.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/modules/dropdown.css" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/modules/dropdown.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/modules/dropdown.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/modules/dropdown.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/js/semantic/modules/dropdown.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/semantic/modules/dropdown.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/views/feed.css" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/views/feed.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/collections/form.css" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/collections/form.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/modules/behavior/form.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/modules/behavior/form.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/js/semantic/behavior/form.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/semantic/behavior/form.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/collections/grid.css" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/collections/grid.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/elements/header.css" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/elements/header.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/thymeleaf/home.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/thymeleaf/home.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/homepage.css" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/homepage.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/js/homepage.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/homepage.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/elements/icon.css" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/elements/icon.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/fonts/icons.svg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/fonts/icons.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/elements/image.css" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/elements/image.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/elements/input.css" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/elements/input.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/views/item.css" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/views/item.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/elements/label.css" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/elements/label.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/frogorf/security/domain/Role.java" afterPath="$PROJECT_DIR$/src/main/java/com/frogorf/security/domain/Role.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/frogorf/security/dao/RoleDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/frogorf/security/dao/RoleDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/frogorf/security/dao/impl/RoleDAOImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/frogorf/security/dao/impl/RoleDAOImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/frogorf/security/service/RoleService.java" afterPath="$PROJECT_DIR$/src/main/java/com/frogorf/security/service/RoleService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/frogorf/security/service/impl/RoleServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/frogorf/security/service/impl/RoleServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/frogorf/web/controller/SecurityController.java" afterPath="$PROJECT_DIR$/src/main/java/com/frogorf/web/controller/SecurityController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/frogorf/security/domain/User.java" afterPath="$PROJECT_DIR$/src/main/java/com/frogorf/security/domain/User.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/frogorf/security/dao/UserDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/frogorf/security/dao/UserDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/frogorf/security/dao/impl/UserDAOImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/frogorf/security/dao/impl/UserDAOImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/frogorf/security/service/UserService.java" afterPath="$PROJECT_DIR$/src/main/java/com/frogorf/security/service/UserService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/frogorf/security/service/impl/UserServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/frogorf/security/service/impl/UserServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/body.css" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/body.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/db/security/import-data.sql" afterPath="$PROJECT_DIR$/src/main/resources/db/security/import-data.sql" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/thymeleaf/fragments/layout.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/thymeleaf/fragments/layout.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/views/list.css" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/views/list.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/elements/loader.css" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/elements/loader.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/thymeleaf/security/login.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/thymeleaf/security/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/collections/menu.css" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/collections/menu.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/collections/message.css" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/collections/message.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/i18n/messages.properties" afterPath="$PROJECT_DIR$/src/main/resources/i18n/messages.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/i18n/messages_en.properties" afterPath="$PROJECT_DIR$/src/main/resources/i18n/messages_en.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/modules/modal.css" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/modules/modal.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/modules/modal.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/modules/modal.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/js/semantic/modules/modal.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/semantic/modules/modal.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/modules/nag.css" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/modules/nag.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/modules/nag.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/modules/nag.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/js/semantic/modules/nag.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/semantic/modules/nag.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/modules/popup.css" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/modules/popup.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/modules/popup.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/modules/popup.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/js/semantic/modules/popup.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/semantic/modules/popup.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/elements/progress.css" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/elements/progress.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/modules/rating.css" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/modules/rating.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/modules/rating.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/modules/rating.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/js/semantic/modules/rating.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/semantic/modules/rating.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/elements/reveal.css" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/elements/reveal.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/modules/search.css" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/modules/search.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/modules/search.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/modules/search.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/js/semantic/modules/search.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/semantic/modules/search.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/elements/segment.css" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/elements/segment.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/persistence-mysql.properties" afterPath="$PROJECT_DIR$/src/main/resources/persistence-mysql.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/db/security/security-shema.sql" afterPath="$PROJECT_DIR$/src/main/resources/db/security/security-shema.sql" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/semantic.css" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/semantic.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/js/semantic/semantic.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/semantic/semantic.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/js/semantic/semantic.min.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/semantic/semantic.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/modules/shape.css" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/modules/shape.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/modules/shape.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/modules/shape.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/js/semantic/modules/shape.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/semantic/modules/shape.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/modules/sidebar.css" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/modules/sidebar.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/modules/sidebar.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/modules/sidebar.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/js/semantic/modules/sidebar.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/semantic/modules/sidebar.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/modules/behavior/state.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/modules/behavior/state.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/js/semantic/behavior/state.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/semantic/behavior/state.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/views/statistic.css" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/views/statistic.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/elements/step.css" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/elements/step.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/modules/tab.css" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/modules/tab.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/modules/tab.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/modules/tab.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/js/semantic/modules/tab.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/semantic/modules/tab.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/collections/table.css" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/collections/table.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/modules/transition.css" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/modules/transition.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/modules/transition.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/modules/transition.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/js/semantic/modules/transition.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/semantic/modules/transition.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/i18n/validation_en.properties" afterPath="$PROJECT_DIR$/src/main/resources/i18n/validation_en.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/modules/video.css" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/modules/video.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/modules/video.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/modules/video.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/js/semantic/modules/video.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/semantic/modules/video.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/js/semantic.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/semantic.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Grabber.iws" />
@@ -109,6 +40,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="Commander">
+    <leftPanel />
+    <rightPanel />
+    <splitter proportion="0.5" />
+  </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/Grabber$GrabberTomcatRun.coverage" NAME="GrabberTomcatRun Coverage Results" MODIFIED="1414757336312" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
@@ -166,46 +102,63 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="login.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/thymeleaf/security/login.html">
+      <file leaf-file-name="messages_en.properties" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/i18n/messages_en.properties">
+          <provider editor-type-id="ResourceBundle">
+            <state />
+          </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="36" selection-start="912" selection-end="912" vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="1190">
+            <state line="79" column="0" selection-start="2021" selection-end="2041" vertical-scroll-proportion="-19.84" vertical-offset="847" max-vertical-offset="1598">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="layout.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/thymeleaf/fragments/layout.html">
+      <file leaf-file-name="list.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/thymeleaf/admin/user/list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="55" column="21" selection-start="2755" selection-end="2760" vertical-scroll-proportion="0.6368078" vertical-offset="544" max-vertical-offset="1785">
+            <state line="18" column="14" selection-start="737" selection-end="1003" vertical-scroll-proportion="-11.769231" vertical-offset="0" max-vertical-offset="476">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ThymeleafConfig.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/config/ThymeleafConfig.java">
+      <file leaf-file-name="edit.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/thymeleaf/admin/user/edit.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="6" selection-start="1384" selection-end="1384" vertical-scroll-proportion="0.0" vertical-offset="646" max-vertical-offset="1717">
+            <state line="12" column="117" selection-start="790" selection-end="790" vertical-scroll-proportion="0.23076923" vertical-offset="0" max-vertical-offset="884">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="admin.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/thymeleaf/admin.html">
+      <file leaf-file-name="detail.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/thymeleaf/admin/user/detail.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="0" selection-start="226" selection-end="296" vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="306">
+            <state line="37" column="35" selection-start="1644" selection-end="1683" vertical-scroll-proportion="-24.192308" vertical-offset="0" max-vertical-offset="850">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/thymeleaf/home.html">
+      <file leaf-file-name="layout.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/thymeleaf/admin/fragments/layout.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="0" selection-start="698" selection-end="698" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="425">
+            <state line="19" column="0" selection-start="1175" selection-end="1175" vertical-scroll-proportion="-12.423077" vertical-offset="0" max-vertical-offset="714">
+              <folding>
+                <element signature="tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+                <element signature="tag#div#1;tag#body#0;tag#html#0" expanded="false" />
+                <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="tag#div#2;tag#body#0;tag#html#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="semantic.min.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/semantic/semantic.min.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="57" selection-start="0" selection-end="137671" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
               <folding />
             </state>
           </provider>
@@ -214,45 +167,66 @@
       <file leaf-file-name="semantic.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/semantic.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="6" selection-start="326" selection-end="326" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="12665">
+            <state line="731" column="0" selection-start="23234" selection-end="23234" vertical-scroll-proportion="-11.307693" vertical-offset="12133" max-vertical-offset="13753">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HomeController.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/web/controller/HomeController.java">
+      <file leaf-file-name="BaseLocale.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/domain/BaseLocale.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="0" selection-start="434" selection-end="434" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2380">
               <folding>
-                <element signature="imports" expanded="false" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#683#684#0" expanded="true" />
+                <element signature="e#714#715#0" expanded="true" />
+                <element signature="e#821#822#0" expanded="true" />
+                <element signature="e#861#862#0" expanded="true" />
+                <element signature="e#952#953#0" expanded="true" />
+                <element signature="e#989#990#0" expanded="true" />
+                <element signature="e#1120#1121#0" expanded="true" />
+                <element signature="e#1172#1173#0" expanded="true" />
+                <element signature="e#1257#1258#0" expanded="true" />
+                <element signature="e#1291#1292#0" expanded="true" />
+                <element signature="e#1410#1411#0" expanded="true" />
+                <element signature="e#1456#1457#0" expanded="true" />
+                <element signature="e#1527#1528#0" expanded="true" />
+                <element signature="e#1554#1555#0" expanded="true" />
+                <element signature="e#1645#1646#0" expanded="true" />
+                <element signature="e#1677#1678#0" expanded="true" />
+                <element signature="e#1750#1751#0" expanded="true" />
+                <element signature="e#1778#1779#0" expanded="true" />
+                <element signature="e#1873#1874#0" expanded="true" />
+                <element signature="e#1907#1908#0" expanded="true" />
+                <element signature="e#1945#1946#0" expanded="true" />
+                <element signature="e#1979#1980#0" expanded="true" />
+                <element signature="e#2033#2034#0" expanded="true" />
+                <element signature="e#2079#2080#0" expanded="true" />
+                <element signature="e#2156#2157#0" expanded="true" />
+                <element signature="e#2186#2187#0" expanded="true" />
+                <element signature="e#2289#2290#0" expanded="true" />
+                <element signature="e#2327#2328#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AdminHomeController.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/web/controller/AdminHomeController.java">
+      <file leaf-file-name="User.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/security/domain/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="30" selection-start="354" selection-end="354" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="374">
-              <folding />
+            <state line="14" column="32" selection-start="211" selection-end="211" vertical-scroll-proportion="0.0" vertical-offset="125" max-vertical-offset="765">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WebConfig.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/config/WebConfig.java">
+      <file leaf-file-name="Role.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/security/domain/Role.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="41" selection-start="816" selection-end="816" vertical-scroll-proportion="0.0" vertical-offset="323" max-vertical-offset="1224">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SecurityController.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/web/controller/SecurityController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="11" selection-start="296" selection-end="325" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="578">
+            <state line="16" column="0" selection-start="240" selection-end="240" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
               <folding />
             </state>
           </provider>
@@ -486,28 +460,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/frogorf/security/dao/impl/RoleDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/frogorf/security/dao/RoleDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/frogorf/security/dao/RoleDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/frogorf/security/dao/impl/UserDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/frogorf/security/dao/impl/UserDAOImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/frogorf/security/service/UserService.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/resources/css/main.css" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/_home.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/resources/css/homepage.css" />
-        <option value="$PROJECT_DIR$/src/main/java/com/frogorf/config/core/SpringSecurityInitializer.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/thymeleaf/security/signin.html" />
-        <option value="$PROJECT_DIR$/src/main/java/com/frogorf/security/service/impl/CustomAuthenticationServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/i18n/messages" />
-        <option value="$PROJECT_DIR$/src/main/resources/i18n/messages_en_US.properties" />
-        <option value="$PROJECT_DIR$/src/main/webapp/resources/i18n/messages.properties" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/messages/messages.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/com/frogorf/security/domain/User.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/frogorf/security/domain/Role.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/db/security/security-data.sql" />
-        <option value="$PROJECT_DIR$/src/main/resources/db/security/security-shema.sql" />
         <option value="$PROJECT_DIR$/src/main/resources/persistence-mysql.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/frogorf/web/controller/SecurityConfig.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
@@ -529,7 +481,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/frogorf/web/controller/SecurityController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/thymeleaf/admin.html" />
         <option value="$PROJECT_DIR$/src/main/resources/log4j.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/i18n/messages.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/frogorf/config/WebConfig.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/thymeleaf/home.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/frogorf/config/ThymeleafConfig.java" />
@@ -537,6 +488,29 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/thymeleaf/security/login.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/frogorf/web/controller/HomeController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/thymeleaf/fragments/layout.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/frogorf/web/controller/admin/AdminRolesController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/frogorf/security/service/RoleService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/frogorf/web/controller/admin/AdminRoleController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/frogorf/web/controller/admin/AdminHomeController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/thymeleaf/admin/role/detail.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/thymeleaf/admin/role/list.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/frogorf/security/service/impl/RoleServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/frogorf/security/dao/RoleDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/frogorf/security/dao/impl/RoleDAOImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/i18n/messages.properties" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/thymeleaf/admin/home.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/thymeleaf/admin/user/list.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/thymeleaf/admin/role/edit.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/frogorf/domain/BaseEntity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/frogorf/domain/BaseLocale.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/frogorf/security/domain/Role.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/frogorf/security/domain/User.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/i18n/messages_en.properties" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/thymeleaf/admin/user/detail.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/js/semantic/semantic.min.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/js/semantic.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/thymeleaf/admin/fragments/layout.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/thymeleaf/admin/user/edit.html" />
       </list>
     </option>
   </component>
@@ -639,6 +613,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -735,7 +711,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="security" />
+              <option name="myItemId" value="admin" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -769,7 +745,113 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="user" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Grabber" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Grabber" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="thymeleaf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="fragments" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Grabber" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Grabber" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Grabber" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Grabber" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="semantic" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -839,14 +921,166 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="i18n" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Grabber" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Grabber" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="i18n" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resource Bundle 'messages'" />
+              <option name="myItemType" value="com.intellij.lang.properties.projectView.ResourceBundleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Grabber" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Grabber" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frogorf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Grabber" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Grabber" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frogorf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="security" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Grabber" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Grabber" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frogorf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="security" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="domain" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Grabber" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Grabber" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frogorf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="domain" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -869,19 +1103,22 @@
     <property name="FullScreen" value="false" />
     <property name="dynamic.classpath" value="false" />
     <property name="restartRequiresConfirmation" value="true" />
+    <property name="OverrideImplement.combined" value="true" />
+    <property name="OverrideImplement.overriding.sorted" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.frogorf.web.controller.admin" />
       <recent name="com.frogorf.web.controller" />
       <recent name="com.frogorf.config.MessageSource" />
       <recent name="com.frogorf.config.root" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\java\frogorf\Grabber\src\main\webapp\WEB-INF\thymeleaf\admin" />
+      <recent name="D:\java\frogorf\Grabber\src\main\webapp\WEB-INF\thymeleaf\admin\role" />
+      <recent name="D:\java\frogorf\Grabber\src\main\webapp\WEB-INF\thymeleaf\admin\user" />
       <recent name="D:\java\frogorf\Grabber\src\main\resources" />
       <recent name="D:\java\frogorf\Grabber\src\main\java\com\frogorf\config\servlet" />
-      <recent name="D:\java\frogorf\Alfabrok\Grabber\src\main\resources\messages" />
-      <recent name="D:\java\frogorf\Alfabrok\Grabber\src\main\webapp\resources\messages" />
-      <recent name="D:\java\frogorf\Alfabrok\Grabber\src\main\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\java\frogorf\Alfabrok\Grabber\src\main\webapp\resources" />
@@ -1295,6 +1532,8 @@
       <workItem from="1415171394514" duration="2007000" />
       <workItem from="1415173576284" duration="2720000" />
       <workItem from="1415192145396" duration="1482000" />
+      <workItem from="1415259116201" duration="46000" />
+      <workItem from="1415259533056" duration="5251000" />
     </task>
     <task id="LOCAL-00001" summary="1. security dao &#10;2. semantic ui">
       <created>1414746285026</created>
@@ -1304,7 +1543,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31750000" />
+    <option name="totallyTimeSpent" value="37047000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1328,13 +1567,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905984" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32799146" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905984" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22790202" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39957264" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1356,7 +1596,6 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905984" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -1383,41 +1622,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/web/controller/SecurityController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="11" selection-start="296" selection-end="325" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="578">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/config/HibernateConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="13" selection-start="1029" selection-end="1029" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1428">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/thymeleaf/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="67" selection-start="2680" selection-end="2680" vertical-scroll-proportion="0.0" vertical-offset="1003" max-vertical-offset="5423">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/thymeleaf/admin.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="26" selection-start="317" selection-end="323" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="306">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="11" selection-start="1137" selection-end="1137" vertical-scroll-proportion="0.0" vertical-offset="714" max-vertical-offset="867">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/config/WebConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="43" column="20" selection-start="1709" selection-end="1709" vertical-scroll-proportion="0.0" vertical-offset="391" max-vertical-offset="1207">
@@ -1428,97 +1632,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/web/controller/SecurityController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="42" selection-start="554" selection-end="575" vertical-scroll-proportion="0.0" vertical-offset="323" max-vertical-offset="578">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/config/HibernateConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="13" selection-start="1029" selection-end="1029" vertical-scroll-proportion="0.0" vertical-offset="442" max-vertical-offset="1428">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/thymeleaf/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="71" selection-start="2404" selection-end="2404" vertical-scroll-proportion="0.0" vertical-offset="765" max-vertical-offset="5423">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/thymeleaf/admin.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="26" selection-start="317" selection-end="323" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="306">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="11" selection-start="1137" selection-end="1137" vertical-scroll-proportion="0.0" vertical-offset="714" max-vertical-offset="867">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/config/WebConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="20" selection-start="1709" selection-end="1709" vertical-scroll-proportion="0.0" vertical-offset="391" max-vertical-offset="1207">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/web/controller/SecurityController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="42" selection-start="554" selection-end="575" vertical-scroll-proportion="0.0" vertical-offset="323" max-vertical-offset="578">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/config/HibernateConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="13" selection-start="1029" selection-end="1029" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1428">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/thymeleaf/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="42" selection-start="2869" selection-end="2869" vertical-scroll-proportion="0.0" vertical-offset="765" max-vertical-offset="5423">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/thymeleaf/admin.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="26" selection-start="317" selection-end="323" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="306">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="11" selection-start="1137" selection-end="1137" vertical-scroll-proportion="0.0" vertical-offset="714" max-vertical-offset="867">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/config/WebConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="20" selection-start="1709" selection-end="1709" vertical-scroll-proportion="0.0" vertical-offset="391" max-vertical-offset="1207">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/web/controller/SecurityController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="42" selection-start="554" selection-end="575" vertical-scroll-proportion="0.0" vertical-offset="323" max-vertical-offset="578">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/thymeleaf/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="57" selection-start="2332" selection-end="2332" vertical-scroll-proportion="0.0" vertical-offset="765" max-vertical-offset="5406">
           <folding />
         </state>
       </provider>
@@ -1626,22 +1739,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/i18n/messages_en.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="22" selection-start="124" selection-end="124" vertical-scroll-proportion="-2.04" vertical-offset="0" max-vertical-offset="153" />
-      </provider>
-      <provider editor-type-id="ResourceBundle">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/i18n/messages.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="615" />
-      </provider>
-      <provider editor-type-id="ResourceBundle">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/config/WebConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="41" selection-start="816" selection-end="816" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1071">
@@ -1649,23 +1746,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/semantic.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="6" selection-start="326" selection-end="326" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="12665">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/web/controller/SecurityController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="11" selection-start="296" selection-end="325" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/thymeleaf/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="0" selection-start="698" selection-end="698" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="425">
           <folding />
         </state>
       </provider>
@@ -1684,32 +1767,231 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/web/controller/AdminHomeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="30" selection-start="354" selection-end="354" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/thymeleaf/security/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="36" selection-start="912" selection-end="912" vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="1190">
+        <state line="24" column="36" selection-start="1150" selection-end="1150" vertical-scroll-proportion="-0.0" vertical-offset="408" max-vertical-offset="1190">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/web/controller/HomeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="434" selection-end="434" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/thymeleaf/fragments/layout.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="21" selection-start="2755" selection-end="2760" vertical-scroll-proportion="0.6368078" vertical-offset="544" max-vertical-offset="1785">
+        <state line="54" column="21" selection-start="2805" selection-end="2810" vertical-scroll-proportion="-2.1923077" vertical-offset="861" max-vertical-offset="1768">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/web/controller/admin/AdminRoleController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="29" selection-start="1425" selection-end="1425" vertical-scroll-proportion="12.461538" vertical-offset="1021" max-vertical-offset="1598">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/web/controller/HomeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="13" selection-start="275" selection-end="275" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/web/controller/admin/AdminHomeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="22" selection-start="457" selection-end="457" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/thymeleaf/admin/role/detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="23" selection-start="475" selection-end="475" vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="544">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/thymeleaf/admin/role/list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="23" selection-start="475" selection-end="475" vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="544">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/security/service/RoleService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="25" selection-start="187" selection-end="248" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/security/service/impl/RoleServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="16" selection-start="524" selection-end="524" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/security/dao/RoleDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="28" selection-start="247" selection-end="247" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/security/dao/impl/UserDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="36" selection-start="1385" selection-end="1454" vertical-scroll-proportion="0.79815304" vertical-offset="109" max-vertical-offset="918">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/security/dao/impl/RoleDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="0" selection-start="923" selection-end="923" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="663">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/i18n/messages.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="74" column="0" selection-start="1983" selection-end="1983" vertical-scroll-proportion="-31.32" vertical-offset="475" max-vertical-offset="1360">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="ResourceBundle">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/thymeleaf/admin/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="24" selection-start="273" selection-end="273" vertical-scroll-proportion="-2.6153846" vertical-offset="0" max-vertical-offset="391">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/thymeleaf/admin/role/edit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="79" selection-start="298" selection-end="328" vertical-scroll-proportion="-2.6153846" vertical-offset="0" max-vertical-offset="544">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/thymeleaf/admin/user/list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="14" selection-start="737" selection-end="1003" vertical-scroll-proportion="-11.769231" vertical-offset="0" max-vertical-offset="476">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/domain/BaseLocale.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2380">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#683#684#0" expanded="true" />
+            <element signature="e#714#715#0" expanded="true" />
+            <element signature="e#821#822#0" expanded="true" />
+            <element signature="e#861#862#0" expanded="true" />
+            <element signature="e#952#953#0" expanded="true" />
+            <element signature="e#989#990#0" expanded="true" />
+            <element signature="e#1120#1121#0" expanded="true" />
+            <element signature="e#1172#1173#0" expanded="true" />
+            <element signature="e#1257#1258#0" expanded="true" />
+            <element signature="e#1291#1292#0" expanded="true" />
+            <element signature="e#1410#1411#0" expanded="true" />
+            <element signature="e#1456#1457#0" expanded="true" />
+            <element signature="e#1527#1528#0" expanded="true" />
+            <element signature="e#1554#1555#0" expanded="true" />
+            <element signature="e#1645#1646#0" expanded="true" />
+            <element signature="e#1677#1678#0" expanded="true" />
+            <element signature="e#1750#1751#0" expanded="true" />
+            <element signature="e#1778#1779#0" expanded="true" />
+            <element signature="e#1873#1874#0" expanded="true" />
+            <element signature="e#1907#1908#0" expanded="true" />
+            <element signature="e#1945#1946#0" expanded="true" />
+            <element signature="e#1979#1980#0" expanded="true" />
+            <element signature="e#2033#2034#0" expanded="true" />
+            <element signature="e#2079#2080#0" expanded="true" />
+            <element signature="e#2156#2157#0" expanded="true" />
+            <element signature="e#2186#2187#0" expanded="true" />
+            <element signature="e#2289#2290#0" expanded="true" />
+            <element signature="e#2327#2328#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/domain/BaseEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="13" selection-start="146" selection-end="146" vertical-scroll-proportion="0.2390625" vertical-offset="0" max-vertical-offset="663">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/security/domain/Role.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="0" selection-start="240" selection-end="240" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/security/domain/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="32" selection-start="211" selection-end="211" vertical-scroll-proportion="0.0" vertical-offset="125" max-vertical-offset="765">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/i18n/messages_en.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="79" column="0" selection-start="2021" selection-end="2041" vertical-scroll-proportion="-19.84" vertical-offset="847" max-vertical-offset="1598">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="ResourceBundle">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/semantic/semantic.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="57" selection-start="0" selection-end="137671" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/semantic.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="731" column="0" selection-start="23234" selection-end="23234" vertical-scroll-proportion="-11.307693" vertical-offset="12133" max-vertical-offset="13753">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/thymeleaf/admin/fragments/layout.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="0" selection-start="1175" selection-end="1175" vertical-scroll-proportion="-12.423077" vertical-offset="0" max-vertical-offset="714">
+          <folding>
+            <element signature="tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#div#1;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="tag#div#2;tag#body#0;tag#html#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/thymeleaf/admin/user/detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="35" selection-start="1644" selection-end="1683" vertical-scroll-proportion="-24.192308" vertical-offset="0" max-vertical-offset="850">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/thymeleaf/admin/user/edit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="117" selection-start="790" selection-end="790" vertical-scroll-proportion="0.23076923" vertical-offset="0" max-vertical-offset="884">
           <folding />
         </state>
       </provider>

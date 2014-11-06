@@ -73,7 +73,8 @@ semantic.ready = function () {
         $existingCode = $('.existing.code'),
 
     // alias
-        handler;
+        handler
+        ;
 
 
     // event handlers
@@ -91,7 +92,9 @@ semantic.ready = function () {
         },
 
         getSpecification: function (callback) {
-            var url = $(this).data('url') || false;
+            var
+                url = $(this).data('url') || false
+                ;
             callback = callback || function () {
             };
             if (url) {
@@ -114,8 +117,10 @@ semantic.ready = function () {
                     text = json['Text'],
                     states = json['States'],
                     variations = json['Variations'],
+
                     $element,
-                    html;
+                    html
+                    ;
                 $.each(types, function (name, type) {
                     html += '<h2 class="ui dividing header">' + name + '</h2';
                     if ($.isPlainObject(type)) {
@@ -155,9 +160,11 @@ semantic.ready = function () {
                 // end
             },
             element: function (koan, type, text, variation) {
+
             },
             variations: function ($element, variations) {
                 $.each(variations, function (name, variation) {
+
                 });
             },
             text: function ($element, text) {
@@ -167,25 +174,34 @@ semantic.ready = function () {
                 return $element;
             }
         },
+
         font: {
+
             increase: function () {
                 var
                     $container = $(this).parent().prev('.ui.segment'),
-                    fontSize = parseInt($container.css('font-size'), 10);
-                $container.css('font-size', fontSize + 1);
+                    fontSize = parseInt($container.css('font-size'), 10)
+                    ;
+                $container
+                    .css('font-size', fontSize + 1)
+                ;
             },
             decrease: function () {
                 var
                     $container = $(this).parent().prev('.ui.segment'),
-                    fontSize = parseInt($container.css('font-size'), 10);
-                $container.css('font-size', fontSize - 1);
+                    fontSize = parseInt($container.css('font-size'), 10)
+                    ;
+                $container
+                    .css('font-size', fontSize - 1)
+                ;
             }
         },
         overviewMode: function () {
             var
                 $button = $(this),
                 $body = $('body'),
-                $example = $('.example');
+                $example = $('.example')
+                ;
             $body.toggleClass('overview');
             $button.toggleClass('active');
             if ($body.hasClass('overview')) {
@@ -206,7 +222,9 @@ semantic.ready = function () {
             }
         },
         developerMode: function () {
-            var $example = $('.example').not('.no');
+            var
+                $example = $('.example').not('.no')
+                ;
             $developer.addClass('active');
             $designer.removeClass('active');
             $example
@@ -216,7 +234,9 @@ semantic.ready = function () {
             ;
         },
         designerMode: function () {
-            var $example = $('.example').not('.no');
+            var
+                $example = $('.example').not('.no')
+                ;
             $designer.addClass('active');
             $developer.removeClass('active');
             $example
@@ -229,10 +249,13 @@ semantic.ready = function () {
         getIndent: function (text) {
             var
                 lines = text.split("\n"),
-                firstLine = (lines[0] === '') ? lines[1] : lines[0],
+                firstLine = (lines[0] === '')
+                    ? lines[1]
+                    : lines[0],
                 spacesPerIndent = 2,
                 leadingSpaces = firstLine.length - firstLine.replace(/^\s*/g, '').length,
-                indent;
+                indent
+                ;
             if (leadingSpaces !== 0) {
                 indent = leadingSpaces;
             }
@@ -256,14 +279,16 @@ semantic.ready = function () {
                 $code = $annotation.find('.code'),
                 $header = $example.children('.ui.header:first-of-type').eq(0).add('p:first-of-type'),
                 $demo = $example.children().not($header).not('i.code:first-child, .code, .instructive, .language.label, .annotation, br, .ignore, .ignored'),
-                code = '';
+                code = ''
+                ;
             if ($code.size() === 0) {
-                $demo.each(function () {
-                    var $this = $(this).clone(false);
-                    if ($this.not('br')) {
-                        code += $this.removeAttr('style').get(0).outerHTML + "\n";
-                    }
-                })
+                $demo
+                    .each(function () {
+                        var $this = $(this).clone(false);
+                        if ($this.not('br')) {
+                            code += $this.removeAttr('style').get(0).outerHTML + "\n";
+                        }
+                    })
                 ;
             }
             $example.data('code', code);
@@ -276,7 +301,8 @@ semantic.ready = function () {
                 $annotation = $example.find('.annotation'),
                 $code = $annotation.find('.code'),
                 $demo = $example.children().not($header).not('i.code:first-child, .code, .instructive, .language.label, .annotation, br, .ignore, .ignored'),
-                code = $example.data('code') || $.proxy(handler.generateCode, this)();
+                code = $example.data('code') || $.proxy(handler.generateCode, this)()
+                ;
 
             if ($code.hasClass('existing')) {
                 $annotation.show();
@@ -637,20 +663,20 @@ semantic.ready = function () {
     ;
 
     // attach events
-    if ($.fn.tablesort !== undefined) {
-        $sortTable
-            .tablesort()
-        ;
-    }
+//    if ($.fn.tablesort !== undefined) {
+//        $sortTable.tablesort();
+//    }
 
     if ($pageTabs.size() > 0) {
-        $pageTabs.tab({
-            onTabInit: handler.makeCode,
-            onTabLoad: function () {
-                $.proxy(handler.makeStickyColumns, this)();
-                $peekItem.removeClass('active').first().addClass('active');
-            }
-        });
+        $pageTabs
+            .tab({
+                onTabInit: handler.makeCode,
+                onTabLoad: function () {
+                    $.proxy(handler.makeStickyColumns, this)();
+                    $peekItem.removeClass('active').first().addClass('active');
+                }
+            })
+        ;
     }
     else {
         handler.makeCode();
@@ -665,22 +691,44 @@ semantic.ready = function () {
         .on('click', handler.createCode)
     ;
 
-    $shownExample.each(handler.createCode);
-    $helpPopup.popup();
-    $swap.on('click', handler.swapStyle);
-    $increaseFont.on('click', handler.font.increase);
-    $decreaseFont.on('click', handler.font.decrease);
-    $developer.on('click', handler.developerMode);
-    $designer.on('click', handler.designerMode);
-    $overview.on('click', handler.overviewMode);
+    $shownExample
+        .each(handler.createCode)
+    ;
 
-    $menuPopup.popup({
-        position: 'bottom center',
-        className: {
-            popup: 'ui popup'
-        }
-    });
-    //$sortableTables.tablesort();
+    $helpPopup
+        .popup()
+    ;
+
+    $swap
+        .on('click', handler.swapStyle)
+    ;
+
+    $increaseFont
+        .on('click', handler.font.increase)
+    ;
+    $decreaseFont
+        .on('click', handler.font.decrease)
+    ;
+
+    $developer
+        .on('click', handler.developerMode)
+    ;
+    $designer
+        .on('click', handler.designerMode)
+    ;
+    $overview
+        .on('click', handler.overviewMode)
+    ;
+
+    $menuPopup
+        .popup({
+            position: 'bottom center',
+            className: {
+                popup: 'ui popup'
+            }
+        })
+    ;
+//    $sortableTables.tablesort();
 
     $menuDropdown
         .dropdown({
@@ -689,15 +737,24 @@ semantic.ready = function () {
         })
     ;
 
-    $sidebarButton.on('mouseenter', handler.menu.mouseenter).on('mouseleave', handler.menu.mouseleave);
-    $menu.sidebar('attach events', '.launch.button, .launch.item').sidebar('attach events', $hideMenu, 'hide');
+    $sidebarButton
+        .on('mouseenter', handler.menu.mouseenter)
+        .on('mouseleave', handler.menu.mouseleave)
+    ;
+    $menu
+        .sidebar('attach events', '.launch.button, .launch.item')
+        .sidebar('attach events', $hideMenu, 'hide')
+    ;
     $waypoints
         .waypoint({
             continuous: false,
             offset: 100,
             handler: function (direction) {
                 var
-                    index = (direction == 'down') ? $waypoints.index(this) : ($waypoints.index(this) - 1 >= 0) ? ($waypoints.index(this) - 1)
+                    index = (direction == 'down')
+                        ? $waypoints.index(this)
+                        : ($waypoints.index(this) - 1 >= 0)
+                        ? ($waypoints.index(this) - 1)
                         : 0
                     ;
                 $peekItem
@@ -731,10 +788,17 @@ semantic.ready = function () {
         })
     ;
 
-    $peekItem.on('click', handler.peek);
-    $peekSubItem.on('click', handler.peekSub);
+    $peekItem
+        .on('click', handler.peek)
+    ;
+    $peekSubItem
+        .on('click', handler.peekSub)
+    ;
 
 };
 
+
 // attach ready event
-$(document).ready(semantic.ready);
+$(document)
+    .ready(semantic.ready)
+;

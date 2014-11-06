@@ -3,6 +3,8 @@
  */
 package com.frogorf.security.domain;
 
+import com.frogorf.domain.BaseEntity;
+
 import javax.persistence.*;
 
 /**
@@ -10,12 +12,7 @@ import javax.persistence.*;
  */
 @Entity
 @Table(name = "user")
-public class User {
-
-    @Id
-    @Column(name = "id")
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    protected Integer id;
+public class User extends BaseEntity {
 
     private String login;
 

@@ -3,6 +3,8 @@
  */
 package com.frogorf.security.domain;
 
+import com.frogorf.domain.BaseEntity;
+
 import javax.persistence.*;
 import java.util.Set;
 
@@ -11,13 +13,7 @@ import java.util.Set;
  */
 @Entity
 @Table(name = "role")
-public class Role {
-
-
-    @Id
-    @Column(name = "id")
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    protected Integer id;
+public class Role extends BaseEntity {
 
     private String role;
 

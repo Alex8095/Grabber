@@ -1,4 +1,4 @@
-package com.frogorf.web.controller;
+package com.frogorf.web.controller.admin;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @RequestMapping("/admin")
 public class AdminHomeController {
 
-    @RequestMapping(value = "/", method = RequestMethod.GET)
+    @RequestMapping(value = {"/", ""}, method = RequestMethod.GET)
     public String home(Model model) {
-        return "home";
+        return "admin/home";
     }
 }

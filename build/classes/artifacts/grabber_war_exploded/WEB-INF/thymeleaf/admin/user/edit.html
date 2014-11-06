@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head th:include="admin/fragments/layout :: head (title=${user['new']} ? #{user.new.page.title} : #{user.edit.page.title})"></head>
+<body id="grabber">
+<div th:replace="admin/fragments/layout :: sidebar"></div>
+<div th:replace="admin/fragments/layout :: sidebar-launch"></div>
+<div th:replace="admin/fragments/layout :: header"></div>
+<div class="tab segment">
+    <div class="container">
+        <div class="introduction">
+            <h1 class="ui dividing header" th:text="${user['new']} ? #{user.new.page.title} : #{user.edit.page.title}"></h1>
+
+            <div class="ui breadcrumb">
+                <a class="section" th:text="#{menu.home}" th:href="@{/admin/}">home</a>
+                <i class="right arrow icon divider"></i>
+                <a class="section" th:text="#{user.list.page.title}" th:href="@{/admin/user/}">users</a>
+                <i class="right arrow icon divider"></i>
+
+                <div class="active section" th:if="${user['new']}" th:text="#{user.new.page.title}"></div>
+                <div class="active section" th:unless="${user['new']}" th:text="#{user.edit.page.title}"></div>
+            </div>
+        </div>
+        <div class="four item tabular ui menu">
+            <a class="item active" data-tab="user" th:text="#{user.item}">user</a>
+            <a class="item" data-tab="roles" th:text="#{role.list.page.title}">roles</a>
+        </div>
+    </div>
+</div>
+<div class="main container">
+    <div class="ui tab active" data-tab="user">
+        <h2 class="ui dividing header" th:text="#{user.item}">user</h2>
+    </div>
+    <div class="ui tab" data-tab="roles">
+        <h2 class="ui dividing header" th:text="#{role.list.page.title}">roles</h2>
+    </div>
+</div>
+</body>
+</html>
