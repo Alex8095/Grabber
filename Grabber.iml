@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module external.linked.project.path="$MODULE_DIR$" external.root.project.path="$MODULE_DIR$" external.system.id="GRADLE" type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="Spring" name="Spring">
+      <configuration>
+        <fileset id="fileset" name="Spring Application Context" removed="false">
+          <file>file://$MODULE_DIR$/src/main/java/com/frogorf/config/AppConfig.java</file>
+          <file>file://$MODULE_DIR$/src/main/java/com/frogorf/config/HibernateConfig.java</file>
+          <file>file://$MODULE_DIR$/src/main/java/com/frogorf/config/SecurityConfig.java</file>
+          <file>file://$MODULE_DIR$/src/main/java/com/frogorf/config/ThymeleafConfig.java</file>
+          <file>file://$MODULE_DIR$/src/main/java/com/frogorf/config/WebConfig.java</file>
+        </fileset>
+      </configuration>
+    </facet>
+  </component>
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
     <content url="file://$MODULE_DIR$">
@@ -32,11 +45,9 @@
     <orderEntry type="library" exported="" name="Gradle: thymeleaf-extras-springsecurity3-2.1.1.RELEASE" level="project" />
     <orderEntry type="library" exported="" name="Gradle: datatables-thymeleaf-0.10.1" level="project" />
     <orderEntry type="library" exported="" name="Gradle: javax.servlet-api-3.1.0" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: jsp-api-2.1" level="project" />
     <orderEntry type="library" exported="" name="Gradle: jackson-core-2.3.1" level="project" />
     <orderEntry type="library" exported="" name="Gradle: jackson-annotations-2.3.1" level="project" />
     <orderEntry type="library" exported="" name="Gradle: jackson-databind-2.3.1" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: commons-logging-1.1.1" level="project" />
     <orderEntry type="library" exported="" name="Gradle: spring-beans-4.0.1.RELEASE" level="project" />
     <orderEntry type="library" exported="" name="Gradle: aopalliance-1.0" level="project" />
     <orderEntry type="library" exported="" name="Gradle: spring-aop-4.0.1.RELEASE" level="project" />
@@ -72,6 +83,21 @@
     <orderEntry type="library" scope="TEST" name="Gradle: junit-4.11" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: spring-test-4.0.1.RELEASE" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: hamcrest-core-1.3" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: validation-api-1.1.0.Final" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: hibernate-validator-5.0.1.Final" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: commons-logging-1.1.3" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: jsp-api-2.0" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: classmate-0.8.0" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: jackson-mapper-asl-1.9.13" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: jersey-json-1.18.2" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: jackson-core-asl-1.9.13" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: jettison-1.1" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: stax-api-1.0-2" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: activation-1.1" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: jaxb-api-2.2.2" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: jaxb-impl-2.2.3-1" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: jackson-jaxrs-1.9.2" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: jackson-xc-1.9.2" level="project" />
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
@@ -174,6 +200,72 @@
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-26/filestore/org.codehaus.jackson/jackson-mapper-asl/1.9.13/jar/1ee2f2bed0e5dd29d1cb155a166e6f8d50bbddb7/jackson-mapper-asl-1.9.13.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-26/filestore/org.codehaus.jackson/jackson-mapper-asl/1.9.13/source/83113901bc2a377d698ccea35ad842786f37c6ad/jackson-mapper-asl-1.9.13-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-26/filestore/org.codehaus.jackson/jackson-core-asl/1.9.13/jar/3c304d70f42f832e0a86d45bd437f692129299a4/jackson-core-asl-1.9.13.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-26/filestore/org.codehaus.jackson/jackson-core-asl/1.9.13/source/6ed53c5ce78344e14296aa47769d67b10e1c7b2c/jackson-core-asl-1.9.13-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-26/filestore/org.codehaus.jackson/jackson-jaxrs/1.9.13/jar/534d72d2b9d6199dd531dfb27083dd4844082bba/jackson-jaxrs-1.9.13.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-26/filestore/org.codehaus.jackson/jackson-jaxrs/1.9.13/source/6bf32987d565b50ecc3897362ed19882af4e5591/jackson-jaxrs-1.9.13-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-26/filestore/com.sun.jersey/jersey-json/1.18.2/jar/7c61ddbaa282717a971133a3ba4124e768e40a91/jersey-json-1.18.2.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-26/filestore/com.sun.jersey/jersey-json/1.18.2/source/d209c0282d9ea24b41211f129bcb500af1c790a/jersey-json-1.18.2-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-26/filestore/javax.validation/validation-api/1.1.0.Final/jar/8613ae82954779d518631e05daa73a6a954817d5/validation-api-1.1.0.Final.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-26/filestore/javax.validation/validation-api/1.1.0.Final/source/7d49b53caed9bd81d172807c3e096d24f3c57090/validation-api-1.1.0.Final-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-26/filestore/org.hibernate/hibernate-validator/5.0.1.Final/jar/542a45c94ff8a7551779caaaffd3857d643b9087/hibernate-validator-5.0.1.Final.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-26/filestore/org.hibernate/hibernate-validator/5.0.1.Final/source/5440d808b0c1fe401c2d54a01902f7f8e87a4d64/hibernate-validator-5.0.1.Final-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
           <root url="jar://$USER_HOME$/.gradle/caches/artifacts-26/filestore/org.hibernate/hibernate-core/4.3.6.Final/jar/e6f1e89880e645c66ef9c30d60a68f7e26f3152d/hibernate-core-4.3.6.Final.jar!/" />
         </CLASSES>
         <JAVADOC />
@@ -211,6 +303,17 @@
         </CLASSES>
         <JAVADOC />
         <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-26/filestore/commons-logging/commons-logging/1.1.3/jar/f6f66e966c70a83ffbdb6f17a0919eaf7c8aca7f/commons-logging-1.1.3.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-26/filestore/commons-logging/commons-logging/1.1.3/source/28bb0405fddaf04f15058fbfbe01fe2780d7d3b6/commons-logging-1.1.3-sources.jar!/" />
+        </SOURCES>
       </library>
     </orderEntry>
     <orderEntry type="module-library" exported="">
@@ -293,56 +396,10 @@
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-26/filestore/javax.servlet.jsp/jsp-api/2.1/jar/63f943103f250ef1f3a4d5e94d145a0f961f5316/jsp-api-2.1.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-26/filestore/javax.servlet/jsp-api/2.0/jar/e6def06602b51b1d9be51f6c3fcdf163ecd01644/jsp-api-2.0.jar!/" />
         </CLASSES>
         <JAVADOC />
-        <SOURCES>
-          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-26/filestore/javax.servlet.jsp/jsp-api/2.1/source/1c9e754118cf8d3d85b6b1257fb6fb0f914d08c6/jsp-api-2.1-sources.jar!/" />
-        </SOURCES>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-26/filestore/com.fasterxml.jackson.core/jackson-core/2.3.1/bundle/f9f7185c92ca5fefe2fb3efdeb477a67c96ea2d0/jackson-core-2.3.1.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES>
-          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-26/filestore/com.fasterxml.jackson.core/jackson-core/2.3.1/source/eb004d3c25084b005ce61f7ac112c39c8352d2e9/jackson-core-2.3.1-sources.jar!/" />
-        </SOURCES>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-26/filestore/com.fasterxml.jackson.core/jackson-annotations/2.3.1/bundle/cbf0cc07675681a7703c900dd5f60288f654f1ba/jackson-annotations-2.3.1.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES>
-          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-26/filestore/com.fasterxml.jackson.core/jackson-annotations/2.3.1/source/d617e4374550959ff1b50de1f13492d8dd27cc2f/jackson-annotations-2.3.1-sources.jar!/" />
-        </SOURCES>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-26/filestore/com.fasterxml.jackson.core/jackson-databind/2.3.1/bundle/c4096a8323bbbcbeda072e3def123a9b66783361/jackson-databind-2.3.1.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES>
-          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-26/filestore/com.fasterxml.jackson.core/jackson-databind/2.3.1/source/88afce898a3aaba55e97ca4fed64cdd2a20c3c9c/jackson-databind-2.3.1-sources.jar!/" />
-        </SOURCES>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-26/filestore/commons-logging/commons-logging/1.1.1/jar/5043bfebc3db072ed80fbd362e7caf00e885d8ae/commons-logging-1.1.1.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES>
-          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-26/filestore/commons-logging/commons-logging/1.1.1/source/f3f156cbff0e0fb0d64bfce31a352cce4a33bc19/commons-logging-1.1.1-sources.jar!/" />
-        </SOURCES>
+        <SOURCES />
       </library>
     </orderEntry>
     <orderEntry type="module-library" exported="">
@@ -397,6 +454,83 @@
         <JAVADOC />
         <SOURCES>
           <root url="jar://$USER_HOME$/.gradle/caches/artifacts-26/filestore/org.springframework/spring-jdbc/4.0.1.RELEASE/source/7efaf25dccac62c8af288aa45f0d58e505c4916f/spring-jdbc-4.0.1.RELEASE-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-26/filestore/org.codehaus.jettison/jettison/1.1/bundle/1a01a2a1218fcf9faa2cc2a6ced025bdea687262/jettison-1.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-26/filestore/org.codehaus.jettison/jettison/1.1/source/6e5ebf802c909bcef2d7e3275c64b474467353b5/jettison-1.1-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-26/filestore/javax.xml.stream/stax-api/1.0-2/jar/d6337b0de8b25e53e81b922352fbea9f9f57ba0b/stax-api-1.0-2.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-26/filestore/javax.xml.stream/stax-api/1.0-2/source/dd58a0151c110e27c6c18abd45b01792f46d3fcd/stax-api-1.0-2-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-26/filestore/javax.activation/activation/1.1/jar/e6cb541461c2834bdea3eb920f1884d1eb508b50/activation-1.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-26/filestore/javax.activation/activation/1.1/source/3697e9f67a2ed7ac5f589cff30f21173299440/activation-1.1-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-26/filestore/javax.xml.bind/jaxb-api/2.2.2/jar/aeb3021ca93dde265796d82015beecdcff95bf09/jaxb-api-2.2.2.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-26/filestore/javax.xml.bind/jaxb-api/2.2.2/source/3016adffd4777795f8aebce4b97e159539e3ad36/jaxb-api-2.2.2-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-26/filestore/com.sun.xml.bind/jaxb-impl/2.2.3-1/jar/56baae106392040a45a06d4a41099173425da1e6/jaxb-impl-2.2.3-1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-26/filestore/com.sun.xml.bind/jaxb-impl/2.2.3-1/source/c7853ba682b292a2f9d831af145cadc5313a7af1/jaxb-impl-2.2.3-1-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-26/filestore/org.codehaus.jackson/jackson-xc/1.9.2/jar/437c991a8eb2c8b69ef1dba2eba27fccb9b98448/jackson-xc-1.9.2.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-26/filestore/org.codehaus.jackson/jackson-xc/1.9.2/source/da7f7691b0838830a76e4b4cbc2ba8a1fcc21ffa/jackson-xc-1.9.2-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-26/filestore/com.fasterxml/classmate/0.8.0/bundle/27426d4fca7adcda34f536e32d6189566a2929f0/classmate-0.8.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-26/filestore/com.fasterxml/classmate/0.8.0/source/445698e66b6d80d4347ce58fe7090209cc2dc023/classmate-0.8.0-sources.jar!/" />
         </SOURCES>
       </library>
     </orderEntry>
@@ -599,6 +733,39 @@
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-26/filestore/com.fasterxml.jackson.core/jackson-core/2.3.1/bundle/f9f7185c92ca5fefe2fb3efdeb477a67c96ea2d0/jackson-core-2.3.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-26/filestore/com.fasterxml.jackson.core/jackson-core/2.3.1/source/eb004d3c25084b005ce61f7ac112c39c8352d2e9/jackson-core-2.3.1-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-26/filestore/com.fasterxml.jackson.core/jackson-annotations/2.3.1/bundle/cbf0cc07675681a7703c900dd5f60288f654f1ba/jackson-annotations-2.3.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-26/filestore/com.fasterxml.jackson.core/jackson-annotations/2.3.1/source/d617e4374550959ff1b50de1f13492d8dd27cc2f/jackson-annotations-2.3.1-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-26/filestore/com.fasterxml.jackson.core/jackson-databind/2.3.1/bundle/c4096a8323bbbcbeda072e3def123a9b66783361/jackson-databind-2.3.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-26/filestore/com.fasterxml.jackson.core/jackson-databind/2.3.1/source/88afce898a3aaba55e97ca4fed64cdd2a20c3c9c/jackson-databind-2.3.1-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
           <root url="jar://$USER_HOME$/.gradle/caches/artifacts-26/filestore/com.github.dandelion/dandelion-core/0.10.1/jar/67cc798a929e04adb57ce909139cac99f72ca868/dandelion-core-0.10.1.jar!/" />
         </CLASSES>
         <JAVADOC />
@@ -665,22 +832,22 @@
     <orderEntry type="module-library" exported="" scope="RUNTIME">
       <library>
         <CLASSES>
-          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-26/filestore/javax.servlet/jstl/1.2/jar/74aca283cd4f4b4f3e425f5820cda58f44409547/jstl-1.2.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-26/filestore/org.slf4j/slf4j-log4j12/1.7.5/jar/6edffc576ce104ec769d954618764f39f0f0f10d/slf4j-log4j12-1.7.5.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES>
-          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-26/filestore/javax.servlet/jstl/1.2/source/2f5877ef15adb721421e80f5aa2b6fe069eec8ed/jstl-1.2-sources.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-26/filestore/org.slf4j/slf4j-log4j12/1.7.5/source/65ffa6d644792e8b09cf6479d5c01ed95bb153a0/slf4j-log4j12-1.7.5-sources.jar!/" />
         </SOURCES>
       </library>
     </orderEntry>
     <orderEntry type="module-library" exported="" scope="RUNTIME">
       <library>
         <CLASSES>
-          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-26/filestore/org.slf4j/slf4j-log4j12/1.7.5/jar/6edffc576ce104ec769d954618764f39f0f0f10d/slf4j-log4j12-1.7.5.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-26/filestore/javax.servlet/jstl/1.2/jar/74aca283cd4f4b4f3e425f5820cda58f44409547/jstl-1.2.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES>
-          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-26/filestore/org.slf4j/slf4j-log4j12/1.7.5/source/65ffa6d644792e8b09cf6479d5c01ed95bb153a0/slf4j-log4j12-1.7.5-sources.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-26/filestore/javax.servlet/jstl/1.2/source/2f5877ef15adb721421e80f5aa2b6fe069eec8ed/jstl-1.2-sources.jar!/" />
         </SOURCES>
       </library>
     </orderEntry>

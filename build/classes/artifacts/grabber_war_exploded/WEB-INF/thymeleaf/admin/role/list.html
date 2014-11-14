@@ -2,7 +2,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
-<head th:include="admin/fragments/layout :: head"></head>
+<head th:include="admin/fragments/layout :: head (title=#{role.list.page.title})"></head>
 <body id="grabber">
 <div th:replace="admin/fragments/layout :: sidebar"></div>
 <div th:replace="admin/fragments/layout :: sidebar-launch"></div>
@@ -10,18 +10,25 @@
 <div class="segment">
     <div class="container">
         <div class="introduction">
-            <h1 class="ui dividing header">
-                Admin home page
-            </h1>
+            <h1 class="ui dividing header" th:text="#{role.list.page.title}">page title</h1>
+        </div>
+        <div class="advertisement">
+            <a class="ui teal labeled icon button"  href="/admin/role/new" th:href="@{/admin/role/new}">
+                <span th:text="#{role.new.page.title}">New</span>
+                <i class="add icon"></i>
+            </a>
         </div>
         <div class="ui breadcrumb">
-            <a class="section">Food</a>
+            <a class="section" th:text="#{menu.home}" th:href="@{/admin/}">home</a>
             <i class="right arrow icon divider"></i>
-            <a class="section">Fruit</a>
-            <i class="right arrow icon divider"></i>
-            <div class="active section">Apples</div>
+
+            <div class="active section" th:text="#{role.list.page.title}">users</div>
         </div>
     </div>
 </div>
+<div class="main main-grid">
+    <div id="grid"></div>
+</div>
+<script src="/resources/js/grabber/role/list.js" th:src="@{/resources/js/grabber/role/list.js}"></script>
 </body>
 </html>

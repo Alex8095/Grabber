@@ -1,5 +1,7 @@
 package com.frogorf.web.controller.admin;
 
+import com.frogorf.kendo.data.source.DataSourceRequest;
+import com.frogorf.kendo.data.source.DataSourceResult;
 import com.frogorf.security.domain.Role;
 import com.frogorf.security.service.RoleService;
 import org.slf4j.Logger;
@@ -29,7 +31,13 @@ public class AdminRoleController {
         dataBinder.setDisallowedFields("id");
     }
 
-    //    @PreAuthorize("hasRole('CTRL_USER_LIST_GET')")
+    @RequestMapping(value = "/role/grid", method = RequestMethod.GET)
+    public
+    @ResponseBody
+    DataSourceResult grid() {
+        return roleService.getList(new DataSourceRequest());
+    }
+
     @RequestMapping(value = {"/role/list", "/role"}, method = RequestMethod.GET)
     public String listRoles(Model model) {
         return "admin/role/list";
@@ -43,7 +51,7 @@ public class AdminRoleController {
     }
 
     @RequestMapping(value = "/role/new", method = RequestMethod.GET)
-    public String initCreationForm(Model model) {
+    public String init(Model model) {
         Role role = new Role();
         model.addAttribute(role);
         return "admin/role/edit";
@@ -51,7 +59,7 @@ public class AdminRoleController {
 
     //    @PreAuthorize("hasRole('CTRL_USER_ADD_POST')")
     @RequestMapping(value = "/role/new", method = RequestMethod.POST)
-    public String addUser(@ModelAttribute Role role, BindingResult result, SessionStatus status) {
+    public String create(@ModelAttribute Role role, BindingResult result, SessionStatus status) {
         logger.info("IN: Role/add-POST");
         if (result.hasErrors()) {
             return "admin/role/edit";
@@ -63,14 +71,14 @@ public class AdminRoleController {
     }
 
     @RequestMapping(value = "/role/{id}/edit", method = RequestMethod.GET)
-    public String editUser(@PathVariable("id") int id, Model model) {
+    public String edit(@PathVariable("id") int id, Model model) {
         model.addAttribute("role", roleService.getRole(id));
         return "admin/role/edit";
     }
 
 
     @RequestMapping(value = "/role/{id}/edit", method = RequestMethod.POST)
-    public String processUpdateCatalogNoteForm(Role role, BindingResult result, SessionStatus status) {
+    public String update(@ModelAttribute Role role, BindingResult result, SessionStatus status) {
         if (result.hasErrors()) {
             return "admin/role/edit";
         } else {
@@ -81,7 +89,7 @@ public class AdminRoleController {
     }
 
     @RequestMapping(value = "/role/{id}/delete")
-    public String deleteUser(@PathVariable("id") int id, Model model) {
+    public String delete(@PathVariable("id") int id, Model model) {
         roleService.deleteRole(id);
         return "redirect:/admin/role/list";
     }

@@ -1,5 +1,7 @@
 package com.frogorf.web.controller.admin;
 
+import com.frogorf.kendo.data.source.DataSourceRequest;
+import com.frogorf.kendo.data.source.DataSourceResult;
 import com.frogorf.security.domain.User;
 import com.frogorf.security.service.UserService;
 import org.slf4j.Logger;
@@ -11,6 +13,8 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.bind.support.SessionStatus;
+
+import javax.validation.Valid;
 
 /**
  * Created by Alex on 06.11.14.
@@ -29,9 +33,16 @@ public class AdminUserController {
         dataBinder.setDisallowedFields("id");
     }
 
-    //    @PreAuthorize("hasRole('CTRL_USER_LIST_GET')")
+    @RequestMapping(value = "/user/grid", method = RequestMethod.GET)
+    public
+    @ResponseBody
+    DataSourceResult grid() {
+        logger.info("user grid");
+        return userService.getList(new DataSourceRequest());
+    }
+
     @RequestMapping(value = {"/user/list", "/user"}, method = RequestMethod.GET)
-    public String listUsers(Model model) {
+    public String listUser(Model model) {
         return "admin/user/list";
     }
 
@@ -43,15 +54,14 @@ public class AdminUserController {
     }
 
     @RequestMapping(value = "/user/new", method = RequestMethod.GET)
-    public String initCreationForm(Model model) {
+    public String newUser(Model model) {
         User user = new User();
         model.addAttribute(user);
         return "admin/user/edit";
     }
 
-    //    @PreAuthorize("hasRole('CTRL_USER_ADD_POST')")
     @RequestMapping(value = "/user/new", method = RequestMethod.POST)
-    public String addUser(@ModelAttribute User user, BindingResult result, SessionStatus status) {
+    public String createUser(@ModelAttribute @Valid User user, BindingResult result, SessionStatus status) {
         logger.info("IN: User/add-POST");
         if (result.hasErrors()) {
             return "admin/user/edit";
@@ -70,7 +80,7 @@ public class AdminUserController {
 
 
     @RequestMapping(value = "/user/{id}/edit", method = RequestMethod.POST)
-    public String processUpdateCatalogNoteForm(User user, BindingResult result, SessionStatus status) {
+    public String updateUser(@ModelAttribute @Valid User user, BindingResult result, SessionStatus status) {
         if (result.hasErrors()) {
             return "admin/user/edit";
         } else {

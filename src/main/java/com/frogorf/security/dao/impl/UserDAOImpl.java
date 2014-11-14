@@ -3,6 +3,8 @@
  */
 package com.frogorf.security.dao.impl;
 
+import com.frogorf.kendo.data.source.DataSourceRequest;
+import com.frogorf.kendo.data.source.DataSourceResult;
 import com.frogorf.security.dao.UserDAO;
 import com.frogorf.security.domain.User;
 import org.hibernate.Query;
@@ -52,6 +54,11 @@ public class UserDAOImpl implements UserDAO {
     @Override
     public void deleteUser(int id) {
         sessionFactory.getCurrentSession().delete(findUserById(id));
+    }
+
+    @Override
+    public DataSourceResult getList(DataSourceRequest request) {
+        return request.toDataSourceResult(sessionFactory.getCurrentSession(), User.class);
     }
 
 

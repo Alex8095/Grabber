@@ -3,6 +3,8 @@
  */
 package com.frogorf.security.service;
 
+import com.frogorf.kendo.data.source.DataSourceRequest;
+import com.frogorf.kendo.data.source.DataSourceResult;
 import com.frogorf.security.domain.User;
 import org.springframework.security.core.userdetails.UserDetailsService;
 
@@ -23,4 +25,5 @@ public interface UserService extends UserDetailsService {
 
     public void deleteUser(int id);
 
+    DataSourceResult getList(DataSourceRequest request);
 }

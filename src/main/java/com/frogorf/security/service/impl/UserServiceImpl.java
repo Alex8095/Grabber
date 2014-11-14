@@ -5,6 +5,8 @@ package com.frogorf.security.service.impl;
 
 import java.util.List;
 
+import com.frogorf.kendo.data.source.DataSourceRequest;
+import com.frogorf.kendo.data.source.DataSourceResult;
 import com.frogorf.security.dao.UserDAO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -49,5 +51,11 @@ public class UserServiceImpl implements UserDAO {
 	public void deleteUser(int id) {
 		userDao.deleteUser(id);
 	}
+
+    @Override
+    @Transactional
+    public DataSourceResult getList(DataSourceRequest request) {
+        return userDao.getList(request);
+    }
 
 }

@@ -18,12 +18,12 @@ import java.util.Properties;
 
 
 /**
-* Created by alex on 29.10.14.
-*/
+ * Created by alex on 29.10.14.
+ */
 @Configuration
 @EnableTransactionManagement
 @PropertySource({"classpath:persistence-mysql.properties"})
-@ComponentScan({"com.frogorf.security"})
+@ComponentScan({"com.frogorf.security", "com.frogorf.dictionary", "com.frogorf.kendo.data.source"})
 public class HibernateConfig {
 
     @Autowired
@@ -37,7 +37,7 @@ public class HibernateConfig {
     public LocalSessionFactoryBean sessionFactory() {
         LocalSessionFactoryBean sessionFactory = new LocalSessionFactoryBean();
         sessionFactory.setDataSource(restDataSource());
-        sessionFactory.setPackagesToScan(new String[]{"com.frogorf.person.domain", "com.frogorf.security.domain"});
+        sessionFactory.setPackagesToScan(new String[]{"com.frogorf.person.domain", "com.frogorf.kendo.data.source", "com.frogorf.security.domain", "com.frogorf.dictionary.domain"});
         sessionFactory.setHibernateProperties(hibernateProperties());
         return sessionFactory;
     }

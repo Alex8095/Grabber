@@ -13,4 +13,5 @@ public class AdminHomeController {
     public String home(Model model) {
         return "admin/home";
     }
+
 }

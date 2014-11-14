@@ -1,32 +1,35 @@
 /**
- * 
+ *
  */
 package com.frogorf.security.dao.impl;
 
+import com.frogorf.kendo.data.source.DataSourceRequest;
+import com.frogorf.kendo.data.source.DataSourceResult;
 import com.frogorf.security.dao.RoleDAO;
+import com.frogorf.security.domain.Role;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-import com.frogorf.security.domain.Role;
-
-/** @author Tsurkin Alex
- * @version */
+/**
+ * @author Tsurkin Alex
+ */
 @Repository("roleDao")
 public class RoleDAOImpl implements RoleDAO {
 
-	@Autowired
-	private SessionFactory sessionFactory;
+    @Autowired
+    private SessionFactory sessionFactory;
 
-	private Session getCurrentSession() {
-		return sessionFactory.getCurrentSession();
-	}
+    private Session getCurrentSession() {
+        return sessionFactory.getCurrentSession();
+    }
 
-	public Role getRole(int id) {
-		Role role = (Role) getCurrentSession().load(Role.class, id);
-		return role;
-	}
+    @Override
+    public Role getRole(int id) {
+        Role role = (Role) getCurrentSession().load(Role.class, id);
+        return role;
+    }
 
     @Override
     public void saveRole(Role role) {
@@ -36,6 +39,11 @@ public class RoleDAOImpl implements RoleDAO {
     @Override
     public void deleteRole(int id) {
         sessionFactory.getCurrentSession().delete(getRole(id));
+    }
+
+    @Override
+    public DataSourceResult getList(DataSourceRequest request) {
+        return request.toDataSourceResult(sessionFactory.getCurrentSession(), Role.class);
     }
 
 }

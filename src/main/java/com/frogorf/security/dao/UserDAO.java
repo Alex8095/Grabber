@@ -1,24 +1,28 @@
 /**
- * 
+ *
  */
 package com.frogorf.security.dao;
 
-import java.util.List;
-
+import com.frogorf.kendo.data.source.DataSourceRequest;
+import com.frogorf.kendo.data.source.DataSourceResult;
 import com.frogorf.security.domain.User;
 
-/** @author Tsurkin Alex
- * @version */
+import java.util.List;
+
+/**
+ * @author Tsurkin Alex
+ */
 public interface UserDAO {
 
-	public List<User> findUsers();
-	
-	public User getUser(String login);
+    public List<User> findUsers();
 
-	public User findUserById(int id);
+    public User getUser(String login);
 
-	public void saveUser(User user);
+    public User findUserById(int id);
 
-	public void deleteUser(int id);
+    public void saveUser(User user);
 
+    public void deleteUser(int id);
+
+    DataSourceResult getList(DataSourceRequest request);
 }

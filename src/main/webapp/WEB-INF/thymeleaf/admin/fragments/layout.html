@@ -7,24 +7,30 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <meta name="author" content="Alex Tsurkin"/>
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Open+Sans:300italic,400,300,700' rel='stylesheet' type='text/css'/>
+    <link rel="stylesheet" type="text/css" href="/resources/css/semantic-imports.css" th:href="@{/resources/css/semantic-imports.css}"/>
+    <link rel="stylesheet" type="text/css" href="/resources/css/semantic.css" th:href="@{/resources/css/semantic.css}"/>
+    <link rel="stylesheet" type="text/css" href="/resources/css/body.css" th:href="@{/resources/css/body.css}"/>
+    <link rel="stylesheet" type="text/css" href="/resources/css/grabber.css" th:href="@{/resources/css/grabber.css}"/>
+    <script src="/resources/js/jquery/jquery.min.js" th:src="@{/resources/js/jquery/jquery.min.js}"></script>
 
-    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Open+Sans:300italic,400,300,700'
-          rel='stylesheet' type='text/css'/>
-    <link rel="stylesheet" type="text/css" href="/resources/css/semantic-imports.css"/>
-    <link rel="stylesheet" type="text/css" href="/resources/css/semantic.css"/>
-    <link rel="stylesheet" type="text/css" href="/resources/css/body.css"/>
-    <link rel="stylesheet" type="text/css" href="/resources/css/grabber.css"/>
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="http://semantic-ui.com/javascript/library/waypoints.js"></script>
     <script src="http://semantic-ui.com/javascript/library/history.js"></script>
     <script src="http://semantic-ui.com/javascript/library/easing.js"></script>
     <script src="http://semantic-ui.com/javascript/library/ace/ace.js"></script>
     <script src="http://semantic-ui.com/javascript/library/tablesort.js"></script>
     <script src="http://semantic-ui.com/javascript/library/waypoints.js"></script>
-    <script src="/resources/js/semantic/semantic.min.js"></script>
-    <script src="/resources/js/semantic.js"></script>
-    <script src="/resources/js/homepage.js"></script>
+    <script src="/resources/js/semantic/semantic.min.js" th:src="@{/resources/js/semantic/semantic.min.js}"></script>
+
+    <script src="/resources/js/semantic.js" th:src="@{/resources/js/semantic.js}"></script>
+    <script src="/resources/js/homepage.js" th:src="@{/resources/js/homepage.js}"></script>
+    <script src="/resources/js/kendo/kendo.all.min.js" th:src="@{/resources/js/other/angular.min.js}"></script>
+    <!--kendo ui-->
+    <script src="/resources/js/kendo/kendo.all.min.js" th:src="@{/resources/js/kendo/kendo.all.min.js}"></script>
+    <link href="/resources/css/kendo/kendo.common.min.css" rel="stylesheet" th:href="@{/resources/css/kendo/kendo.common.min.css}"/>
+    <link href="/resources/css/kendo/kendo.default.min.css" rel="stylesheet" th:href="@{/resources/css/kendo/kendo.default.min.css}"/>
+    <link href="/resources/css/kendo/kendo.dataviz.min.css" rel="stylesheet" th:href="@{/resources/css/kendo/kendo.dataviz.min.css}"/>
+    <link href="/resources/css/kendo/kendo.dataviz.default.min.css" rel="stylesheet" th:href="@{/resources/css/kendo/kendo.dataviz.default.min.css}"/>
 </head>
 <body>
 <div th:fragment="header" class="ui fixed transparent inverted main menu">
@@ -80,8 +86,12 @@
         </a>
 
         <div class="menu">
-            <a class="active item" href="../admin/role/" th:href="@{/admin/role/}"
+            <a class="item" href="../admin/roles/" th:href="@{/admin/roles/}"
                th:text="#{menu.settings.user.roles}">user roles</a>
+            <a class="item" href="../admin/dictionary/" th:href="@{/admin/dictionary/}"
+               th:text="#{menu.settings.dictionaries}">dictionaries</a>
+            <a class="item" href="../admin/dictionary/values/" th:href="@{/admin/dictionary/value/}"
+               th:text="#{menu.settings.dictionaries.values}">dictionaries values</a>
         </div>
     </div>
     <div class="item">

@@ -21,9 +21,9 @@
                 <div th:if="${param.error}" style="display: block" class="ui error message">
                     <div class="header" th:text="#{security.form.error}">error</div>
                 </div>
-                <form xmlns:th="http://www.thymeleaf.org" action="authentication" th:action="@{/security/login}"
-                      method="post">
+                <form xmlns:th="http://www.thymeleaf.org" action="authentication" th:action="@{/security/login}" method="post">
                     <h3 class="ui header" th:text="#{security.login.form.title}">login</h3>
+
                     <div class="field">
                         <label th:text="#{security.login.label}"></label>
 

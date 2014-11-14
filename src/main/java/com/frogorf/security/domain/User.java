@@ -4,18 +4,25 @@
 package com.frogorf.security.domain;
 
 import com.frogorf.domain.BaseEntity;
+import org.hibernate.validator.constraints.NotEmpty;
 
 import javax.persistence.*;
+import javax.xml.bind.annotation.XmlRootElement;
 
 /**
  * @author Tsurkin Alex
  */
 @Entity
 @Table(name = "user")
+@XmlRootElement
 public class User extends BaseEntity {
-
+    @Column
+    @NotEmpty
     private String login;
-
+    @Column
+    private String name;
+    @Column
+    @NotEmpty
     private String password;
 
     @OneToOne(cascade = CascadeType.ALL)
@@ -54,4 +61,15 @@ public class User extends BaseEntity {
         this.role = role;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public User() {
+
+    }
 }

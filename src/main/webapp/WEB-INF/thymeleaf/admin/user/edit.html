@@ -29,12 +29,45 @@
     </div>
 </div>
 <div class="main container">
-    <div class="ui tab active" data-tab="user">
-        <h2 class="ui dividing header" th:text="#{user.item}">user</h2>
-    </div>
-    <div class="ui tab" data-tab="roles">
-        <h2 class="ui dividing header" th:text="#{role.list.page.title}">roles</h2>
-    </div>
+    <form xmlns:th="http://www.thymeleaf.org" action="authentication" th:action="@{/security/login}" method="post">
+        <div class="sticky-wrapper">
+            <div class="peek">
+                <button class="ui blue button" type="submit" th:text="#{button.action.save}">save</button>
+            </div>
+        </div>
+        <div class="ui tab active" data-tab="user">
+            <h2 class="ui dividing header" th:text="#{user.item}">user</h2>
+            <div class="ui form">
+                <div class="field">
+                    <label th:text="#{security.login.label}"></label>
+                    <div class="ui left labeled icon input">
+                        <input type="text" id="username" name="username" th:placeholder="#{security.login.placeholder}"/>
+                        <i class="user icon"></i>
+
+                        <div class="ui corner label">
+                            <i class="icon asterisk"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="field">
+                    <label th:text="#{security.password.label}">password</label>
+
+                    <div class="ui left labeled icon input">
+                        <input type="password" id="password" name="password"
+                               th:placeholder="#{security.password.placeholder}"/>
+                        <i class="lock icon"></i>
+
+                        <div class="ui corner label">
+                            <i class="icon asterisk"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ui tab" data-tab="roles">
+            <h2 class="ui dividing header" th:text="#{role.list.page.title}">roles</h2>
+        </div>
+    </form>
 </div>
 </body>
 </html>

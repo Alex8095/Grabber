@@ -45,12 +45,12 @@ h3::selection {
 
 html,
 body {
-    font-size: 15px;
+    font-size: 13px;
 }
 
 body#grabber {
     font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif /*rtl:prepend:"Droid Arabic Kufi","Droid Sans", */;
-    background: #FCFCFC url(../images/bg.jpg) repeat;
+    background: #FCFCFC repeat;
     margin: 0px;
     padding: 0px;
     color: #555555;
@@ -178,8 +178,8 @@ a:hover {
 #grabber > .content > .page > .segment,
 #grabber > .segment {
     margin: 0px 0px 3em;
-    padding-top: 70px;
-    padding-bottom: 30px;
+    padding-top: 45px;
+    padding-bottom: 15px;
     background-color: #FFFFFF;
     border-bottom: 1px solid #DDDDDD;
 }
@@ -596,7 +596,7 @@ body.guide .main.container > * {
 
 #grabber .launch.button {
     position: fixed;
-    top: 63px;
+    top: 53px;
     z-index: 500;
     width: 70px;
 }

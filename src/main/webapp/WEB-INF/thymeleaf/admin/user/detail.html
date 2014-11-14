@@ -17,6 +17,7 @@
             <i class="right arrow icon divider"></i>
             <a class="section" th:text="#{user.list.page.title}" th:href="@{/admin/user/}">users</a>
             <i class="right arrow icon divider"></i>
+
             <div class="active section" th:text="#{user.detail.page.title}"></div>
         </div>
     </div>
@@ -28,16 +29,41 @@
                 <a class="active item" th:text="#{user.item}">user</a>
                 <a class="item" th:text="#{role.list.page.title}">role</a>
 
+                <div class="ui vertical buttons" style="margin:30px 0 0 10px">
+                    <a class="ui green button" href="/admin/user/1/edit" th:href="@{/admin/user/1/edit}">Edit</a>
+                    <a class="ui red button">Delete </a>
+                </div>
             </div>
         </div>
     </div>
     <h2 class="ui dividing header" th:text="#{user.item}">user</h2>
 
-    <div>text
-    </div>
+    <table class="ui table basic">
+        <tbody>
+        <tr>
+            <td class="left-t-head" th:text="#{user.login}"></td>
+            <td th:text="${user.login}"></td>
+        </tr>
+        <tr>
+            <td class="left-t-head" th:text="#{user.name}"></td>
+            <td th:text="${user.name}"></td>
+        </tr>
+        </tbody>
+    </table>
+
     <h2 class="ui dividing header" th:text="#{role.list.page.title}">roles</h2>
 
-    <div>text
+    <div class="ui list">
+        <p class="item">
+            <i class="right triangle icon"></i>
+            Administrator
+        </p>
+
+        <p class="item">
+            <i class="right triangle icon"></i>
+            Manager
+        </p>
+
     </div>
 
 </div>

@@ -4,9 +4,11 @@
 package com.frogorf.security.domain;
 
 import com.frogorf.domain.BaseEntity;
+import org.hibernate.validator.constraints.NotEmpty;
 
-import javax.persistence.*;
-import java.util.Set;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Table;
 
 /**
  * @author Tsurkin Alex
@@ -14,12 +16,9 @@ import java.util.Set;
 @Entity
 @Table(name = "role")
 public class Role extends BaseEntity {
-
+    @Column
+    @NotEmpty
     private String role;
-
-    @OneToMany(cascade = CascadeType.ALL)
-    @JoinTable(name = "user_role", joinColumns = {@JoinColumn(name = "role_id", referencedColumnName = "id")}, inverseJoinColumns = {@JoinColumn(name = "user_id", referencedColumnName = "id")})
-    private Set<User> userRoles;
 
     public Integer getId() {
         return id;
@@ -37,12 +36,7 @@ public class Role extends BaseEntity {
         this.role = role;
     }
 
-    public Set<User> getUserRoles() {
-        return userRoles;
-    }
+    public Role() {
 
-    public void setUserRoles(Set<User> userRoles) {
-        this.userRoles = userRoles;
     }
-
 }

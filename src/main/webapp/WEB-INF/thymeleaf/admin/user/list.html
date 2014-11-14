@@ -12,12 +12,24 @@
         <div class="introduction">
             <h1 class="ui dividing header" th:text="#{user.list.page.title}">users</h1>
         </div>
+        <div class="advertisement">
+            <a class="ui teal labeled icon button" href="/admin/user/new" th:href="@{/admin/user/new}">
+                <span th:text="#{user.new.page.title}">New</span>
+                <i class="add icon"></i>
+            </a>
+        </div>
+
         <div class="ui breadcrumb">
             <a class="section" th:text="#{menu.home}" th:href="@{/admin/}">home</a>
             <i class="right arrow icon divider"></i>
+
             <div class="active section" th:text="#{user.list.page.title}">users</div>
         </div>
     </div>
 </div>
+<div class="main main-grid">
+    <div id="grid"></div>
+</div>
+<script src="/resources/js/grabber/user/list.js" th:src="@{/resources/js/grabber/user/list.js}"></script>
 </body>
 </html>

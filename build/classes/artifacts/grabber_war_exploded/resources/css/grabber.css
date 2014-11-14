@@ -1,0 +1,41 @@
+.four {
+    text-align: left !important;
+}
+
+.four .item {
+    text-align: center;
+}
+
+.main-grid {
+    z-index: 999;
+    position: fixed;
+    padding: 0 2%;
+    width: 96%;
+}
+
+.segment .breadcrumb {
+    margin-top: 5px;
+}
+
+.advertisement .button {
+    min-width: 200px;
+    margin-top: 20px;
+}
+
+/*  list    */
+.list p {
+    margin: 0;
+}
+
+/*  table   */
+.table .left-t-head {
+    font-weight: bold;
+    cursor: auto;
+    background-color: rgba(0, 0, 0, 0.05);
+    text-align: left;
+    color: rgba(0, 0, 0, 0.8);
+    padding: 0.5em 0.7em;
+    vertical-align: middle;
+    background-color: transparent;
+    padding: 0.5em;
+}

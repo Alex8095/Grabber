@@ -1,36 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d9b5d374-f857-4bc3-a8be-81545628c980" name="Default" comment="">
-      <change type="DELETED" beforePath="D:\java\frogorf\Grabber\src\main\java\com\frogorf\web\controller\AdminHomeController.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\java\frogorf\Grabber\src\main\webapp\WEB-INF\thymeleaf\home.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\java\frogorf\Grabber\src\main\webapp\WEB-INF\thymeleaf\home2.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/frogorf/security/service/impl/CustomAuthenticationServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/frogorf/security/service/impl/CustomAuthenticationServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Grabber.iml" afterPath="$PROJECT_DIR$/Grabber.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/frogorf/web/controller/HomeController.java" afterPath="$PROJECT_DIR$/src/main/java/com/frogorf/web/controller/HomeController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/frogorf/security/domain/Role.java" afterPath="$PROJECT_DIR$/src/main/java/com/frogorf/security/domain/Role.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/frogorf/security/dao/RoleDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/frogorf/security/dao/RoleDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/frogorf/security/dao/impl/RoleDAOImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/frogorf/security/dao/impl/RoleDAOImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/frogorf/security/service/RoleService.java" afterPath="$PROJECT_DIR$/src/main/java/com/frogorf/security/service/RoleService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/frogorf/security/service/impl/RoleServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/frogorf/security/service/impl/RoleServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/frogorf/web/controller/SecurityController.java" afterPath="$PROJECT_DIR$/src/main/java/com/frogorf/web/controller/SecurityController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/frogorf/security/domain/User.java" afterPath="$PROJECT_DIR$/src/main/java/com/frogorf/security/domain/User.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/frogorf/security/dao/UserDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/frogorf/security/dao/UserDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/frogorf/security/dao/impl/UserDAOImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/frogorf/security/dao/impl/UserDAOImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/frogorf/security/service/UserService.java" afterPath="$PROJECT_DIR$/src/main/java/com/frogorf/security/service/UserService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/frogorf/security/service/impl/UserServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/frogorf/security/service/impl/UserServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/body.css" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/body.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/db/security/import-data.sql" afterPath="$PROJECT_DIR$/src/main/resources/db/security/import-data.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/thymeleaf/fragments/layout.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/thymeleaf/fragments/layout.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/thymeleaf/security/login.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/thymeleaf/security/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/i18n/messages.properties" afterPath="$PROJECT_DIR$/src/main/resources/i18n/messages.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/i18n/messages_en.properties" afterPath="$PROJECT_DIR$/src/main/resources/i18n/messages_en.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/persistence-mysql.properties" afterPath="$PROJECT_DIR$/src/main/resources/persistence-mysql.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/db/security/security-shema.sql" afterPath="$PROJECT_DIR$/src/main/resources/db/security/security-shema.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/semantic.css" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/semantic.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/js/semantic.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/semantic.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="d9b5d374-f857-4bc3-a8be-81545628c980" name="Default" comment="" />
     <ignored path="Grabber.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -102,120 +73,40 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="messages_en.properties" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/i18n/messages_en.properties">
-          <provider editor-type-id="ResourceBundle">
-            <state />
-          </provider>
+      <file leaf-file-name="edit.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/thymeleaf/admin/dictionary/value/edit.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="79" column="0" selection-start="2021" selection-end="2041" vertical-scroll-proportion="-19.84" vertical-offset="847" max-vertical-offset="1598">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="list.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/thymeleaf/admin/user/list.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="14" selection-start="737" selection-end="1003" vertical-scroll-proportion="-11.769231" vertical-offset="0" max-vertical-offset="476">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="edit.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/thymeleaf/admin/user/edit.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="117" selection-start="790" selection-end="790" vertical-scroll-proportion="0.23076923" vertical-offset="0" max-vertical-offset="884">
+            <state line="72" column="13" selection-start="3581" selection-end="4821" vertical-scroll-proportion="-4.576923" vertical-offset="1105" max-vertical-offset="2040">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="detail.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/thymeleaf/admin/user/detail.html">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/thymeleaf/admin/dictionary/value/detail.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="35" selection-start="1644" selection-end="1683" vertical-scroll-proportion="-24.192308" vertical-offset="0" max-vertical-offset="850">
+            <state line="49" column="42" selection-start="2243" selection-end="2258" vertical-scroll-proportion="-28.115385" vertical-offset="102" max-vertical-offset="1105">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="layout.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/thymeleaf/admin/fragments/layout.html">
+      <file leaf-file-name="import-data.sql" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/db/security/import-data.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="0" selection-start="1175" selection-end="1175" vertical-scroll-proportion="-12.423077" vertical-offset="0" max-vertical-offset="714">
-              <folding>
-                <element signature="tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-                <element signature="tag#div#1;tag#body#0;tag#html#0" expanded="false" />
-                <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="tag#div#2;tag#body#0;tag#html#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="semantic.min.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/semantic/semantic.min.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="57" selection-start="0" selection-end="137671" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
+            <state line="1" column="59" selection-start="110" selection-end="116" vertical-scroll-proportion="-0.34" vertical-offset="0" max-vertical-offset="238">
               <folding />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="semantic.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/semantic.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="731" column="0" selection-start="23234" selection-end="23234" vertical-scroll-proportion="-11.307693" vertical-offset="12133" max-vertical-offset="13753">
-              <folding />
-            </state>
+          <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+            <state />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BaseLocale.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/domain/BaseLocale.java">
+      <file leaf-file-name="SecurityConfig.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/config/SecurityConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2380">
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#683#684#0" expanded="true" />
-                <element signature="e#714#715#0" expanded="true" />
-                <element signature="e#821#822#0" expanded="true" />
-                <element signature="e#861#862#0" expanded="true" />
-                <element signature="e#952#953#0" expanded="true" />
-                <element signature="e#989#990#0" expanded="true" />
-                <element signature="e#1120#1121#0" expanded="true" />
-                <element signature="e#1172#1173#0" expanded="true" />
-                <element signature="e#1257#1258#0" expanded="true" />
-                <element signature="e#1291#1292#0" expanded="true" />
-                <element signature="e#1410#1411#0" expanded="true" />
-                <element signature="e#1456#1457#0" expanded="true" />
-                <element signature="e#1527#1528#0" expanded="true" />
-                <element signature="e#1554#1555#0" expanded="true" />
-                <element signature="e#1645#1646#0" expanded="true" />
-                <element signature="e#1677#1678#0" expanded="true" />
-                <element signature="e#1750#1751#0" expanded="true" />
-                <element signature="e#1778#1779#0" expanded="true" />
-                <element signature="e#1873#1874#0" expanded="true" />
-                <element signature="e#1907#1908#0" expanded="true" />
-                <element signature="e#1945#1946#0" expanded="true" />
-                <element signature="e#1979#1980#0" expanded="true" />
-                <element signature="e#2033#2034#0" expanded="true" />
-                <element signature="e#2079#2080#0" expanded="true" />
-                <element signature="e#2156#2157#0" expanded="true" />
-                <element signature="e#2186#2187#0" expanded="true" />
-                <element signature="e#2289#2290#0" expanded="true" />
-                <element signature="e#2327#2328#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="User.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/security/domain/User.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="32" selection-start="211" selection-end="211" vertical-scroll-proportion="0.0" vertical-offset="125" max-vertical-offset="765">
+            <state line="15" column="13" selection-start="694" selection-end="694" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="816">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -223,11 +114,84 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Role.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/security/domain/Role.java">
+      <file leaf-file-name="HibernateConfig.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/config/HibernateConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="0" selection-start="240" selection-end="240" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
+            <state line="25" column="84" selection-start="1061" selection-end="1061" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1190">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WebConfig.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/config/WebConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="51" column="0" selection-start="2032" selection-end="2032" vertical-scroll-proportion="0.6277873" vertical-offset="348" max-vertical-offset="1258">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SecurityInitializer.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/config/SecurityInitializer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="1" selection-start="0" selection-end="248" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AdminDictionaryController.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/web/controller/admin/AdminDictionaryController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="116" column="50" selection-start="4561" selection-end="4561" vertical-scroll-proportion="0.0" vertical-offset="1173" max-vertical-offset="2601">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="detail.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/thymeleaf/admin/dictionary/detail.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="40" column="57" selection-start="1822" selection-end="1822" vertical-scroll-proportion="-21.26923" vertical-offset="127" max-vertical-offset="1037">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Dictionary.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/dictionary/domain/Dictionary.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="31" selection-start="537" selection-end="537" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="2074">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1013#1014#0" expanded="true" />
+                <element signature="e#1040#1041#0" expanded="true" />
+                <element signature="e#1080#1081#0" expanded="true" />
+                <element signature="e#1112#1113#0" expanded="true" />
+                <element signature="e#1143#1144#0" expanded="true" />
+                <element signature="e#1170#1171#0" expanded="true" />
+                <element signature="e#1210#1211#0" expanded="true" />
+                <element signature="e#1242#1243#0" expanded="true" />
+                <element signature="e#1280#1281#0" expanded="true" />
+                <element signature="e#1314#1315#0" expanded="true" />
+                <element signature="e#1368#1369#0" expanded="true" />
+                <element signature="e#1414#1415#0" expanded="true" />
+                <element signature="e#1445#1446#0" expanded="true" />
+                <element signature="e#1472#1473#0" expanded="true" />
+                <element signature="e#1512#1513#0" expanded="true" />
+                <element signature="e#1544#1545#0" expanded="true" />
+                <element signature="e#1890#1891#0" expanded="true" />
+                <element signature="e#1946#1947#0" expanded="true" />
+                <element signature="e#1987#1988#0" expanded="true" />
+                <element signature="e#2020#2021#0" expanded="true" />
+                <element signature="e#2076#2077#0" expanded="true" />
+                <element signature="e#2120#2121#0" expanded="true" />
+                <element signature="e#2168#2169#0" expanded="true" />
+                <element signature="e#2202#2203#0" expanded="true" />
+                <element signature="e#2266#2267#0" expanded="true" />
+                <element signature="e#2312#2313#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -431,6 +395,10 @@
                 <option name="name" value="tomcatJasper" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="wrapper" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
                 <option name="description" value="Uses your files as and where they are and deploys them to Tomcat." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="tomcatRun" />
@@ -460,57 +428,57 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/resources/persistence-mysql.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/com/frogorf/web/controller/SecurityConfig.java" />
-        <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/src/main/java/com/frogorf/config/MessageSource/SecurityConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/frogorf/config/MessageSource/HibernateConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/frogorf/config/root/HibernateConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/frogorf/config/root/SecurityConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/css/semantic.css" />
+        <option value="$PROJECT_DIR$/src/main/java/com/frogorf/kendoui/data/source/DataSourceResult.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/frogorf/kendoui/data/source/DataSourceRequest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/frogorf/security/service/impl/CustomAuthenticationServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/frogorf/config/HibernateConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/frogorf/config/AppConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/frogorf/config/SecurityInitializer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/frogorf/config/MessageSource/WebConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/frogorf/config/MessageSource/ThymeleafConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/frogorf/config/MessageSource/AppConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/frogorf/config/servlet/ThymeleafConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/frogorf/config/servlet/ThymeleafConfig1.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/frogorf/config/MessageSource/ServletInitializer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/frogorf/config/ServletInitializer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/frogorf/config/SecurityConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/frogorf/web/controller/SecurityController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/thymeleaf/admin.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/log4j.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/frogorf/config/WebConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/thymeleaf/home.html" />
-        <option value="$PROJECT_DIR$/src/main/java/com/frogorf/config/ThymeleafConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/frogorf/web/controller/AdminHomeController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/thymeleaf/security/login.html" />
-        <option value="$PROJECT_DIR$/src/main/java/com/frogorf/web/controller/HomeController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/thymeleaf/fragments/layout.html" />
-        <option value="$PROJECT_DIR$/src/main/java/com/frogorf/web/controller/admin/AdminRolesController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/frogorf/security/service/RoleService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/frogorf/web/controller/admin/AdminRoleController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/frogorf/web/controller/admin/AdminHomeController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/thymeleaf/admin/role/detail.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/thymeleaf/admin/role/list.html" />
-        <option value="$PROJECT_DIR$/src/main/java/com/frogorf/security/service/impl/RoleServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/frogorf/security/dao/UserDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/frogorf/security/dao/impl/UserDAOImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/frogorf/security/service/UserService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/frogorf/web/controller/admin/AdminKendoController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/thymeleaf/admin/fragments/layout.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/frogorf/security/dao/RoleDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/frogorf/security/service/RoleService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/frogorf/security/service/impl/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/frogorf/security/service/impl/RoleServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/frogorf/security/dao/impl/RoleDAOImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/i18n/messages.properties" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/thymeleaf/admin/home.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/thymeleaf/admin/user/list.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/thymeleaf/admin/role/edit.html" />
-        <option value="$PROJECT_DIR$/src/main/java/com/frogorf/domain/BaseEntity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/frogorf/domain/BaseLocale.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/frogorf/dictionary/dao/DictionaryDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/frogorf/dictionary/service/DictionaryService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/frogorf/dictionary/service/impl/DictionaryServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/frogorf/dictionary/dao/impl/DictionaryDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/frogorf/kendo/data/source/DataSourceResult.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/frogorf/kendo/data/source/DataSourceRequest.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/thymeleaf/admin/user/edit.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/frogorf/web/controller/admin/AdminUserController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/frogorf/security/domain/Role.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/frogorf/security/domain/User.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/i18n/messages_en.properties" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/js/grabber/user/list.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/js/grabber/role/list.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/js/grabber/dictionary/list.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/js/grabber/dictionary/list.value.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/css/collections/form.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/thymeleaf/admin/dictionary/edit.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/frogorf/web/controller/admin/AdminRoleController.java" />
+        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/src/main/resources/persistence-mysql.properties" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/thymeleaf/admin/dictionary/list.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/thymeleaf/admin/user/list.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/thymeleaf/admin/role/list.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/thymeleaf/admin/dictionary/value/list.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/thymeleaf/admin/dictionary/detail.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/thymeleaf/admin/user/detail.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/resources/js/semantic/semantic.min.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/resources/js/semantic.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/thymeleaf/admin/fragments/layout.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/thymeleaf/admin/user/edit.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/css/grabber.css" />
+        <option value="$PROJECT_DIR$/src/main/java/com/frogorf/web/controller/admin/AdminDictionaryController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/i18n/messages_en.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/frogorf/dictionary/domain/DictionaryValue.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/frogorf/dictionary/domain/Dictionary.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/thymeleaf/admin/dictionary/value/edit.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/thymeleaf/admin/dictionary/value/detail.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/db/security/import-data.sql" />
+        <option value="$PROJECT_DIR$/src/main/java/com/frogorf/config/SecurityConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/frogorf/config/SecurityInitializer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/frogorf/config/WebConfig.java" />
       </list>
     </option>
   </component>
@@ -535,10 +503,16 @@
             <id />
           </State>
           <State>
+            <id>Abstraction issues</id>
+          </State>
+          <State>
             <id>Android Lint</id>
           </State>
           <State>
             <id>DOM issuesJavaScript</id>
+          </State>
+          <State>
+            <id>Error handling</id>
           </State>
           <State>
             <id>GeneralJavaScript</id>
@@ -553,6 +527,12 @@
             <id>HTML</id>
           </State>
           <State>
+            <id>Internationalization issues</id>
+          </State>
+          <State>
+            <id>Java language level migration aids</id>
+          </State>
+          <State>
             <id>JavaScript</id>
           </State>
           <State>
@@ -562,10 +542,19 @@
             <id>Javadoc issues</id>
           </State>
           <State>
+            <id>Naming ConventionsGroovy</id>
+          </State>
+          <State>
+            <id>Numeric issues</id>
+          </State>
+          <State>
             <id>Plugin DevKit</id>
           </State>
           <State>
             <id>Portability issues</id>
+          </State>
+          <State>
+            <id>Potentially confusing code constructsJavaScript</id>
           </State>
           <State>
             <id>Threading issues</id>
@@ -579,7 +568,7 @@
         </expanded-state>
         <selected-state>
           <State>
-            <id>Abstraction issues</id>
+            <id>UnnecessaryExplicitNumericCast</id>
           </State>
         </selected-state>
       </profile-state>
@@ -600,6 +589,12 @@
   <component name="ProjectReloadState">
     <option name="STATE" value="0" />
   </component>
+  <component name="ProjectStructureProblems">
+    <ignored-problems>
+      <problem id="library-missing-from-artifact(artifact:grabber.war exploded,WEB-INF/classes/module-output)" />
+      <problem id="library-missing-from-artifact(artifact:grabber.war exploded,WEB-INF/classes/module-output)" />
+    </ignored-problems>
+  </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
       <flattenPackages />
@@ -614,7 +609,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -630,24 +624,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Grabber" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Grabber" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Grabber" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -787,7 +763,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="fragments" />
+              <option name="myItemId" value="role" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -813,45 +789,19 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
+              <option name="myItemId" value="WEB-INF" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Grabber" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Grabber" />
+              <option name="myItemId" value="thymeleaf" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
+              <option name="myItemId" value="admin" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="semantic" />
+              <option name="myItemId" value="dictionary" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -877,7 +827,63 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="thymeleaf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dictionary" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="value" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Grabber" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Grabber" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Grabber" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Grabber" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -977,37 +983,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frogorf" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Grabber" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Grabber" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frogorf" />
+              <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -1040,14 +1016,6 @@
               <option name="myItemId" value="frogorf" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="security" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="domain" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -1075,12 +1043,13 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="domain" />
+              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1092,12 +1061,12 @@
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="editor.preferences.folding" />
+    <property name="options.lastSelected" value="preferences.sourceCode.General" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
     <property name="last_opened_file_path" value="$USER_HOME$/AppData/Local/GitHub/PortableGit_ed44d00daa128db527396557813e7b68709ed0e2/bin/git.exe" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="FullScreen" value="false" />
@@ -1105,6 +1074,7 @@
     <property name="restartRequiresConfirmation" value="true" />
     <property name="OverrideImplement.combined" value="true" />
     <property name="OverrideImplement.overriding.sorted" value="false" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/com/frogorf" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -1114,18 +1084,18 @@
       <recent name="com.frogorf.config.root" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\java\frogorf\Grabber\src\main\webapp\WEB-INF\thymeleaf\admin" />
-      <recent name="D:\java\frogorf\Grabber\src\main\webapp\WEB-INF\thymeleaf\admin\role" />
-      <recent name="D:\java\frogorf\Grabber\src\main\webapp\WEB-INF\thymeleaf\admin\user" />
-      <recent name="D:\java\frogorf\Grabber\src\main\resources" />
-      <recent name="D:\java\frogorf\Grabber\src\main\java\com\frogorf\config\servlet" />
+      <recent name="D:\java\workspaces\frogorf\Grabber\src\main\webapp\resources\js\grabber\role" />
+      <recent name="D:\java\workspaces\frogorf\Grabber\src\main\webapp\resources\js\grabber\user" />
+      <recent name="D:\java\workspaces\frogorf\Grabber\src\main\webapp\resources\js\frogorf\dictionary" />
+      <recent name="D:\java\workspaces\frogorf\Grabber\src\main\webapp\resources\js\script" />
+      <recent name="D:\java\workspaces\frogorf\Grabber\src\main\webapp\resources\css\jquery" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\java\frogorf\Alfabrok\Grabber\src\main\webapp\resources" />
-      <recent name="D:\java\frogorf\Alfabrok\Grabber\src\main\resources\db\security" />
-      <recent name="D:\java\frogorf\Alfabrok\Grabber\src\main\resources\security" />
-      <recent name="D:\java\frogorf\Alfabrok\Grabber\src\main\resources" />
-      <recent name="D:\java\frogorf\Alfabrok\Grabber\src\main\webapp\WEB-INF\thymeleaf" />
+      <recent name="D:\java\workspaces\frogorf\Grabber\src\main\webapp\resources\js\other" />
+      <recent name="D:\java\workspaces\frogorf\Grabber\src\main\webapp\resources\js\jquery" />
+      <recent name="D:\java\workspaces\frogorf\Grabber\src\main\webapp\resources\js" />
+      <recent name="D:\java\workspaces\frogorf\Grabber\src\main\webapp\WEB-INF\thymeleaf\admin\dictionary\value" />
+      <recent name="D:\java\workspaces\frogorf\Grabber\src\main\webapp\resources\js\frogorf\user" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.GrabberTomcatRun">
@@ -1157,6 +1127,24 @@
         <option name="taskNames">
           <list>
             <option value="tomcatStop" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <RunnerSettings RunnerId="ExternalSystemTaskRunner" />
+      <ConfigurationWrapper RunnerId="ExternalSystemTaskRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Grabber [buildDependents]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="buildDependents" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -1417,13 +1405,14 @@
       <method />
     </configuration>
     <configuration default="false" name="GrabberTomcatRun" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0.55" ALTERNATIVE_JRE_ENABLED="false" ALTERNATIVE_JRE_PATH="">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/grabber" />
       <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
       <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="grabber.war exploded">
           <settings>
-            <option name="CONTEXT_PATH" value="/" />
+            <option name="CONTEXT_PATH" value="/grabber" />
           </settings>
         </artifact>
       </deployment>
@@ -1494,15 +1483,17 @@
         </option>
       </method>
     </configuration>
-    <list size="3">
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="Tomcat Server.GrabberTomcatRun" />
       <item index="1" class="java.lang.String" itemvalue="Gradle.Grabber [tomcatRun]" />
       <item index="2" class="java.lang.String" itemvalue="Gradle.Grabber [tomcatStop]" />
+      <item index="3" class="java.lang.String" itemvalue="Gradle.Grabber [buildDependents]" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Gradle.Grabber [tomcatRun]" />
-        <item index="1" class="java.lang.String" itemvalue="Gradle.Grabber [tomcatStop]" />
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="Gradle.Grabber [buildDependents]" />
+        <item index="1" class="java.lang.String" itemvalue="Gradle.Grabber [tomcatRun]" />
+        <item index="2" class="java.lang.String" itemvalue="Gradle.Grabber [tomcatStop]" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -1534,6 +1525,12 @@
       <workItem from="1415192145396" duration="1482000" />
       <workItem from="1415259116201" duration="46000" />
       <workItem from="1415259533056" duration="5251000" />
+      <workItem from="1415291576153" duration="12553000" />
+      <workItem from="1415640893389" duration="1968000" />
+      <workItem from="1415643001307" duration="12320000" />
+      <workItem from="1415726838844" duration="9726000" />
+      <workItem from="1415905436423" duration="13877000" />
+      <workItem from="1415959902759" duration="9574000" />
     </task>
     <task id="LOCAL-00001" summary="1. security dao &#10;2. semantic ui">
       <created>1414746285026</created>
@@ -1543,7 +1540,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37047000" />
+    <option name="totallyTimeSpent" value="97065000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1572,30 +1569,32 @@
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905984" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32799146" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905984" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32692307" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22790202" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39957264" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39910814" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28846154" sideWeight="0.4430245" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2865106" sideWeight="0.44322345" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905984" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16239317" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22790202" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905984" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13034189" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22736955" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32887402" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905984" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19542067" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28846154" sideWeight="0.5569755" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32799146" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18051118" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3931624" sideWeight="0.5567766" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32887402" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -1622,376 +1621,400 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/config/WebConfig.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/css/collections/form.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="20" selection-start="1709" selection-end="1709" vertical-scroll-proportion="0.0" vertical-offset="391" max-vertical-offset="1207">
+        <state line="44" column="17" selection-start="819" selection-end="819" vertical-scroll-proportion="0.0" vertical-offset="748" max-vertical-offset="11084">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/web/controller/SecurityController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/thymeleaf/admin/user/detail.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="42" selection-start="554" selection-end="575" vertical-scroll-proportion="0.0" vertical-offset="323" max-vertical-offset="578">
+        <state line="36" column="14" selection-start="0" selection-end="1980" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="935">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/css/modules/behavior/api.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="26" selection-start="2400" selection-end="2400" vertical-scroll-proportion="0.0" vertical-offset="833" max-vertical-offset="1751">
-          <folding />
-        </state>
+        <state line="109" column="32" selection-start="3101" selection-end="3101" vertical-scroll-proportion="0.33333334" vertical-offset="1515" max-vertical-offset="10710" />
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/artifacts-26/filestore/org.springframework/spring-context/4.0.1.RELEASE/source/148fc52b7d7ac01b5a67642a35d914702385c037/spring-context-4.0.1.RELEASE-sources.jar!/org/springframework/context/annotation/ComponentScan.java">
+    <entry file="jar://$USER_HOME$/.gradle/caches/artifacts-26/filestore/org.springframework/spring-web/4.0.1.RELEASE/source/e9f9d0649e61af469444970e256c7224ca10e3bc/spring-web-4.0.1.RELEASE-sources.jar!/org/springframework/web/bind/annotation/SessionAttributes.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="35" selection-start="2460" selection-end="2466" vertical-scroll-proportion="0.0" vertical-offset="361" max-vertical-offset="2669" />
+        <state line="71" column="72" selection-start="3145" selection-end="3174" vertical-scroll-proportion="0.7131902" vertical-offset="419" max-vertical-offset="1071" />
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/artifacts-26/filestore/org.springframework.security/spring-security-config/3.2.5.RELEASE/source/61a26ced836e615e5ef6ae6cb6ebd6b3d7db8570/spring-security-config-3.2.5.RELEASE-sources.jar!/org/springframework/security/config/annotation/web/builders/HttpSecurity.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/config/ThymeleafConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="343" column="63" selection-start="15806" selection-end="16186" vertical-scroll-proportion="0.42873302" vertical-offset="4313" max-vertical-offset="21896" />
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/artifacts-26/filestore/org.springframework.security/spring-security-config/3.2.5.RELEASE/source/61a26ced836e615e5ef6ae6cb6ebd6b3d7db8570/spring-security-config-3.2.5.RELEASE-sources.jar!/org/springframework/security/config/annotation/web/configurers/ExpressionUrlAuthorizationConfigurer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="333" column="71" selection-start="14458" selection-end="14461" vertical-scroll-proportion="0.23754153" vertical-offset="4923" max-vertical-offset="5525" />
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/artifacts-26/filestore/org.springframework.security/spring-security-config/3.2.4.RELEASE/source/7abcbd88e75b7d813d81f1e7c70c5aa688b35e02/spring-security-config-3.2.4.RELEASE-sources.jar!/org/springframework/security/config/annotation/web/AbstractRequestMatcherRegistry.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="13" selection-start="2073" selection-end="2073" vertical-scroll-proportion="0.73421925" vertical-offset="0" max-vertical-offset="3009" />
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.7.0_67/src.zip!/java/security/SecureClassLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="141" column="0" selection-start="4965" selection-end="4965" vertical-scroll-proportion="0.34423408" vertical-offset="1738" max-vertical-offset="3502" />
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.7.0_67/src.zip!/com/sun/jmx/interceptor/DefaultMBeanServerInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="818" column="0" selection-start="32428" selection-end="32428" vertical-scroll-proportion="0.320598" vertical-offset="12285" max-vertical-offset="33694" />
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/artifacts-26/filestore/org.springframework.security/spring-security-core/3.2.4.RELEASE/source/c63f2deae158ec91d0dc4e6a932ca8d675bd7c43/spring-security-core-3.2.4.RELEASE-sources.jar!/org/springframework/security/authentication/AuthenticationProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="17" selection-start="970" selection-end="970" vertical-scroll-proportion="-0.016611295" vertical-offset="231" max-vertical-offset="986" />
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/artifacts-26/filestore/org.springframework.security/spring-security-core/3.2.4.RELEASE/source/c63f2deae158ec91d0dc4e6a932ca8d675bd7c43/spring-security-core-3.2.4.RELEASE-sources.jar!/org/springframework/security/core/userdetails/UserDetailsService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="35" selection-start="1206" selection-end="1224" vertical-scroll-proportion="0.35049835" vertical-offset="112" max-vertical-offset="714" />
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/artifacts-26/filestore/org.springframework/spring-context/4.0.1.RELEASE/source/148fc52b7d7ac01b5a67642a35d914702385c037/spring-context-4.0.1.RELEASE-sources.jar!/org/springframework/context/support/ReloadableResourceBundleMessageSource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="159" column="16" selection-start="7248" selection-end="7248" vertical-scroll-proportion="0.3321859" vertical-offset="1966" max-vertical-offset="10642" />
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/artifacts-26/filestore/org.springframework.security/spring-security-config/3.2.4.RELEASE/source/7abcbd88e75b7d813d81f1e7c70c5aa688b35e02/spring-security-config-3.2.4.RELEASE-sources.jar!/org/springframework/security/config/annotation/authentication/builders/AuthenticationManagerBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="232" column="20" selection-start="10947" selection-end="10947" vertical-scroll-proportion="0.36162987" vertical-offset="3136" max-vertical-offset="4522" />
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/artifacts-26/filestore/org.springframework/spring-context/4.0.1.RELEASE/source/148fc52b7d7ac01b5a67642a35d914702385c037/spring-context-4.0.1.RELEASE-sources.jar!/org/springframework/context/support/AbstractMessageSource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="128" column="47" selection-start="5293" selection-end="5318" vertical-scroll-proportion="0.61461794" vertical-offset="1228" max-vertical-offset="5644" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="59" selection-start="865" selection-end="865" vertical-scroll-proportion="0.0" vertical-offset="410" max-vertical-offset="1751">
+        <state line="15" column="16" selection-start="571" selection-end="571" vertical-scroll-proportion="-0.69543976" vertical-offset="512" max-vertical-offset="1547">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/config/AppConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="0" selection-end="326" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/config/ServletInitializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="12" selection-start="332" selection-end="332" vertical-scroll-proportion="0.15699208" vertical-offset="0" max-vertical-offset="799" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/config/SecurityInitializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="13" selection-start="172" selection-end="172" vertical-scroll-proportion="0.15699208" vertical-offset="0" max-vertical-offset="758" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/config/SecurityConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="25" selection-start="1444" selection-end="1444" vertical-scroll-proportion="0.7176781" vertical-offset="0" max-vertical-offset="758" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/config/HibernateConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="13" selection-start="1029" selection-end="1029" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="1190">
+        <state line="7" column="13" selection-start="264" selection-end="264" vertical-scroll-proportion="0.16612378" vertical-offset="0" max-vertical-offset="614">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/css/semantic.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="11" selection-start="1137" selection-end="1137" vertical-scroll-proportion="0.7609375" vertical-offset="227" max-vertical-offset="867">
-          <folding />
-        </state>
+        <state line="598" column="10" selection-start="10486" selection-end="10486" vertical-scroll-proportion="0.3923611" vertical-offset="9940" max-vertical-offset="28084" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/config/WebConfig.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/security/service/impl/CustomAuthenticationServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="41" selection-start="816" selection-end="816" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1071">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/web/controller/SecurityController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="11" selection-start="296" selection-end="325" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/thymeleaf/admin.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="226" selection-end="296" vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="306">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/config/ThymeleafConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="6" selection-start="1384" selection-end="1384" vertical-scroll-proportion="0.0" vertical-offset="106" max-vertical-offset="1547">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/thymeleaf/security/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="36" selection-start="1150" selection-end="1150" vertical-scroll-proportion="-0.0" vertical-offset="408" max-vertical-offset="1190">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/thymeleaf/fragments/layout.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="21" selection-start="2805" selection-end="2810" vertical-scroll-proportion="-2.1923077" vertical-offset="861" max-vertical-offset="1768">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/web/controller/admin/AdminRoleController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="29" selection-start="1425" selection-end="1425" vertical-scroll-proportion="12.461538" vertical-offset="1021" max-vertical-offset="1598">
+        <state line="28" column="65" selection-start="1077" selection-end="1077" vertical-scroll-proportion="0.5737122" vertical-offset="153" max-vertical-offset="1785">
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="n#!!doc" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#2098#2106#0" expanded="false" />
+            <element signature="e#2490#2508#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/web/controller/HomeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="13" selection-start="275" selection-end="275" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/web/controller/admin/AdminHomeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="22" selection-start="457" selection-end="457" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/thymeleaf/admin/role/detail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="23" selection-start="475" selection-end="475" vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="544">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/thymeleaf/admin/role/list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="23" selection-start="475" selection-end="475" vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="544">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/security/service/RoleService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="25" selection-start="187" selection-end="248" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/security/service/impl/RoleServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="16" selection-start="524" selection-end="524" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/security/dao/RoleDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="28" selection-start="247" selection-end="247" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
-          <folding />
-        </state>
+        <state line="19" column="54" selection-start="414" selection-end="414" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/security/dao/impl/UserDAOImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/security/service/RoleService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="36" selection-start="1385" selection-end="1454" vertical-scroll-proportion="0.79815304" vertical-offset="109" max-vertical-offset="918">
+        <state line="19" column="54" selection-start="415" selection-end="415" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/security/service/impl/RoleServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="0" selection-start="659" selection-end="659" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="782">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/security/dao/impl/RoleDAOImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="0" selection-start="923" selection-end="923" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="663">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/i18n/messages.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="0" selection-start="1983" selection-end="1983" vertical-scroll-proportion="-31.32" vertical-offset="475" max-vertical-offset="1360">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="ResourceBundle">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/thymeleaf/admin/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="24" selection-start="273" selection-end="273" vertical-scroll-proportion="-2.6153846" vertical-offset="0" max-vertical-offset="391">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/thymeleaf/admin/role/edit.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="79" selection-start="298" selection-end="328" vertical-scroll-proportion="-2.6153846" vertical-offset="0" max-vertical-offset="544">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/thymeleaf/admin/user/list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="14" selection-start="737" selection-end="1003" vertical-scroll-proportion="-11.769231" vertical-offset="0" max-vertical-offset="476">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/domain/BaseLocale.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2380">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#683#684#0" expanded="true" />
-            <element signature="e#714#715#0" expanded="true" />
-            <element signature="e#821#822#0" expanded="true" />
-            <element signature="e#861#862#0" expanded="true" />
-            <element signature="e#952#953#0" expanded="true" />
-            <element signature="e#989#990#0" expanded="true" />
-            <element signature="e#1120#1121#0" expanded="true" />
-            <element signature="e#1172#1173#0" expanded="true" />
-            <element signature="e#1257#1258#0" expanded="true" />
-            <element signature="e#1291#1292#0" expanded="true" />
-            <element signature="e#1410#1411#0" expanded="true" />
-            <element signature="e#1456#1457#0" expanded="true" />
-            <element signature="e#1527#1528#0" expanded="true" />
-            <element signature="e#1554#1555#0" expanded="true" />
-            <element signature="e#1645#1646#0" expanded="true" />
-            <element signature="e#1677#1678#0" expanded="true" />
-            <element signature="e#1750#1751#0" expanded="true" />
-            <element signature="e#1778#1779#0" expanded="true" />
-            <element signature="e#1873#1874#0" expanded="true" />
-            <element signature="e#1907#1908#0" expanded="true" />
-            <element signature="e#1945#1946#0" expanded="true" />
-            <element signature="e#1979#1980#0" expanded="true" />
-            <element signature="e#2033#2034#0" expanded="true" />
-            <element signature="e#2079#2080#0" expanded="true" />
-            <element signature="e#2156#2157#0" expanded="true" />
-            <element signature="e#2186#2187#0" expanded="true" />
-            <element signature="e#2289#2290#0" expanded="true" />
-            <element signature="e#2327#2328#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/domain/BaseEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="13" selection-start="146" selection-end="146" vertical-scroll-proportion="0.2390625" vertical-offset="0" max-vertical-offset="663">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/security/domain/Role.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="240" selection-end="240" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/security/domain/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="32" selection-start="211" selection-end="211" vertical-scroll-proportion="0.0" vertical-offset="125" max-vertical-offset="765">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/i18n/messages_en.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="79" column="0" selection-start="2021" selection-end="2041" vertical-scroll-proportion="-19.84" vertical-offset="847" max-vertical-offset="1598">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="ResourceBundle">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/semantic/semantic.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="57" selection-start="0" selection-end="137671" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/semantic.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="731" column="0" selection-start="23234" selection-end="23234" vertical-scroll-proportion="-11.307693" vertical-offset="12133" max-vertical-offset="13753">
+        <state line="45" column="90" selection-start="1169" selection-end="1244" vertical-scroll-proportion="0.70264065" vertical-offset="0" max-vertical-offset="871">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/thymeleaf/admin/fragments/layout.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="0" selection-start="1175" selection-end="1175" vertical-scroll-proportion="-12.423077" vertical-offset="0" max-vertical-offset="714">
+        <state line="27" column="19" selection-start="2109" selection-end="2223" vertical-scroll-proportion="0.40236688" vertical-offset="119" max-vertical-offset="1972">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/security/dao/UserDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="17" selection-start="272" selection-end="272" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="544" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/security/dao/impl/UserDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="0" selection-start="1167" selection-end="1167" vertical-scroll-proportion="0.0" vertical-offset="455" max-vertical-offset="1173">
           <folding>
-            <element signature="tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#div#1;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="tag#div#2;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/thymeleaf/admin/user/detail.html">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/security/service/impl/UserServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="35" selection-start="1644" selection-end="1683" vertical-scroll-proportion="-24.192308" vertical-offset="0" max-vertical-offset="850">
+        <state line="54" column="2" selection-start="1084" selection-end="1229" vertical-scroll-proportion="0.0" vertical-offset="387" max-vertical-offset="1105">
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/security/domain/Role.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="13" selection-start="366" selection-end="366" vertical-scroll-proportion="0.33224756" vertical-offset="0" max-vertical-offset="614">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/security/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="56" selection-start="637" selection-end="637" vertical-scroll-proportion="0.6921824" vertical-offset="0" max-vertical-offset="614" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/domain/BaseEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="5" selection-start="535" selection-end="535" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="646">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/i18n/messages.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="30.84" vertical-offset="771" max-vertical-offset="1360">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="ResourceBundle">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/css/collections/form.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="17" selection-start="837" selection-end="837" vertical-scroll-proportion="0.0" vertical-offset="765" max-vertical-offset="11101">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/thymeleaf/admin/user/edit.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="117" selection-start="790" selection-end="790" vertical-scroll-proportion="0.23076923" vertical-offset="0" max-vertical-offset="884">
+        <state line="38" column="75" selection-start="2071" selection-end="2134" vertical-scroll-proportion="0.2260355" vertical-offset="455" max-vertical-offset="1326">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/web/controller/admin/AdminUserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="0" selection-start="1352" selection-end="1352" vertical-scroll-proportion="0.0" vertical-offset="697" max-vertical-offset="1768">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/web/controller/admin/AdminHomeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="0" selection-start="471" selection-end="471" vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="391">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/web/controller/admin/AdminRoleController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="4" selection-start="1908" selection-end="1908" vertical-scroll-proportion="0.0" vertical-offset="620" max-vertical-offset="1530">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="89" column="44" selection-start="3181" selection-end="3199" vertical-scroll-proportion="0.0" vertical-offset="943" max-vertical-offset="1853">
+          <folding>
+            <marker date="1415961617754" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/persistence-mysql.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="52" selection-start="335" selection-end="335" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/config/ServletInitializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="63" selection-start="1345" selection-end="1345" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="714">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/dictionary/service/impl/DictionaryServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="29" selection-start="1165" selection-end="1165" vertical-scroll-proportion="0.0" vertical-offset="279" max-vertical-offset="1666">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/dictionary/dao/impl/DictionaryDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="0" selection-start="1138" selection-end="1138" vertical-scroll-proportion="0.0" vertical-offset="228" max-vertical-offset="1428">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/thymeleaf/admin/user/list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="14" selection-start="729" selection-end="1009" vertical-scroll-proportion="0.35876623" vertical-offset="0" max-vertical-offset="680">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/thymeleaf/admin/role/list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="14" selection-start="734" selection-end="1014" vertical-scroll-proportion="-8.5" vertical-offset="0" max-vertical-offset="663">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/thymeleaf/admin/dictionary/value/list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="14" selection-start="1086" selection-end="1086" vertical-scroll-proportion="0.4238845" vertical-offset="0" max-vertical-offset="762">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/thymeleaf/admin/role/detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="642">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/security/domain/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="23" selection-start="419" selection-end="423" vertical-scroll-proportion="0.423676" vertical-offset="0" max-vertical-offset="969">
+          <folding>
+            <element signature="e#1304#1305#0" expanded="false" />
+            <element signature="e#1331#1332#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/thymeleaf/admin/dictionary/list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="0" selection-start="753" selection-end="1062" vertical-scroll-proportion="-9.153846" vertical-offset="0" max-vertical-offset="663">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/thymeleaf/admin/user/detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="23" selection-start="2316" selection-end="2320" vertical-scroll-proportion="0.59615386" vertical-offset="408" max-vertical-offset="1292">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/css/grabber.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="37" selection-start="452" selection-end="452" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="782">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/thymeleaf/admin/dictionary/edit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="48" selection-start="1765" selection-end="1765" vertical-scroll-proportion="-12.423077" vertical-offset="187" max-vertical-offset="1360">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/thymeleaf/admin/dictionary/value/edit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="72" column="13" selection-start="3581" selection-end="4821" vertical-scroll-proportion="-4.576923" vertical-offset="1105" max-vertical-offset="2040">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/thymeleaf/admin/dictionary/value/detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="42" selection-start="2243" selection-end="2258" vertical-scroll-proportion="-28.115385" vertical-offset="102" max-vertical-offset="1105">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/dictionary/domain/DictionaryValue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="31" selection-start="227" selection-end="243" vertical-scroll-proportion="0.18681319" vertical-offset="0" max-vertical-offset="1632">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/dictionary/domain/Dictionary.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="31" selection-start="537" selection-end="537" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="2074">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1013#1014#0" expanded="true" />
+            <element signature="e#1040#1041#0" expanded="true" />
+            <element signature="e#1080#1081#0" expanded="true" />
+            <element signature="e#1112#1113#0" expanded="true" />
+            <element signature="e#1143#1144#0" expanded="true" />
+            <element signature="e#1170#1171#0" expanded="true" />
+            <element signature="e#1210#1211#0" expanded="true" />
+            <element signature="e#1242#1243#0" expanded="true" />
+            <element signature="e#1280#1281#0" expanded="true" />
+            <element signature="e#1314#1315#0" expanded="true" />
+            <element signature="e#1368#1369#0" expanded="true" />
+            <element signature="e#1414#1415#0" expanded="true" />
+            <element signature="e#1445#1446#0" expanded="true" />
+            <element signature="e#1472#1473#0" expanded="true" />
+            <element signature="e#1512#1513#0" expanded="true" />
+            <element signature="e#1544#1545#0" expanded="true" />
+            <element signature="e#1890#1891#0" expanded="true" />
+            <element signature="e#1946#1947#0" expanded="true" />
+            <element signature="e#1987#1988#0" expanded="true" />
+            <element signature="e#2020#2021#0" expanded="true" />
+            <element signature="e#2076#2077#0" expanded="true" />
+            <element signature="e#2120#2121#0" expanded="true" />
+            <element signature="e#2168#2169#0" expanded="true" />
+            <element signature="e#2202#2203#0" expanded="true" />
+            <element signature="e#2266#2267#0" expanded="true" />
+            <element signature="e#2312#2313#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/web/controller/admin/AdminDictionaryController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="116" column="50" selection-start="4561" selection-end="4561" vertical-scroll-proportion="0.0" vertical-offset="1173" max-vertical-offset="2601">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/i18n/messages_en.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="102" column="0" selection-start="2654" selection-end="2674" vertical-scroll-proportion="0.48135594" vertical-offset="1308" max-vertical-offset="2210">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="ResourceBundle">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/thymeleaf/admin/dictionary/detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="57" selection-start="1822" selection-end="1822" vertical-scroll-proportion="-21.26923" vertical-offset="127" max-vertical-offset="1037">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/config/SecurityInitializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="1" selection-start="0" selection-end="248" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/db/security/import-data.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="59" selection-start="110" selection-end="116" vertical-scroll-proportion="-0.34" vertical-offset="0" max-vertical-offset="238">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/config/SecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="13" selection-start="694" selection-end="694" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="816">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/config/HibernateConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="84" selection-start="1061" selection-end="1061" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1190">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/config/WebConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="0" selection-start="2032" selection-end="2032" vertical-scroll-proportion="0.6277873" vertical-offset="348" max-vertical-offset="1258">
           <folding />
         </state>
       </provider>
@@ -2002,7 +2025,7 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
-          <last-edited>grabber.war exploded сopy</last-edited>
+          <last-edited>grabber.war exploded</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -2026,7 +2049,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>No facets are configured</last-edited>
+          <last-edited>Spring</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

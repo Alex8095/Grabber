@@ -12,7 +12,7 @@ public class ServletInitializer extends AbstractAnnotationConfigDispatcherServle
 
     @Override
     protected Class<?>[] getRootConfigClasses() {
-        return new Class[]{AppConfig.class, HibernateConfig.class, SecurityConfig.class};
+        return new Class[]{AppConfig.class, HibernateConfig.class/*, SecurityConfig.class*/};
     }
 
     @Override
@@ -37,5 +37,6 @@ public class ServletInitializer extends AbstractAnnotationConfigDispatcherServle
         charFilter.setForceEncoding(true);
         return new Filter[]{new HiddenHttpMethodFilter(), charFilter, new HttpPutFormContentFilter()};
     }
+
 
 }

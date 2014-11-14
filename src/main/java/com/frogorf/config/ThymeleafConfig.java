@@ -36,10 +36,10 @@ public class ThymeleafConfig {
         return engine;
     }
 
-    @Bean
-    public SpringSecurityDialect springSecurityDialect() {
-        return new SpringSecurityDialect();
-    }
+//    @Bean
+//    public SpringSecurityDialect springSecurityDialect() {
+//        return new SpringSecurityDialect();
+//    }
 
     @Bean
     public ThymeleafViewResolver thymeleafViewResolver() {
