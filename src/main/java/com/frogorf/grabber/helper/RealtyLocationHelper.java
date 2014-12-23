@@ -2,7 +2,6 @@ package com.frogorf.grabber.helper;
 
 import com.frogorf.core.location.domain.Location;
 import com.frogorf.dictionary.domain.DictionaryValue;
-import com.frogorf.grabber.helper.selector.LocationSelector;
 import com.frogorf.realty.domain.Realty;
 
 import java.util.Map;
@@ -33,8 +32,6 @@ public interface RealtyLocationHelper {
     void putLocationMapEntry(int LocationSelectorId, String value);
 
     DictionaryValue findLocationDictionaryValue(String value, Integer dictionaryId);
-
-    DictionaryValue createDictionaryValue(String value, Integer dictionaryId);
 
     String getHouseNumber();
 

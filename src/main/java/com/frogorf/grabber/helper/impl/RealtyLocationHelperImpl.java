@@ -6,6 +6,7 @@ import com.frogorf.dictionary.service.DictionaryService;
 import com.frogorf.grabber.helper.RealtyLocationHelper;
 import com.frogorf.grabber.helper.selector.LocationSelector;
 import com.frogorf.realty.domain.Realty;
+import com.frogorf.utils.Translit;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -30,6 +31,21 @@ public class RealtyLocationHelperImpl implements RealtyLocationHelper {
 
     @Override
     public Location getLocation() {
+        location = realty.getLocation();
+        if (location == null) {
+            createLocationMap();
+            location = new Location();
+            if (locationMap != null & locationMap.size() > 0) {
+                location.setRegion(findLocationDictionaryValue(locationMap.get(LocationSelector.REGION), LocationSelector.REGION_D_ID));
+                location.setDistrict(findLocationDictionaryValue(locationMap.get(LocationSelector.DISTRICT), LocationSelector.DISTRICT_D_ID));
+                location.setCity(findLocationDictionaryValue(locationMap.get(LocationSelector.CITY), LocationSelector.CITY_D_ID));
+                location.setAreaCity(findLocationDictionaryValue(locationMap.get(LocationSelector.CITY_AREA), LocationSelector.CITY_AREA_D_ID));
+                location.setDistrictCity(findLocationDictionaryValue(locationMap.get(LocationSelector.CITY_DISTRICT), LocationSelector.CITY_DISTRICT_D_ID));
+                location.setStreet(findLocationDictionaryValue(locationMap.get(LocationSelector.STREET), LocationSelector.STREET_D_ID));
+                location.setSiteLocation(locationSource);
+                location.setHouseNumber(getHouseNumber());
+            }
+        }
         return location;
     }
 
@@ -96,6 +112,9 @@ public class RealtyLocationHelperImpl implements RealtyLocationHelper {
 
     @Override
     public void putLocationMapEntry(int locationSelectorId, String value) {
+        if (locationMap == null) {
+            locationMap = new HashMap<>();
+        }
         if (value != null && !locationMap.containsKey(locationSelectorId)) {
             locationMap.put(locationSelectorId, value);
         }
@@ -103,12 +122,13 @@ public class RealtyLocationHelperImpl implements RealtyLocationHelper {
 
     @Override
     public DictionaryValue findLocationDictionaryValue(String value, Integer dictionaryId) {
-        return null;
-    }
-
-    @Override
-    public DictionaryValue createDictionaryValue(String value, Integer dictionaryId) {
-        return null;
+        if (value == null) {
+            return null;
+        }
+        Map<String, String> params = new HashMap<>();
+        params.put(DictionaryValue.PARAM_CODE, Translit.toTranslit(value).toUpperCase());
+        params.put(DictionaryValue.PARAM_DICTIONARY_ID, dictionaryId.toString());
+        return dictionaryService.findDictionaryValue(params);
     }
 
     @Override
@@ -119,7 +139,7 @@ public class RealtyLocationHelperImpl implements RealtyLocationHelper {
     @Override
     public void createLocationMap() {
         locationMap = new HashMap<>();
-        String[] words = locationSource.replace(" , ", ",").split(",");
+        String[] words = locationSource.replace(" , ", ",").replace(", ", ",").split(",");
         switch (words.length) {
             case 1: {
                 putLocationMapEntry(LocationSelector.CITY, formatCity(words[0]));

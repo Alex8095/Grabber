@@ -2,6 +2,7 @@ package com.frogorf.dictionary.domain;
 
 
 import com.frogorf.core.domain.BaseEntity;
+import com.frogorf.utils.Translit;
 import org.hibernate.annotations.Fetch;
 import org.hibernate.annotations.FetchMode;
 
@@ -18,12 +19,15 @@ public class DictionaryValue extends BaseEntity {
 
     @Column
     @NotNull
-    public static final String PARAM_CODE = "code";
     private String code;
+    public static final String PARAM_CODE = "code";
+
     @NotNull
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "dictionary_id", nullable = false)
     private Dictionary dictionary;
+    public static final String PARAM_DICTIONARY_ID = "dictionary_id";
+
     @ManyToOne
     @JoinColumn(name = "parent_id")
     private DictionaryValue parentDictionaryValue;
@@ -41,7 +45,7 @@ public class DictionaryValue extends BaseEntity {
     }
 
     public void setCode(String code) {
-        this.code = code.toUpperCase();
+        this.code = Translit.toTranslit(code).toUpperCase();
     }
 
     public Dictionary getDictionary() {

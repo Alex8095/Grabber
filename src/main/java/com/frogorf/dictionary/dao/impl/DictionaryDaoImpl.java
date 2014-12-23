@@ -129,10 +129,10 @@ public class DictionaryDaoImpl implements DictionaryDao {
             criteria.add(Restrictions.eq("code", params.get("code").toUpperCase()));
         }
         if (params.containsKey("parent_id")) {
-            criteria.add(Restrictions.eq("parent_id", params.get("parent_id")));
+            criteria.add(Restrictions.eq("parentDictionaryValue.id", Integer.valueOf(params.get("parent_id"))));
         }
         if (params.containsKey("dictionary_id")) {
-            criteria.add(Restrictions.eq("dictionary_id", params.get("dictionary_id")));
+            criteria.add(Restrictions.eq("dictionary.id", Integer.valueOf(params.get("dictionary_id"))));
         }
         return (DictionaryValue) criteria.uniqueResult();
     }
