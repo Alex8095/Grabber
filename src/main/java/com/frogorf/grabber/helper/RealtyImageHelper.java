@@ -12,9 +12,11 @@ public interface RealtyImageHelper {
 
     List<RealtyImage> getImages();
 
-    List<RealtyImage> getRealtyImages();
+    void init(List<String> imagesSource, Realty realty);
 
-    void init(Realty realty);
+    RealtyImage createImage(String imageSource);
+
+    boolean canAddImageToList(String imageSource);
 
     void clean();
 }

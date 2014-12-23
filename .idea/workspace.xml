@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="d9b5d374-f857-4bc3-a8be-81545628c980" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Grabber.iml" afterPath="$PROJECT_DIR$/Grabber.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/frogorf/grabber/helper/RealtyImageHelper.java" afterPath="$PROJECT_DIR$/src/main/java/com/frogorf/grabber/helper/RealtyImageHelper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/frogorf/grabber/helper/impl/RealtyImageHelperImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/frogorf/grabber/helper/impl/RealtyImageHelperImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Grabber.iws" />
@@ -290,19 +292,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Grabber.iws" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Grabber.iws">
+      <file leaf-file-name="RealtyImageHelperTest.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/frogorf/grabber/helper/RealtyImageHelperTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3621">
-              <folding />
+            <state line="80" column="5" selection-start="3160" selection-end="3160" vertical-scroll-proportion="0.78205127" vertical-offset="689" max-vertical-offset="1598">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Grabber.iml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Grabber.iml">
+      <file leaf-file-name="RealtyImageHelperImpl.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/grabber/helper/impl/RealtyImageHelperImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="65" selection-start="1280" selection-end="1280" vertical-scroll-proportion="0.35301062" vertical-offset="41" max-vertical-offset="1870">
+            <state line="30" column="20" selection-start="911" selection-end="911" vertical-scroll-proportion="0.0" vertical-offset="130" max-vertical-offset="1139">
               <folding />
             </state>
           </provider>
@@ -540,7 +544,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/com/frogorf/grabber/parser/OlxRealtyCategoryParserImplTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/frogorf/grabber/helper/RealtySellerHelper.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/frogorf/dictionary/service/DictionaryServiceTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/frogorf/realty/domain/Seller.java" />
@@ -579,8 +582,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/frogorf/grabber/helper/RealtyPriceHelper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/frogorf/grabber/helper/impl/RealtyHelperImpl.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/frogorf/grabber/helper/RealtyHelperTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/frogorf/grabber/helper/RealtyImageHelper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/frogorf/grabber/helper/impl/RealtyImageHelperImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/frogorf/grabber/parser/impl/OlxRealtyItemParser.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/frogorf/grabber/helper/RealtyLocationHelper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/frogorf/dictionary/domain/DictionaryValue.java" />
@@ -591,6 +592,9 @@
         <option value="$PROJECT_DIR$/src/test/java/com/frogorf/grabber/helper/RealtyLocationHelperTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/frogorf/grabber/helper/impl/RealtyLocationHelperImpl.java" />
         <option value="$PROJECT_DIR$/Grabber.iml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/frogorf/grabber/helper/RealtyImageHelper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/frogorf/grabber/helper/impl/RealtyImageHelperImpl.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/frogorf/grabber/helper/RealtyImageHelperTest.java" />
       </list>
     </option>
   </component>
@@ -721,7 +725,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -803,12 +806,205 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frogorf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="grabber" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Grabber" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Grabber" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frogorf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="grabber" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="helper" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Grabber" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Grabber" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Grabber" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Grabber" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frogorf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Grabber" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Grabber" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frogorf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="grabber" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Grabber" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Grabber" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frogorf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="grabber" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="helper" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Grabber" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Grabber" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frogorf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="grabber" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="helper" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="impl" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -839,15 +1035,15 @@
     <property name="LayoutCode.rearrangeEntries" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.frogorf.grabber.helper" />
       <recent name="com.frogorf.grabber.helper.impl" />
       <recent name="com.frogorf.realty.dao.impl" />
       <recent name="com.frogorf.dictionary.service" />
       <recent name="com.frogorf.grabber.parser.impl" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.frogorf.realty.dao.impl" />
@@ -866,6 +1062,10 @@
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.frogorf.realty.domain" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.frogorf.grabber.helper" />
+      <recent name="com.frogorf.grabber.parser" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\java\frogorf\Grabber\src\main\java\com\frogorf\grabber" />
       <recent name="D:\java\frogorf\Grabber\src\test\java\com\frogorf" />
@@ -873,68 +1073,8 @@
       <recent name="D:\java\frogorf\Grabber\src" />
       <recent name="D:\java\frogorf\Grabber\src\main\resources\db" />
     </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="com.frogorf.grabber.helper" />
-      <recent name="com.frogorf.grabber.parser" />
-    </key>
   </component>
-  <component name="RunManager" selected="JUnit.RealtyLocationHelperTest.testGetLocation">
-    <configuration default="false" name="RealtyLocationHelperTest.testGetHouseNumber" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.frogorf.grabber.helper.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="Grabber" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.frogorf.grabber.helper" />
-      <option name="MAIN_CLASS_NAME" value="com.frogorf.grabber.helper.RealtyLocationHelperTest" />
-      <option name="METHOD_NAME" value="testGetHouseNumber" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="RealtyLocationHelperTest.testPutLocationMapEntry" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.frogorf.grabber.helper.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="Grabber" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.frogorf.grabber.helper" />
-      <option name="MAIN_CLASS_NAME" value="com.frogorf.grabber.helper.RealtyLocationHelperTest" />
-      <option name="METHOD_NAME" value="testPutLocationMapEntry" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.RealtyImageHelperTest.testCanAddImageToList">
     <configuration default="false" name="RealtyLocationHelperTest.testCreateLocationMap" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -1010,6 +1150,62 @@
       <option name="PACKAGE_NAME" value="com.frogorf.grabber.helper" />
       <option name="MAIN_CLASS_NAME" value="com.frogorf.grabber.helper.RealtyLocationHelperTest" />
       <option name="METHOD_NAME" value="testFormatRegion" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="RealtyImageHelperTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.frogorf.grabber.helper.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="Grabber" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.frogorf.grabber.helper" />
+      <option name="MAIN_CLASS_NAME" value="com.frogorf.grabber.helper.RealtyImageHelperTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="RealtyImageHelperTest.testCanAddImageToList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.frogorf.grabber.helper.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="Grabber" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.frogorf.grabber.helper" />
+      <option name="MAIN_CLASS_NAME" value="com.frogorf.grabber.helper.RealtyImageHelperTest" />
+      <option name="METHOD_NAME" value="testCanAddImageToList" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -1251,6 +1447,12 @@
       <envs />
       <method />
     </configuration>
+    <configuration default="true" type="com.intellij.persistence.run.ConsoleRunConfigurationType" factoryName="Query Language Console">
+      <option name="VM_PARAMETERS" value="" />
+      <option name="USER_CFG_CLASS" />
+      <option name="CONTEXT_PROVIDER" />
+      <method />
+    </configuration>
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="" />
       <option name="ACTIVITY_CLASS" value="" />
@@ -1268,12 +1470,6 @@
       <option name="NETWORK_LATENCY" value="none" />
       <option name="CLEAR_LOGCAT" value="false" />
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
-      <method />
-    </configuration>
-    <configuration default="true" type="com.intellij.persistence.run.ConsoleRunConfigurationType" factoryName="Query Language Console">
-      <option name="VM_PARAMETERS" value="" />
-      <option name="USER_CFG_CLASS" />
-      <option name="CONTEXT_PROVIDER" />
       <method />
     </configuration>
     <configuration default="false" name="GrabberTomcatRun" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0.55" ALTERNATIVE_JRE_ENABLED="false" ALTERNATIVE_JRE_PATH="">
@@ -1357,19 +1553,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Tomcat Server.GrabberTomcatRun" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.RealtyLocationHelperTest.testGetHouseNumber" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.RealtyLocationHelperTest.testPutLocationMapEntry" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.RealtyLocationHelperTest.testCreateLocationMap" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.RealtyLocationHelperTest.testGetLocation" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.RealtyLocationHelperTest.testFormatRegion" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.RealtyLocationHelperTest.testCreateLocationMap" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.RealtyLocationHelperTest.testGetLocation" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.RealtyLocationHelperTest.testFormatRegion" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.RealtyImageHelperTest" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.RealtyImageHelperTest.testCanAddImageToList" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.RealtyLocationHelperTest.testGetLocation" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.RealtyLocationHelperTest.testFormatRegion" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.RealtyLocationHelperTest.testCreateLocationMap" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.RealtyLocationHelperTest.testPutLocationMapEntry" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.RealtyLocationHelperTest.testGetHouseNumber" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.RealtyImageHelperTest.testCanAddImageToList" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.RealtyImageHelperTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.RealtyLocationHelperTest.testGetLocation" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.RealtyLocationHelperTest.testFormatRegion" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.RealtyLocationHelperTest.testCreateLocationMap" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -1433,6 +1629,7 @@
       <workItem from="1419322842813" duration="3015000" />
       <workItem from="1419335763075" duration="5802000" />
       <workItem from="1419362501083" duration="156000" />
+      <workItem from="1419363639673" duration="1789000" />
     </task>
     <task id="LOCAL-00001" summary="1. security dao &#10;2. semantic ui">
       <created>1414746285026</created>
@@ -1442,7 +1639,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="222326000" />
+    <option name="totallyTimeSpent" value="224115000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1483,6 +1680,7 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905984" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22742476" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19808307" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32887402" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1490,13 +1688,12 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21516165" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2008547" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.32664436" sideWeight="0.5567766" order="2" side_tool="false" content_ui="tabs" x="2092" y="580" width="1634" height="430" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" weight="0.32664436" sideWeight="0.5567766" order="2" side_tool="false" content_ui="tabs" x="1702" y="605" width="1634" height="430" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24893162" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2275641" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -1523,16 +1720,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/db/import-grabber.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="756" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="187" />
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.7.0_67/src.zip!/java/lang/String.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1676" column="15" selection-start="66573" selection-end="66573" vertical-scroll-proportion="0.33295062" vertical-offset="27641" max-vertical-offset="52173" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/frogorf/grabber/helper/RealtySellerHelperTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="36" column="3" selection-start="1338" selection-end="1379" vertical-scroll-proportion="0.19288175" vertical-offset="155" max-vertical-offset="1496" />
@@ -1659,19 +1846,9 @@
         <state line="13" column="31" selection-start="522" selection-end="522" vertical-scroll-proportion="0.33183184" vertical-offset="0" max-vertical-offset="666" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/realty/domain/Realty.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="42" selection-start="1652" selection-end="1652" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3128" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/frogorf/grabber/helper/RealtyPriceHelperTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="33" column="13" selection-start="1218" selection-end="1218" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2380" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/frogorf/grabber/helper/RealtyHelperTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="26" selection-start="1053" selection-end="1277" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1190" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/grabber/helper/impl/RealtyPriceHelperImpl.java">
@@ -1692,11 +1869,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/grabber/helper/impl/RealtyOptionHelperImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="122" column="45" selection-start="4532" selection-end="4652" vertical-scroll-proportion="-0.20549451" vertical-offset="1870" max-vertical-offset="3264" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/grabber/helper/impl/RealtyImageHelperImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="5" selection-start="337" selection-end="337" vertical-scroll-proportion="0.14945056" vertical-offset="0" max-vertical-offset="910" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/dictionary/service/DictionaryService.java">
@@ -1759,30 +1931,14 @@
         <state line="35" column="0" selection-start="808" selection-end="808" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="765" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/grabber/helper/impl/RealtyLocationHelperImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="0" selection-start="2197" selection-end="2197" vertical-scroll-proportion="0.0" vertical-offset="450" max-vertical-offset="3043">
-          <folding>
-            <element signature="e#4553#4554#0" expanded="true" />
-            <element signature="e#4587#4588#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/frogorf/grabber/helper/RealtyLocationHelperTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="163" column="58" selection-start="7752" selection-end="7752" vertical-scroll-proportion="0.45910782" vertical-offset="1198" max-vertical-offset="2941">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#setUp#0;class#RealtyLocationHelperTest#0" expanded="false" />
-            <element signature="method#tearDown#0;class#RealtyLocationHelperTest#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Grabber.ipr">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1819">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1819" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Grabber.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="65" selection-start="1280" selection-end="1280" vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="1870">
           <folding />
         </state>
       </provider>
@@ -1794,10 +1950,57 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Grabber.iml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/grabber/helper/impl/RealtyLocationHelperImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="65" selection-start="1280" selection-end="1280" vertical-scroll-proportion="0.35301062" vertical-offset="41" max-vertical-offset="1870">
+        <state line="48" column="0" selection-start="2197" selection-end="2197" vertical-scroll-proportion="0.2050401" vertical-offset="450" max-vertical-offset="3009">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/realty/domain/Realty.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="262" column="29" selection-start="7232" selection-end="7232" vertical-scroll-proportion="0.44651163" vertical-offset="2574" max-vertical-offset="3434">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/grabber/helper/RealtyImageHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="25" selection-start="252" selection-end="252" vertical-scroll-proportion="0.17525773" vertical-offset="0" max-vertical-offset="873">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/frogorf/grabber/helper/RealtyHelperTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="26" selection-start="1052" selection-end="1277" vertical-scroll-proportion="0.38946164" vertical-offset="0" max-vertical-offset="1190">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/frogorf/grabber/helper/RealtyLocationHelperTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="0" selection-start="958" selection-end="998" vertical-scroll-proportion="0.185567" vertical-offset="229" max-vertical-offset="2941">
+          <folding>
+            <element signature="method#setUp#0;class#RealtyLocationHelperTest#0" expanded="false" />
+            <element signature="method#tearDown#0;class#RealtyLocationHelperTest#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/grabber/helper/impl/RealtyImageHelperImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="20" selection-start="911" selection-end="911" vertical-scroll-proportion="0.0" vertical-offset="130" max-vertical-offset="1139">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/frogorf/grabber/helper/RealtyImageHelperTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="80" column="5" selection-start="3160" selection-end="3160" vertical-scroll-proportion="0.78205127" vertical-offset="689" max-vertical-offset="1598">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
