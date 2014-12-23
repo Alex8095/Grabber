@@ -1,1 +1,3 @@
 http://semantic-ui.com/
+
+http://alfabrok.ua/rest.php?action=dictionaryvalues&startdictid=null&ld_id=19

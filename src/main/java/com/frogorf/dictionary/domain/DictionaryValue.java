@@ -1,11 +1,14 @@
 package com.frogorf.dictionary.domain;
 
-import com.frogorf.domain.BaseEntity;
+
+import com.frogorf.core.domain.BaseEntity;
+import org.hibernate.annotations.Fetch;
+import org.hibernate.annotations.FetchMode;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashMap;
+import java.util.Map;
 
 @Entity
 @Table(name = "dictionary_value")
@@ -15,55 +18,30 @@ public class DictionaryValue extends BaseEntity {
 
     @Column
     @NotNull
-    private String name;
-    @Column
-    @NotNull
+    public static final String PARAM_CODE = "code";
     private String code;
-    @Column
-    private String description;
-    @Column
-    private String lang;
-    @ManyToOne
     @NotNull
-    @JoinColumn(name = "dictionary_id")
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "dictionary_id", nullable = false)
     private Dictionary dictionary;
     @ManyToOne
     @JoinColumn(name = "parent_id")
-    private DictionaryValue dictionaryValue;
-    @ManyToMany(fetch = FetchType.EAGER)
-    @JoinTable(name = "dictionary_value", joinColumns = @JoinColumn(name = "id"), inverseJoinColumns = @JoinColumn(name = "parent_id"))
-    private List<DictionaryValue> dictionaryValues;
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
+    private DictionaryValue parentDictionaryValue;
+    @ElementCollection(targetClass = DictionaryValueLocale.class, fetch = FetchType.EAGER)
+    @CollectionTable(name = "dictionary_value_locale", joinColumns = @JoinColumn(name = "dictionary_value_id"))
+    @MapKeyColumn(name = "locale")
+    @Fetch(FetchMode.SELECT)
+    private Map<String, DictionaryValueLocale> locales;
+    public static final String PARAM_SITE_CODE = "site_code";
+    @Column(name = "site_code")
+    private String siteCode;
 
     public String getCode() {
         return code;
     }
 
     public void setCode(String code) {
-        this.code = code;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
-    public String getLang() {
-        return lang;
-    }
-
-    public void setLang(String lang) {
-        this.lang = lang;
+        this.code = code.toUpperCase();
     }
 
     public Dictionary getDictionary() {
@@ -74,43 +52,69 @@ public class DictionaryValue extends BaseEntity {
         this.dictionary = dictionary;
     }
 
-    public DictionaryValue getDictionaryValue() {
-        return dictionaryValue;
+    public DictionaryValue getParentDictionaryValue() {
+        return parentDictionaryValue;
     }
 
-    public void setDictionaryValue(DictionaryValue dictionaryValue) {
-        this.dictionaryValue = dictionaryValue;
+    public void setParentDictionaryValue(DictionaryValue parentDictionaryValue) {
+        this.parentDictionaryValue = parentDictionaryValue;
     }
 
-    public List<DictionaryValue> getDictionaryValues() {
-        if (this.dictionaryValues == null) {
-            this.dictionaryValues = new ArrayList<DictionaryValue>();
+    public Map<String, DictionaryValueLocale> getLocales() {
+        return locales;
+    }
+
+    public void setLocales(Map<String, DictionaryValueLocale> locales) {
+        this.locales = locales;
+    }
+
+    public String getName() {
+        checkLocales();
+        if (locales.containsKey(getLocaleLanguage()))
+            return locales.get(getLocaleLanguage()).getName();
+        else
+            return "";
+    }
+
+    public void setName(String name) {
+        checkLocales();
+        if (!locales.containsKey(getLocaleLanguage())) {
+            locales.put(getLocaleLanguage(), new DictionaryValueLocale());
         }
-        return dictionaryValues;
+        locales.get(getLocaleLanguage()).setName(name);
     }
 
-    public void setDictionaryValues(List<DictionaryValue> dictionaryValues) {
-        this.dictionaryValues = dictionaryValues;
+    public String getDescription() {
+        checkLocales();
+        if (locales.containsKey(getLocaleLanguage()))
+            return locales.get(getLocaleLanguage()).getDescription();
+        else
+            return "";
+    }
+
+    public void setDescription(String description) {
+        checkLocales();
+        if (!locales.containsKey(getLocaleLanguage())) {
+            locales.put(getLocaleLanguage(), new DictionaryValueLocale());
+        }
+        locales.get(getLocaleLanguage()).setDescription(description);
+    }
+
+    public String getSiteCode() {
+        return siteCode;
+    }
+
+    public void setSiteCode(String siteCode) {
+        this.siteCode = siteCode;
+    }
+
+    private void checkLocales() {
+        if (locales == null) {
+            locales = new HashMap<>();
+        }
     }
 
     public DictionaryValue() {
-
     }
 
-    public DictionaryValue(String name, String code, String description, String lang, Dictionary dictionary, DictionaryValue dictionaryValue, List<DictionaryValue> dictionaryValues) {
-        super();
-        this.name = name;
-        this.code = code;
-        this.description = description;
-        this.lang = lang;
-        this.dictionary = dictionary;
-        this.dictionaryValue = dictionaryValue;
-        this.dictionaryValues = dictionaryValues;
-    }
-
-    @Override
-    public String toString() {
-        return String.format("DictionaryValue[id=%s, name='%s', code='%s', description='%s', lang='%s', dictionary=%s, dictionaryValue=%s, dictionaryValue.size=%s]", id, name, code, description,
-                lang, dictionary, dictionaryValue, getDictionaryValues().size());
-    }
 }

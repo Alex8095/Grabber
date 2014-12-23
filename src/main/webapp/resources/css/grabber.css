@@ -1,3 +1,12 @@
+.clear:before, .clear:after {
+    content: "";
+    display: table
+}
+
+.clear:after {
+    clear: both
+}
+
 .four {
     text-align: left !important;
 }
@@ -38,4 +47,65 @@
     vertical-align: middle;
     background-color: transparent;
     padding: 0.5em;
+    width: 30%;
+}
+
+.no-margin-bottom {
+    margin-bottom: 0 !important;
+}
+
+/*  searching */
+.searchable {
+}
+
+.searchable .style {
+    background-color: #EFEFEF;
+}
+
+.searchable .grid {
+    display: none;
+    width: 96%;
+    padding: 0 2%;
+    padding-bottom: 5px;
+}
+
+.searchable .button {
+    border-radius: 0 0 0.25em 0.25em;
+    display: inline-block;
+    float: right;
+    margin: 0 2% 0 0;
+    padding: 0.75em;
+    text-align: center;
+}
+
+.actions {
+    text-align: right;
+    width: 96%!important;
+    padding: 0 2%;
+    margin: 0 0 15px;
+}
+
+.actions .button{
+    width: 50px!important;
+}
+.actions .button:first-child {
+    border-top-left-radius:0!important;
+}
+
+.actions .button:last-child {
+    border-top-right-radius:0!important;
+}
+
+/*grid toolbar*/
+#grid .k-grid-toolbar {
+    padding: .6em 1.3em;
+}
+
+.category-label {
+    vertical-align: middle;
+    padding-right: .5em;
+}
+
+#category {
+    vertical-align: middle;
 }

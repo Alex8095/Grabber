@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head th:include="admin/fragments/layout :: head (title=#{grabber.history.detail.page.title})"></head>
+<body id="grabber">
+<div th:replace="admin/fragments/layout :: sidebar"></div>
+<div th:replace="admin/fragments/layout :: sidebar-launch"></div>
+<div th:replace="admin/fragments/layout :: header"></div>
+<div class="segment">
+    <div class="container">
+        <div class="introduction">
+            <h1 class="ui dividing header" th:text="#{grabber.history.detail.page.title}"></h1>
+        </div>
+        <div class="ui breadcrumb">
+            <a class="section" th:text="#{menu.home}" th:href="@{/admin/}">home</a>
+            <i class="right arrow icon divider"></i>
+            <a class="section" th:text="#{grabber.history.list.page.title}" th:href="@{/admin/grabber/history/}">users</a>
+            <i class="right arrow icon divider"></i>
+
+            <div class="active section" th:text="#{grabber.history.detail.page.title}"></div>
+        </div>
+    </div>
+</div>
+<div class="main container">
+    <div class="sticky-wrapper">
+        <div class="peek">
+            <div class="ui vertical pointing secondary menu">
+                <a class="item" th:text="#{grabber.history.item}">History</a>
+                <a class="active item" th:text="#{task.detail.page.title}">Task</a>
+            </div>
+        </div>
+    </div>
+    <h2 class="ui dividing header" th:text="#{grabber.history.item}">History</h2>
+
+    <table class="ui table basic">
+        <tbody>
+        <tr>
+            <td class="left-t-head" th:text="#{grabber.history.date.start}"></td>
+            <td th:text="${history.startDate}"></td>
+        </tr>
+        <tr>
+            <td class="left-t-head" th:text="#{grabber.history.date.end}"></td>
+            <td th:text="${history.endDate}"></td>
+        </tr>
+        <tr>
+            <td class="left-t-head" th:text="#{grabber.history.date.state}"></td>
+            <td th:text="${history.state.name}"></td>
+        </tr>
+        <tr>
+            <td class="left-t-head" th:text="#{grabber.history.count.found}"></td>
+            <td th:text="${history.countFound}"></td>
+        </tr>
+        <tr>
+            <td class="left-t-head" th:text="#{grabber.history.count.new}"></td>
+            <td th:text="${history.countNew}"></td>
+        </tr>
+        <tr>
+            <td class="left-t-head" th:text="#{grabber.history.count.update}"></td>
+            <td th:text="${history.countUpdate}"></td>
+        </tr>
+        <tr>
+            <td class="left-t-head" th:text="#{grabber.history.count.duplicated}"></td>
+            <td th:text="${history.countDuplicated}"></td>
+        </tr>
+        </tbody>
+    </table>
+
+    <h2 class="ui dividing header" th:text="#{task.detail.page.title}">Task</h2>
+
+    <table class="ui table basic">
+        <tbody>
+        <tr>
+            <td class="left-t-head" th:text="#{task.url}"></td>
+            <td th:text="${history.task.url}"></td>
+        </tr>
+        <tr>
+            <td class="left-t-head" th:text="#{task.ownerType}"></td>
+            <td th:text="${history.task.ownerType.name}"></td>
+        </tr>
+        <tr>
+            <td class="left-t-head" th:text="#{task.implementationType}"></td>
+            <td th:text="${history.task.implementationType.name}"></td>
+        </tr>
+        <tr>
+            <td class="left-t-head" th:text="#{task.isRent}"></td>
+            <td><i th:if="${history.task['isRent']}" class="checkmark icon"></i></td>
+        </tr>
+        <tr>
+            <td class="left-t-head" th:text="#{task.isSale}"></td>
+            <td><i th:if="${history.task['isSale']}" class="checkmark icon"></i></td>
+        </tr>
+        <tr>
+            <td class="left-t-head" th:text="#{task.isChange}"></td>
+            <td><i th:if="${history.task['isChange']}" class="checkmark icon"></i></td>
+        </tr>
+        </tbody>
+    </table>
+
+</div>
+</body>
+</html>

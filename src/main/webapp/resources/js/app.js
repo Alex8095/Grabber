@@ -1,5 +1,7 @@
 var frogorf = {
-    action: null
+    action: null,
+    grid: "#grid",
+    host: "http://" + window.location.host
 };
 
 function getFormParam(str_replace) {
@@ -75,4 +77,14 @@ function getGridHeight() {
 function log(message) {
     $("<div>").text(message).prependTo("#log");
     $("#log").scrollTop(0);
+}
+function resizeGrid() {
+    var gridElement = $(frogorf.grid);
+    var dataArea = gridElement.find(".k-grid-content");
+    var newGridHeight = $(document).height() - 150 - $(".searchable").height() - $(".actions").height();
+    var newDataAreaHeight = newGridHeight - 65;
+    dataArea.height(newDataAreaHeight);
+    gridElement.height(newGridHeight);
+    $(frogorf.grid).data("kendoGrid").refresh();
+
 }

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head th:include="admin/fragments/layout :: head (title=#{realty.detail.page.title})"></head>
+<body id="grabber">
+<div th:replace="admin/fragments/layout :: sidebar"></div>
+<div th:replace="admin/fragments/layout :: sidebar-launch"></div>
+<div th:replace="admin/fragments/layout :: header"></div>
+<div class="segment">
+    <div class="container">
+        <div class="introduction">
+            <h1 class="ui dividing header" th:text="#{realty.detail.page.title}"></h1>
+        </div>
+        <div class="ui breadcrumb">
+            <a class="section" th:text="#{menu.home}" th:href="@{/admin/}">home</a>
+            <i class="right arrow icon divider"></i>
+            <a class="section" th:text="#{realty.list.page.title}" th:href="@{/admin/user/}">users</a>
+            <i class="right arrow icon divider"></i>
+
+            <div class="active section" th:text="#{realty.detail.page.title}"></div>
+        </div>
+    </div>
+</div>
+<div class="main container">
+    <div class="sticky-wrapper">
+        <div class="peek">
+            <div class="ui vertical pointing secondary menu">
+                <a class="active item" th:text="#{realty.item}">realty</a>
+                <a class="item" th:text="#{location.item}">location</a>
+                <a class="item" th:text="#{realty.options}">option</a>
+                <a class="item" th:text="#{realty.images}">images</a>
+                <a class="item" th:text="#{realty.price.history}">price</a>
+                <a class="item" th:text="#{realty.history}">history</a>
+            </div>
+        </div>
+    </div>
+    <h2 class="ui dividing header" th:text="#{realty.item}">realty</h2>
+
+    <table class="ui table basic">
+        <tbody>
+        <tr>
+            <td class="left-t-head" th:text="#{realty.title}"></td>
+            <td th:text="${realty.title}"></td>
+        </tr>
+        <tr>
+            <td class="left-t-head" th:text="#{realty.price}"></td>
+            <td th:text="${realty.price}"></td>
+        </tr>
+        <tr>
+            <td class="left-t-head" th:text="#{realty.site.url}"></td>
+            <td th:text="${realty.siteUrl}"></td>
+        </tr>
+        <tr>
+            <td class="left-t-head" th:text="#{realty.site.code}"></td>
+            <td th:text="${realty.siteCode}"></td>
+        </tr>
+        <tr>
+            <td class="left-t-head" th:text="#{task.ownerType}"></td>
+            <td th:text="${realty.ownerType.name}"></td>
+        </tr>
+        <tr>
+            <td class="left-t-head" th:text="#{task.implementationType}"></td>
+            <td th:text="${realty.implementationType.name}"></td>
+        </tr>
+        <tr>
+            <td class="left-t-head" th:text="#{task.isRent}"></td>
+            <td><i th:if="${realty['isRent']}" class="checkmark icon"></i></td>
+        </tr>
+        <tr>
+            <td class="left-t-head" th:text="#{task.isSale}"></td>
+            <td><i th:if="${realty['isSale']}" class="checkmark icon"></i></td>
+        </tr>
+        <tr>
+            <td class="left-t-head" th:text="#{task.isChange}"></td>
+            <td><i th:if="${realty['isChange']}" class="checkmark icon"></i></td>
+        </tr>
+        </tbody>
+    </table>
+
+    <h2 class="ui dividing header" th:text="#{location.item}">location</h2>
+
+    <table class="ui table basic">
+        <tbody>
+        <tr>
+            <td class="left-t-head" th:text="#{location.country}"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="left-t-head" th:text="#{location.region}"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="left-t-head" th:text="#{location.district}"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="left-t-head" th:text="#{location.city}"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="left-t-head" th:text="#{location.area.city}"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="left-t-head" th:text="#{location.district.city}"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="left-t-head" th:text="#{location.street}"></td>
+            <td></td>
+        </tr>
+        </tbody>
+    </table>
+
+    <h2 class="ui dividing header" th:text="#{realty.options}">option</h2>
+    <h2 class="ui dividing header" th:text="#{realty.images}">images</h2>
+    <h2 class="ui dividing header" th:text="#{realty.price}">price</h2>
+    <h2 class="ui dividing header" th:text="#{realty.history}">history</h2>
+</div>
+</body>
+</html>

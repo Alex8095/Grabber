@@ -15,6 +15,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * @author Tsurkin Alex
@@ -33,6 +34,14 @@ public class DictionaryDaoImpl implements DictionaryDao {
     @Override
     public Dictionary findDictionaryById(int id) {
         return (Dictionary) sessionFactory.getCurrentSession().get(Dictionary.class, id);
+    }
+
+    @Override
+    public Dictionary findDictionaryByCode(String code) {
+        return (Dictionary) sessionFactory.getCurrentSession()
+                .createCriteria(Dictionary.class)
+                .add(Restrictions.eq("code", code.toUpperCase()))
+                .uniqueResult();
     }
 
     @Override
@@ -66,7 +75,31 @@ public class DictionaryDaoImpl implements DictionaryDao {
 
     @Override
     public List<DictionaryValue> findDictionaryValueAllByDictionaryId(int dictionaryId) {
-        return sessionFactory.getCurrentSession().createQuery("from DictionaryValue").list();
+        return sessionFactory.getCurrentSession()
+                .createCriteria(DictionaryValue.class)
+                .add(Restrictions.eq("dictionary.id", dictionaryId))
+                .list();
+    }
+
+    @Override
+    public List<DictionaryValue> findDictionaryValues(Map<String, String> params) {
+        Criteria criteria = sessionFactory.getCurrentSession().createCriteria(DictionaryValue.class);
+        if (params.containsKey("code")) {
+            criteria.createAlias("dictionary", "dictionary");
+            criteria.add(Restrictions.eq("dictionary.code", params.get("code").toUpperCase()));
+        }
+        if (params.containsKey("parent_id")) {
+            criteria.add(Restrictions.eq("parent_id", params.get("parent_id")));
+        }
+        return criteria.list();
+    }
+
+    @Override
+    public List<DictionaryValue> findDictionaryValuesByCode(String code) {
+        Criteria criteria = sessionFactory.getCurrentSession().createCriteria(DictionaryValue.class);
+        criteria.createAlias("dictionary", "dictionary");
+        criteria.add(Restrictions.eq("dictionary.code", code.toUpperCase()));
+        return criteria.list();
     }
 
     @Override
@@ -87,5 +120,27 @@ public class DictionaryDaoImpl implements DictionaryDao {
     @Override
     public DataSourceResult getDictionaryValueList(DataSourceRequest request) {
         return request.toDataSourceResult(sessionFactory.getCurrentSession(), DictionaryValue.class);
+    }
+
+    @Override
+    public DictionaryValue findDictionaryValue(Map<String, String> params) {
+        Criteria criteria = sessionFactory.getCurrentSession().createCriteria(DictionaryValue.class);
+        if (params.containsKey("code")) {
+            criteria.add(Restrictions.eq("code", params.get("code").toUpperCase()));
+        }
+        if (params.containsKey("parent_id")) {
+            criteria.add(Restrictions.eq("parent_id", params.get("parent_id")));
+        }
+        if (params.containsKey("dictionary_id")) {
+            criteria.add(Restrictions.eq("dictionary_id", params.get("dictionary_id")));
+        }
+        return (DictionaryValue) criteria.uniqueResult();
+    }
+
+    @Override
+    public void saveDictionaryValueList(List<DictionaryValue> list) {
+        for (DictionaryValue dictionaryValue : list) {
+            saveDictionaryValue(dictionaryValue);
+        }
     }
 }

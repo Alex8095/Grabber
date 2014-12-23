@@ -31,11 +31,12 @@ public class AdminRoleController {
         dataBinder.setDisallowedFields("id");
     }
 
-    @RequestMapping(value = "/role/grid", method = RequestMethod.GET)
+    @RequestMapping(value = "/role/grid", method = {RequestMethod.GET, RequestMethod.POST})
     public
     @ResponseBody
-    DataSourceResult grid() {
-        return roleService.getList(new DataSourceRequest());
+    DataSourceResult grid(DataSourceRequest request) {
+        logger.info("grid call");
+        return roleService.getList(request);
     }
 
     @RequestMapping(value = {"/role/list", "/role"}, method = RequestMethod.GET)

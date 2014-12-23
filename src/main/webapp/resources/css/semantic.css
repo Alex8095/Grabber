@@ -177,7 +177,7 @@ a:hover {
 /* segment headers */
 #grabber > .content > .page > .segment,
 #grabber > .segment {
-    margin: 0px 0px 3em;
+    margin: 0px 0px 2em;
     padding-top: 45px;
     padding-bottom: 15px;
     background-color: #FFFFFF;
@@ -437,7 +437,7 @@ body.guide .main.container > * {
 #grabber .introduction {
     display: table-cell;
     vertical-align: top;
-    width: 100%;
+    width: 80%;
 }
 
 #grabber .advertisement {

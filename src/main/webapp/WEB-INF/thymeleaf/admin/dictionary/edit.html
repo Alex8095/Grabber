@@ -71,5 +71,14 @@
         </div>
     </form>
 </div>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#name").syncTranslit({
+            destination: "code",
+            caseStyle: "upper",
+            urlSeparator: "_"
+        });
+    });
+</script>
 </body>
 </html>

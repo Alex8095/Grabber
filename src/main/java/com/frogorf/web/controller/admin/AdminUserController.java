@@ -33,12 +33,12 @@ public class AdminUserController {
         dataBinder.setDisallowedFields("id");
     }
 
-    @RequestMapping(value = "/user/grid", method = RequestMethod.GET)
+    @RequestMapping(value = "/user/grid", method = {RequestMethod.GET, RequestMethod.POST})
     public
     @ResponseBody
-    DataSourceResult grid() {
-        logger.info("user grid");
-        return userService.getList(new DataSourceRequest());
+    DataSourceResult grid(DataSourceRequest request) {
+        logger.info("grid call");
+        return userService.getList(request);
     }
 
     @RequestMapping(value = {"/user/list", "/user"}, method = RequestMethod.GET)

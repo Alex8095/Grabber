@@ -1,12 +1,10 @@
 package com.frogorf.dictionary.domain;
 
-import com.frogorf.domain.BaseEntity;
+import com.frogorf.core.domain.BaseEntity;
 import org.hibernate.validator.constraints.NotEmpty;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
-import java.util.ArrayList;
-import java.util.List;
 
 @Entity
 @Table(name = "dictionary")
@@ -19,21 +17,17 @@ public class Dictionary extends BaseEntity {
     private String name;
     @Column
     @NotNull
+    public static final String PARAM_CODE = "code";
     private String code;
     @Column
     private String description;
     @Column
     private String lang;
-    @OneToMany(mappedBy = "dictionary", fetch = FetchType.EAGER)
-    private List<DictionaryValue> dictionaryValues;
 
     /* parent */
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "parent_id")
     private Dictionary dictionary;
-    @ManyToMany
-    @JoinTable(name = "dictionary", joinColumns = @JoinColumn(name = "id"), inverseJoinColumns = @JoinColumn(name = "parent_id"))
-    private List<Dictionary> dictionarys;
 
     public String getName() {
         return name;
@@ -48,7 +42,7 @@ public class Dictionary extends BaseEntity {
     }
 
     public void setCode(String code) {
-        this.code = code;
+        this.code = code.toUpperCase();
     }
 
     public String getDescription() {
@@ -67,19 +61,6 @@ public class Dictionary extends BaseEntity {
         this.lang = lang;
     }
 
-    /**
-     * @return the dictionaryValues
-     */
-    public List<DictionaryValue> getDictionaryValues() {
-        if (this.dictionaryValues == null)
-            this.dictionaryValues = new ArrayList<DictionaryValue>();
-        return this.dictionaryValues;
-    }
-
-    public void setDictionaryValues(List<DictionaryValue> dictionaryValues) {
-        this.dictionaryValues = dictionaryValues;
-    }
-
     public Dictionary getDictionary() {
         return dictionary;
     }
@@ -88,29 +69,15 @@ public class Dictionary extends BaseEntity {
         this.dictionary = dictionary;
     }
 
-    public List<Dictionary> getDictionarys() {
-        return dictionarys;
-    }
-
-    public void setDictionarys(List<Dictionary> dictionarys) {
-        this.dictionarys = dictionarys;
-    }
-
     public Dictionary() {
 
     }
 
-    public Dictionary(String name, String code, String description, String lang, List<DictionaryValue> dictionaryValues) {
+    public Dictionary(String name, String code, String description, String lang) {
         super();
         this.name = name;
         this.code = code;
         this.description = description;
         this.lang = lang;
-        this.dictionaryValues = dictionaryValues;
-    }
-
-    @Override
-    public String toString() {
-        return String.format("Dictionary[id=%s, name='%s', code='%s', description='%s', lang='%s', dictionaryValues.size=%s]", id, name, code, description, lang, getDictionaryValues().size());
     }
 }

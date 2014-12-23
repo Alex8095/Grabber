@@ -3,7 +3,7 @@
  */
 package com.frogorf.security.domain;
 
-import com.frogorf.domain.BaseEntity;
+import com.frogorf.core.domain.BaseEntity;
 import org.hibernate.validator.constraints.NotEmpty;
 
 import javax.persistence.Column;

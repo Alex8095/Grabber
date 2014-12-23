@@ -73,6 +73,8 @@ dependencies {
     compile "org.javassist:javassist:3.18.1-GA"
     compile "org.apache.tomcat:tomcat-dbcp:8.0.8"
 
+    compile 'org.jsoup:jsoup:1.7.2'
+
     compile "mysql:mysql-connector-java:5.1.32"
     runtime "mysql:mysql-connector-java:5.1.32"
 

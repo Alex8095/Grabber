@@ -4,7 +4,6 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.support.ResourceBundleMessageSource;
-import org.springframework.http.MediaType;
 import org.springframework.util.StringUtils;
 import org.springframework.web.servlet.LocaleResolver;
 import org.springframework.web.servlet.config.annotation.*;
@@ -65,13 +64,4 @@ public class WebConfig extends WebMvcConfigurerAdapter {
     public void configureDefaultServletHandling(DefaultServletHandlerConfigurer configurer) {
         configurer.enable();
     }
-
-//        @Bean
-//    public UrlBasedViewResolver setupViewResolver() {
-//        UrlBasedViewResolver resolver = new UrlBasedViewResolver();
-//        resolver.setPrefix("/WEB-INF/pages/");
-//        resolver.setSuffix(".jsp");
-//        resolver.setViewClass(JstlView.class);
-//        return resolver;
-//    }
 }

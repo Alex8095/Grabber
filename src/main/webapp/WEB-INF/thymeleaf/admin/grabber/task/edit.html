@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head th:include="admin/fragments/layout :: head (title=${task['new']} ? #{grabber.task.new.page.title} : #{grabber.task.edit.page.title})"></head>
+<body id="grabber">
+<div th:replace="admin/fragments/layout :: sidebar"></div>
+<div th:replace="admin/fragments/layout :: sidebar-launch"></div>
+<div th:replace="admin/fragments/layout :: header"></div>
+<div class="segment">
+    <div class="container">
+        <div class="introduction">
+            <h1 class="ui dividing header" th:text="${task['new']} ? #{grabber.task.new.page.title} : #{grabber.task.edit.page.title}"></h1>
+
+            <div class="ui breadcrumb">
+                <a class="section" th:text="#{menu.home}" th:href="@{/admin/}">home</a>
+                <i class="right arrow icon divider"></i>
+                <a class="section" th:text="#{grabber.task.list.page.title}" th:href="@{/admin/grabber/task/}">tasks</a>
+                <i class="right arrow icon divider"></i>
+
+                <div class="active section" th:if="${task['new']}" th:text="#{grabber.task.new.page.title}"></div>
+                <div class="active section" th:unless="${task['new']}" th:text="#{grabber.task.edit.page.title}"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="main container">
+    <form th:object="${task}" method="post" action="./task.html" th:action="@{${#httpServletRequest.servletPath}}">
+        <div class="sticky-wrapper">
+            <div class="peek">
+                <button class="ui blue button" type="submit" th:text="#{button.action.save}">save</button>
+            </div>
+        </div>
+        <div class="ui form segment">
+            <div class="field" th:classappend="${#fields.hasErrors('url')} ? error">
+                <label th:text="#{task.url}">url</label>
+                <div class="ui left labeled input">
+                    <input type="text" th:field="*{url}"/>
+                    <div class="ui red pointing prompt label transition visible" th:classappend="${#fields.hasErrors('url')} ? visible" th:errors="*{url}">[error]</div>
+                    <div class="ui corner label">
+                        <i class="icon asterisk"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="two fields">
+                <div class="field" th:classappend="${#fields.hasErrors('ownerType.id')} ? error">
+                    <label th:text="#{task.ownerType}">name</label>
+
+                    <div class="ui selection dropdown">
+                        <input type="hidden" th:field="*{ownerType.id}"/>
+
+                        <div class="default text" th:text="form.no.selected">no selected</div>
+                        <i class="dropdown icon"></i>
+
+                        <div class="ui corner label">
+                            <i class="icon asterisk"></i>
+                        </div>
+                        <div class="menu ui transition hidden">
+                            <div class="item" th:each="dictionary : ${owners}" th:attr="data-value=${dictionary.id}" th:text="${dictionary.name}">Name
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui red pointing prompt label transition" th:classappend="${#fields.hasErrors('ownerType.id')} ? visible" th:errors="*{ownerType.id}">
+                        [error]
+                    </div>
+                </div>
+                <div class="field" th:classappend="${#fields.hasErrors('implementationType.id')} ? error">
+                    <label th:text="#{task.implementationType}">name</label>
+
+                    <div class="ui selection dropdown">
+                        <input type="hidden" th:field="*{implementationType.id}"/>
+
+                        <div class="default text" th:text="form.no.selected">no selected</div>
+                        <i class="dropdown icon"></i>
+
+                        <div class="ui corner label">
+                            <i class="icon asterisk"></i>
+                        </div>
+                        <div class="menu ui transition hidden">
+                            <div class="item" th:each="dictionary : ${implementations}" th:attr="data-value=${dictionary.id}" th:text="${dictionary.name}">Name
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui red pointing prompt label transition" th:classappend="${#fields.hasErrors('implementationType.id')} ? visible" th:errors="*{implementationType.id}">
+                        [error]
+                    </div>
+                </div>
+            </div>
+            <div class="ui three fields">
+                <div class="field ui checkbox">
+                    <input type="checkbox" th:field="*{isSale}"/>
+                    <label for="isSale" th:text="#{task.isSale}">isSale</label>
+                </div>
+                <div class="field ui checkbox">
+                    <input type="checkbox" th:field="*{isRent}"/>
+                    <label for="isRent" th:text="#{task.isRent}">isRent</label>
+                </div>
+                <div class="field ui checkbox">
+                    <input type="checkbox" th:field="*{isChange}"/>
+                    <label for="isChange" th:text="#{task.isChange}">isChange</label>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+</body>
+</html>

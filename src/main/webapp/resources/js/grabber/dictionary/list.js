@@ -1,22 +1,50 @@
-$(document).ready(function () {
-    var grid = $("#grid").kendoGrid({
-        dataSource: {
-            type: "odata",
-            transport: {
-                read: "http://localhost:8080/grabber/admin/dictionary/grid"
+jQuery(function () {
+    jQuery("#grid").kendoGrid({
+        "dataSource": {
+            "schema": {
+                "total": "total",
+                "data": "data"
             },
-            pageSize: 20,
-            serverPaging: true,
-            serverSorting: true,
-            serverFiltering: true
+            "transport": {
+                "parameterMap": function parameterMap(options) {
+                    return JSON.stringify(options);
+                },
+                "read": {
+                    "contentType": "application/json",
+                    "type": "POST",
+                    "url": frogorf.host + "/Grabber/admin/dictionary/grid"
+                }
+            },
+            "pageSize": 20.0
         },
-        height: 550,
+        change: rowSelect,
+        selectable: true,
+        height: $(document).height() - 200,
         sortable: true,
-        pageable: true,
-        columns: [
-            { field: "id", title: "ID", width: 100 },
+        "pageable": true,
+        "columns": [
+            {"field": "id", "title": "ID", "width": "100px"},
             { field: "name", title: "Name" },
             { field: "code", title: "Code" }
-        ]
+        ]});
+
+    $(window).resize(function () {
+        resizeGrid();
     });
 });
+function rowSelect(e) {
+    var selectedrow = $("#grid").find("tbody tr.k-state-selected");
+    var list = $('#grid').data("kendoGrid").dataItem(selectedrow);
+    var listjson = list.toJSON();
+    var ID = listjson.id;
+    window.location = document.URL + ID;
+}
+function categoriesChange() {
+    var value = this.value(),
+        grid = $("#grid").data("kendoGrid");
+    if (value) {
+        grid.dataSource.filter({ field: "categoryId", operator: "eq", value: parseInt(value) });
+    } else {
+        grid.dataSource.filter({});
+    }
+}

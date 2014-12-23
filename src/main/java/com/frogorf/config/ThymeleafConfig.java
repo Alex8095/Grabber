@@ -29,23 +29,18 @@ public class ThymeleafConfig {
     public SpringTemplateEngine templateEngine() {
         SpringTemplateEngine engine = new SpringTemplateEngine();
         engine.setTemplateResolver(templateResolver());
-        //config dialect
         Set<IDialect> dialects = new HashSet<IDialect>();
         dialects.add(new SpringSecurityDialect());
         engine.setAdditionalDialects(dialects);
         return engine;
     }
 
-//    @Bean
-//    public SpringSecurityDialect springSecurityDialect() {
-//        return new SpringSecurityDialect();
-//    }
-
     @Bean
     public ThymeleafViewResolver thymeleafViewResolver() {
         ThymeleafViewResolver resolver = new ThymeleafViewResolver();
         resolver.setTemplateEngine(templateEngine());
         resolver.setCache(false);
+        resolver.setCharacterEncoding("UTF-8");
         return resolver;
     }
 }

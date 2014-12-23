@@ -7,25 +7,36 @@
 <div th:replace="admin/fragments/layout :: sidebar"></div>
 <div th:replace="admin/fragments/layout :: sidebar-launch"></div>
 <div th:replace="admin/fragments/layout :: header"></div>
-<div class="segment">
+<div class="segment no-margin-bottom">
     <div class="container">
         <div class="introduction">
             <h1 class="ui dividing header" th:text="#{dictionary.value.list.page.title}">dictionary value title</h1>
-        </div>
-        <div class="advertisement">
-            <a class="ui teal labeled icon button"  href="/admin/dictionary/value/new" th:href="@{/admin/dictionary/value/new}">
-                <span th:text="#{dictionary.value.new.page.title}">New</span>
-                <i class="add icon"></i>
-            </a>
         </div>
         <div class="ui breadcrumb">
             <a class="section" th:text="#{menu.home}" th:href="@{/admin/}">home</a>
             <i class="right arrow icon divider"></i>
             <a class="section" th:text="#{menu.settings.dictionaries}" th:href="@{/admin/dictionary/}">dictionary list</a>
             <i class="right arrow icon divider"></i>
+
             <div class="active section" th:text="#{dictionary.value.list.page.title}">dictionary value list</div>
         </div>
     </div>
+</div>
+<div class="searchable">
+    <div class="style">
+        <div class="ui eight column grid">
+            <div class="column">
+                <label class="category-label" for="dictionary"><span th:text="#{dictionary.detail.page.title}"></span>:</label>
+                <input type="search" id="dictionary" style="width: 150px"/>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="actions 12 fluid ui right icon buttons">
+    <a class="ui teal medium button" href="/admin/dictionary/value/new" th:href="@{/admin/dictionary/value/new}">
+        <i class="add icon"></i>
+    </a>
+    <div class="ui black medium searching button"><i class="search icon"></i></div>
 </div>
 <div class="main main-grid">
     <div id="grid"></div>

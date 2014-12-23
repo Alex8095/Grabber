@@ -9,6 +9,7 @@ import com.frogorf.kendo.data.source.DataSourceRequest;
 import com.frogorf.kendo.data.source.DataSourceResult;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * @author Tsurkin Alex
@@ -19,6 +20,8 @@ public interface DictionaryDao {
     public List<Dictionary> findDictionaryAll();
 
     public Dictionary findDictionaryById(int id);
+
+    public Dictionary findDictionaryByCode(String code);
 
     public void saveDictionary(Dictionary dictionary);
 
@@ -33,6 +36,10 @@ public interface DictionaryDao {
 
     public List<DictionaryValue> findDictionaryValueAllByDictionaryId(int dictionaryId);
 
+    public List<DictionaryValue> findDictionaryValues(Map<String, String> params);
+
+    public List<DictionaryValue> findDictionaryValuesByCode(String code);
+
     public DictionaryValue findDictionaryValueById(int id);
 
     public void saveDictionaryValue(DictionaryValue dictionaryValue);
@@ -41,4 +48,7 @@ public interface DictionaryDao {
 
     DataSourceResult getDictionaryValueList(DataSourceRequest request);
 
+    DictionaryValue findDictionaryValue(Map<String, String> params);
+
+    void saveDictionaryValueList(List<DictionaryValue> list);
 }

@@ -14,6 +14,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * @author Tsurkin Alex
@@ -34,6 +35,11 @@ public class DictionaryServiceImpl implements DictionaryService {
     @Transactional
     public Dictionary findDictionaryById(int id) {
         return dictionaryDao.findDictionaryById(id);
+    }
+
+    @Override
+    public Dictionary findDictionaryByCode(String code) {
+        return dictionaryDao.findDictionaryByCode(code);
     }
 
     @Override
@@ -58,6 +64,18 @@ public class DictionaryServiceImpl implements DictionaryService {
     @Transactional
     public List<DictionaryValue> findDictionaryValueAll() {
         return dictionaryDao.findDictionaryValueAll();
+    }
+
+    @Override
+    @Transactional
+    public List<DictionaryValue> findDictionaryValues(Map<String, String> params) {
+        return dictionaryDao.findDictionaryValues(params);
+    }
+
+    @Override
+    @Transactional
+    public List<DictionaryValue> findDictionaryValuesByCode(String code) {
+        return dictionaryDao.findDictionaryValuesByCode(code);
     }
 
     @Override
@@ -99,6 +117,16 @@ public class DictionaryServiceImpl implements DictionaryService {
     @Transactional
     public DataSourceResult getDictionaryValueList(DataSourceRequest request) {
         return dictionaryDao.getDictionaryValueList(request);
+    }
+
+    @Override
+    public DictionaryValue findDictionaryValue(Map<String, String> params) {
+        return dictionaryDao.findDictionaryValue(params);
+    }
+
+    @Override
+    public void saveDictionaryValueList(List<DictionaryValue> list) {
+        dictionaryDao.saveDictionaryValueList(list);
     }
 
 }

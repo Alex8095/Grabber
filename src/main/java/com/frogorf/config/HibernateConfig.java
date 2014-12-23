@@ -23,7 +23,13 @@ import java.util.Properties;
 @Configuration
 @EnableTransactionManagement
 @PropertySource({"classpath:persistence-mysql.properties"})
-@ComponentScan({"com.frogorf.security", "com.frogorf.dictionary", "com.frogorf.kendo.data.source"})
+@ComponentScan({
+        "com.frogorf.core",
+        "com.frogorf.security",
+        "com.frogorf.dictionary",
+        "com.frogorf.grabber",
+        "com.frogorf.realty",
+        "com.frogorf.kendo.data.source"})
 public class HibernateConfig {
 
     @Autowired
@@ -37,7 +43,14 @@ public class HibernateConfig {
     public LocalSessionFactoryBean sessionFactory() {
         LocalSessionFactoryBean sessionFactory = new LocalSessionFactoryBean();
         sessionFactory.setDataSource(restDataSource());
-        sessionFactory.setPackagesToScan(new String[]{"com.frogorf.person.domain", "com.frogorf.kendo.data.source", "com.frogorf.security.domain", "com.frogorf.dictionary.domain"});
+        sessionFactory.setPackagesToScan(new String[]{
+                "com.frogorf.core.domain",
+                "com.frogorf.core.location.domain",
+                "com.frogorf.grabber.domain",
+                "com.frogorf.realty.domain",
+                "com.frogorf.kendo.data.source",
+                "com.frogorf.security.domain",
+                "com.frogorf.dictionary.domain"});
         sessionFactory.setHibernateProperties(hibernateProperties());
         return sessionFactory;
     }
@@ -71,6 +84,7 @@ public class HibernateConfig {
         hibernateProperties.setProperty("hibernate.dialect", env.getProperty("hibernate.dialect"));
         hibernateProperties.setProperty("hibernate.show_sql", "true");
         hibernateProperties.setProperty("hibernate.format_sql", "true");
+        hibernateProperties.setProperty("hibernate.connection.charSet", "UTF8");
         hibernateProperties.setProperty("hibernate.hbm2ddl.import_files", env.getProperty("hibernate.import_files"));
         // hibernateProperties.setProperty("hibernate.globally_quoted_identifiers", "true");
         return hibernateProperties;

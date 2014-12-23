@@ -1,21 +1,45 @@
-$(document).ready(function () {
-    var grid = $("#grid").kendoGrid({
+jQuery(function () {
+    jQuery("#grid").kendoGrid({
         dataSource: {
-            type: "odata",
-            transport: {
-                read: "http://localhost:8080/grabber/admin/role/grid"
+            schema: {
+                total: "total",
+                data: "data"
             },
-            pageSize: 20,
-            serverPaging: true,
-            serverSorting: true,
-            serverFiltering: true
+            transport: {
+                parameterMap: function parameterMap(options) {
+                    return JSON.stringify(options);
+                },
+                read: {
+                    contentType: "application/json",
+                    type: "POST",
+                    url: frogorf.host + "/Grabber/admin/role/grid"
+                }
+            },
+            pageSize: 20.0
         },
-        height: 550,
+        change: rowSelect,
+        selectable: true,
+        height: "430px",
         sortable: true,
         pageable: true,
         columns: [
-            { field: "id", title: "ID", width: 100 },
+            {"field": "id", "title": "ID", "width": "100px"},
             { field: "role", title: "Role" }
-        ]
-    });
+        ]});
 });
+function rowSelect(e) {
+    var selectedrow = $("#grid").find("tbody tr.k-state-selected");
+    var list = $('#grid').data("kendoGrid").dataItem(selectedrow);
+    var listjson = list.toJSON();
+    var ID = listjson.id;
+    window.location = document.URL + ID;
+}
+function categoriesChange() {
+    var value = this.value(),
+        grid = $("#grid").data("kendoGrid");
+    if (value) {
+        grid.dataSource.filter({ field: "categoryId", operator: "eq", value: parseInt(value) });
+    } else {
+        grid.dataSource.filter({});
+    }
+}
