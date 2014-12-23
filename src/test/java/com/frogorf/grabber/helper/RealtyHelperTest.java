@@ -15,9 +15,9 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.test.context.transaction.TransactionConfiguration;
 
 import javax.transaction.Transactional;
+import java.util.Date;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNull;
+import static org.junit.Assert.*;
 
 /**
  * Created by Alex on 23.12.14.
@@ -29,6 +29,7 @@ import static org.junit.Assert.assertNull;
 public class RealtyHelperTest {
 
     private static final Logger logger = LoggerFactory.getLogger(RealtyHelperTest.class);
+    private static final Date DATE = new Date("2014/12/17");
 
     @Autowired
     private RealtyHelper realtyHelper;
@@ -36,6 +37,10 @@ public class RealtyHelperTest {
     private RealtyService realtyService;
 
     private Realty realty;
+
+    private static final String TITLE_OWNER_TRUE = "Продаётся 3-х комн. Лесной, Волкова. Без комиссии. СОБСТВЕННИК";
+    private static final String TITLE_OWNER_FALSE = "Продаётся 3-х комн. Лесной, Волкова. Без коиссии. СБСТВЕННИК";
+    private static final String DATE_PUBLISHING = "Добавлено: в 13:42, 17 декабря 2014, ";
 
     @Before
     public void setUp() throws Exception {
@@ -78,4 +83,21 @@ public class RealtyHelperTest {
         realtyService.saveRealty(realty);
         assertEquals(realty, realtyHelper.getRealty());
     }
+
+    @Test
+    public void testGetParseOwner() throws Exception {
+    }
+
+    @Test
+    public void testParseOwner() throws Exception {
+        assertTrue(realtyHelper.parseOwner(TITLE_OWNER_TRUE));
+        assertFalse(realtyHelper.parseOwner(TITLE_OWNER_FALSE));
+    }
+
+    @Test
+    public void testGetParseDatePublishing() throws Exception {
+        assertEquals(DATE, realtyHelper.getParseDatePublishing(DATE_PUBLISHING));
+    }
+
+
 }

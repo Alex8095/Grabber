@@ -4,7 +4,7 @@ import com.frogorf.dictionary.domain.Dictionary;
 import com.frogorf.dictionary.domain.DictionaryValue;
 import com.frogorf.dictionary.service.DictionaryService;
 import com.frogorf.grabber.helper.RealtyOptionHelper;
-import com.frogorf.grabber.helper.selector.RealtyOptionSelector;
+import com.frogorf.grabber.helper.selector.OptionSelector;
 import com.frogorf.grabber.parser.ItemParser;
 import com.frogorf.realty.domain.Realty;
 import com.frogorf.realty.domain.RealtyOption;
@@ -184,7 +184,7 @@ public class RealtyOptionHelperImpl implements RealtyOptionHelper {
         Dictionary dictionary = new Dictionary();
         dictionary.setName(optionSourceName);
         dictionary.setCode(Translit.toTranslit(optionSourceName));
-        dictionary.setDictionary(dictionaryService.findDictionaryById(RealtyOptionSelector.PARENT_DICTIONARY_ID));
+        dictionary.setDictionary(dictionaryService.findDictionaryById(OptionSelector.PARENT_DICTIONARY_ID));
         dictionaryService.saveDictionary(dictionary);
         return dictionary;
     }

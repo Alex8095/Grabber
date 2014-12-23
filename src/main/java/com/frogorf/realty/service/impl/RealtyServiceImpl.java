@@ -26,6 +26,12 @@ public class RealtyServiceImpl implements RealtyService {
 
     @Override
     @Transactional
+    public Realty findRealtyOr(Map<String, String> params) {
+        return realtyDao.findRealtyOr(params);
+    }
+
+    @Override
+    @Transactional
     public Realty findRealtyById(int id) {
         return realtyDao.findRealtyById(id);
     }
@@ -109,7 +115,14 @@ public class RealtyServiceImpl implements RealtyService {
     }
 
     @Override
+    @Transactional
     public void saveRealtyHistoryPrices(List<RealtyHistoryPrice> realtyHistoryPrices) {
         realtyDao.saveRealtyHistoryPrices(realtyHistoryPrices);
+    }
+
+    @Override
+    @Transactional
+    public void saveRealtyImages(List<RealtyImage> realtyImages) {
+        realtyDao.saveRealtyImages(realtyImages);
     }
 }

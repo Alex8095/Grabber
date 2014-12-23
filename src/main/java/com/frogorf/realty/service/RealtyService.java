@@ -9,6 +9,8 @@ import java.util.Map;
 
 public interface RealtyService {
 
+    Realty findRealtyOr(Map<String, String> params);
+
     public Realty findRealtyById(int id);
 
     public void saveRealty(Realty realty);
@@ -16,6 +18,7 @@ public interface RealtyService {
     public void deleteRealty(int id);
 
     DataSourceResult getListRealty(DataSourceRequest request);
+
 
     /*RealtyOption*/
     public RealtyOption findRealtyOption(Map<String, String> params);
@@ -39,5 +42,10 @@ public interface RealtyService {
 
     void saveRealtyOptionList(List<RealtyOptionValue> realtyOptionValues);
 
+    /*Price*/
     void saveRealtyHistoryPrices(List<RealtyHistoryPrice> realtyHistoryPrices);
+
+    /*Price*/
+    void saveRealtyImages(List<RealtyImage> realtyImages);
+
 }

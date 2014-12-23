@@ -15,6 +15,8 @@ import java.util.Map;
  */
 public interface RealtyDao {
 
+    Realty findRealtyOr(Map<String, String> params);
+
     public Realty findRealtyById(int id);
 
     public void saveRealty(Realty realty);
@@ -46,4 +48,7 @@ public interface RealtyDao {
     void saveRealtyOptionList(List<RealtyOptionValue> realtyOptionValues);
 
     void saveRealtyHistoryPrices(List<RealtyHistoryPrice> realtyHistoryPrices);
+
+    void saveRealtyImages(List<RealtyImage> realtyImages);
+
 }

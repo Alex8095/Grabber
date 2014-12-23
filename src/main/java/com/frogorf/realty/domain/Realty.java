@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.frogorf.core.domain.BaseEntity;
 import com.frogorf.core.location.domain.Location;
 import com.frogorf.dictionary.domain.DictionaryValue;
+import com.frogorf.utils.Translit;
 import org.hibernate.annotations.Fetch;
 import org.hibernate.annotations.FetchMode;
 import org.springframework.security.core.userdetails.User;
@@ -19,6 +20,9 @@ import java.util.Map;
 public class Realty extends BaseEntity {
 
     private static final long serialVersionUID = 1L;
+
+
+    public final static String TITLE_PARAM = "location.ru.title";
 
     @Embedded
     private Location location;
@@ -36,17 +40,22 @@ public class Realty extends BaseEntity {
     private Boolean isChange;
     @Column(name = "price")
     private Long price;
+    @Column(name = "date_publishing")
+    private Date datePublishing;
     @Column(name = "date_create")
     private Date dateCreate;
     @Column(name = "date_last_update")
     private Date dateLastUpdate;
     @Column(name = "site_code")
     private String siteCode;
+    public final static String SITE_CODE_PARAM = "siteCode";
     @Column(name = "site_url")
     private String siteUrl;
+    public final static String SITE_URL_PARAM = "siteUrl";
 
     @Column(name = "main_site_code")
     private String mainSiteCode;
+    public final static String MAIN_SITE_CODE_PARAM = "mainSiteCode";
     @Column(name = "date_up_to_main_site")
     private Date dateUpToMainSite;
     @Column(name = "date_last_update_to_main_site")
@@ -159,7 +168,7 @@ public class Realty extends BaseEntity {
     }
 
     public void setSiteCode(String siteCode) {
-        this.siteCode = siteCode;
+        this.siteCode = Translit.toTranslit(siteCode).toLowerCase();
     }
 
     public String getSiteUrl() {
@@ -175,7 +184,7 @@ public class Realty extends BaseEntity {
     }
 
     public void setMainSiteCode(String mainSiteCode) {
-        this.mainSiteCode = mainSiteCode;
+        this.mainSiteCode = Translit.toTranslit(mainSiteCode).toLowerCase();
     }
 
     public Date getDateUpToMainSite() {
@@ -290,6 +299,14 @@ public class Realty extends BaseEntity {
 
     public void setRealtyOptionValues(List<RealtyOptionValue> realtyOptionValues) {
         this.realtyOptionValues = realtyOptionValues;
+    }
+
+    public Date getDatePublishing() {
+        return datePublishing;
+    }
+
+    public void setDatePublishing(Date datePublishing) {
+        this.datePublishing = datePublishing;
     }
 
     public Realty() {

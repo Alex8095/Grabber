@@ -60,6 +60,13 @@ public class OlxRealtyItemParser implements ItemParser {
         this.link = link;
         getDocument(link);
         realty = new Realty();
+
+        realtyHelper.init(realty);
+        realtyImageHelper.init(null, realty);
+        realtyLocationHelper.init(null, realty);
+        realtyOptionHelper.init(null, realty);
+        realtyPriceHelper.init(null, realty);
+
         realty.setPrice(getRealtyPrice());
         realty.setTitle(getRealtyTitle());
         realty.setDescription(getRealtyDescription());

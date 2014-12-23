@@ -3,7 +3,7 @@ package com.frogorf.grabber.helper;
 import com.frogorf.config.HibernateConfigTest;
 import com.frogorf.dictionary.domain.Dictionary;
 import com.frogorf.dictionary.service.DictionaryService;
-import com.frogorf.grabber.helper.selector.RealtyOptionSelector;
+import com.frogorf.grabber.helper.selector.OptionSelector;
 import com.frogorf.grabber.parser.ItemParser;
 import com.frogorf.realty.domain.Realty;
 import com.frogorf.realty.domain.RealtyOption;
@@ -72,7 +72,7 @@ public class RealtyOptionHelperTest {
         dictionary.setCode("DICTIONARY_OPTION");
         dictionary.setName("Dictionary option");
         dictionaryService.saveDictionary(dictionary);
-        RealtyOptionSelector.setPARENT_DICTIONARY_ID(dictionary.getId());
+        OptionSelector.setPARENT_DICTIONARY_ID(dictionary.getId());
     }
 
     @Test

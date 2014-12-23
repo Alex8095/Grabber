@@ -6,6 +6,7 @@ import com.frogorf.realty.dao.RealtyDao;
 import com.frogorf.realty.domain.*;
 import org.hibernate.Criteria;
 import org.hibernate.SessionFactory;
+import org.hibernate.criterion.Disjunction;
 import org.hibernate.criterion.Restrictions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
@@ -18,6 +19,26 @@ public class RealtyDaoImpl implements RealtyDao {
 
     @Autowired
     private SessionFactory sessionFactory;
+
+    @Override
+    public Realty findRealtyOr(Map<String, String> params) {
+        Criteria criteria = sessionFactory.getCurrentSession().createCriteria(Realty.class);
+        Disjunction disjunction = Restrictions.disjunction();
+        if (params.containsKey(Realty.TITLE_PARAM)) {
+            disjunction.add(Restrictions.eq(Realty.TITLE_PARAM, params.get(Realty.TITLE_PARAM)));
+        }
+        if (params.containsKey(Realty.SITE_CODE_PARAM)) {
+            disjunction.add(Restrictions.eq(Realty.SITE_CODE_PARAM, params.get(Realty.SITE_CODE_PARAM)));
+        }
+        if (params.containsKey(Realty.MAIN_SITE_CODE_PARAM)) {
+            disjunction.add(Restrictions.eq(Realty.MAIN_SITE_CODE_PARAM, params.get(Realty.MAIN_SITE_CODE_PARAM)));
+        }
+        if (params.containsKey(Realty.SITE_URL_PARAM)) {
+            disjunction.add(Restrictions.eq(Realty.SITE_URL_PARAM, params.get(Realty.SITE_URL_PARAM)));
+        }
+        criteria.add(disjunction);
+        return (Realty) criteria.uniqueResult();
+    }
 
     @Override
     public Realty findRealtyById(int id) {
@@ -48,7 +69,7 @@ public class RealtyDaoImpl implements RealtyDao {
     public RealtyOption findRealtyOption(Map<String, String> params) {
         Criteria criteria = sessionFactory.getCurrentSession().createCriteria(RealtyOption.class);
         if (params.containsKey(RealtyOption.PARAM_CODE)) {
-            criteria.add(Restrictions.eq(RealtyOption.PARAM_CODE, params.get("code").toUpperCase()));
+            criteria.add(Restrictions.eq(RealtyOption.PARAM_CODE, params.get(RealtyOption.PARAM_CODE).toUpperCase()));
         }
         return (RealtyOption) criteria.uniqueResult();
     }
@@ -99,6 +120,13 @@ public class RealtyDaoImpl implements RealtyDao {
     public void saveRealtyHistoryPrices(List<RealtyHistoryPrice> realtyHistoryPrices) {
         for (RealtyHistoryPrice realtyHistoryPrice : realtyHistoryPrices) {
             sessionFactory.getCurrentSession().saveOrUpdate(realtyHistoryPrice);
+        }
+    }
+
+    @Override
+    public void saveRealtyImages(List<RealtyImage> realtyImages) {
+        for (RealtyImage realtyImage : realtyImages) {
+            sessionFactory.getCurrentSession().saveOrUpdate(realtyImage);
         }
     }
 }
