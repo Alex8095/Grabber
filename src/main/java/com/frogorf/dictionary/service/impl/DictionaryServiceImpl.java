@@ -102,11 +102,6 @@ public class DictionaryServiceImpl implements DictionaryService {
         dictionaryDao.saveDictionaryValue(dictionaryValue);
     }
 
-    /* (non-Javadoc)
-     *
-     * @see
-     * com.frogorf.dictioanry.service.DictionaryService#deleteDictionaryValue
-     * (int) */
     @Override
     @Transactional(readOnly = true)
     public void deleteDictionaryValue(int id) {

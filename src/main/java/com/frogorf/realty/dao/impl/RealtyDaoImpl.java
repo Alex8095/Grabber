@@ -21,12 +21,21 @@ public class RealtyDaoImpl implements RealtyDao {
     private SessionFactory sessionFactory;
 
     @Override
+    public Realty findRealty(Map<String, String> params) {
+        Criteria criteria = sessionFactory.getCurrentSession().createCriteria(Realty.class);
+        if (params.containsKey(Realty.MAIN_SITE_CODE_PARAM)) {
+            criteria.add(Restrictions.eq(Realty.MAIN_SITE_CODE_PARAM, params.get(Realty.MAIN_SITE_CODE_PARAM).toUpperCase()));
+        }
+        return (Realty) criteria.uniqueResult();
+    }
+
+    @Override
     public Realty findRealtyOr(Map<String, String> params) {
         Criteria criteria = sessionFactory.getCurrentSession().createCriteria(Realty.class);
         Disjunction disjunction = Restrictions.disjunction();
-        if (params.containsKey(Realty.TITLE_PARAM)) {
-            disjunction.add(Restrictions.eq(Realty.TITLE_PARAM, params.get(Realty.TITLE_PARAM)));
-        }
+//        if (params.containsKey(Realty.TITLE_PARAM)) {
+//            disjunction.add(Restrictions.eq(Realty.TITLE_PARAM, params.get(Realty.TITLE_PARAM)));
+//        }
         if (params.containsKey(Realty.SITE_CODE_PARAM)) {
             disjunction.add(Restrictions.eq(Realty.SITE_CODE_PARAM, params.get(Realty.SITE_CODE_PARAM)));
         }

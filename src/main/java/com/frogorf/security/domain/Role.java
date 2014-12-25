@@ -1,6 +1,3 @@
-/**
- *
- */
 package com.frogorf.security.domain;
 
 import com.frogorf.core.domain.BaseEntity;

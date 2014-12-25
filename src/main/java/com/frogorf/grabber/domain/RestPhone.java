@@ -7,21 +7,5 @@ import org.codehaus.jackson.annotate.JsonIgnoreProperties;
  */
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class RestPhone {
-    private String value;
-
-    public String getValue() {
-        return value;
-    }
-
-    public void setValue(String value) {
-        this.value = value;
-    }
-
-    public RestPhone() {
-
-    }
-
-    public RestPhone(String value) {
-        this.value = value;
-    }
+    public String value;
 }

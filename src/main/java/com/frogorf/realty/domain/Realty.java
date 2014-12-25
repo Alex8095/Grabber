@@ -7,7 +7,8 @@ import com.frogorf.dictionary.domain.DictionaryValue;
 import com.frogorf.utils.Translit;
 import org.hibernate.annotations.Fetch;
 import org.hibernate.annotations.FetchMode;
-import org.springframework.security.core.userdetails.User;
+import org.hibernate.annotations.LazyCollection;
+import org.hibernate.annotations.LazyCollectionOption;
 
 import javax.persistence.*;
 import java.util.Date;
@@ -20,9 +21,6 @@ import java.util.Map;
 public class Realty extends BaseEntity {
 
     private static final long serialVersionUID = 1L;
-
-
-    public final static String TITLE_PARAM = "location.ru.title";
 
     @Embedded
     private Location location;
@@ -52,7 +50,6 @@ public class Realty extends BaseEntity {
     @Column(name = "site_url")
     private String siteUrl;
     public final static String SITE_URL_PARAM = "siteUrl";
-
     @Column(name = "main_site_code")
     private String mainSiteCode;
     public final static String MAIN_SITE_CODE_PARAM = "mainSiteCode";
@@ -60,9 +57,7 @@ public class Realty extends BaseEntity {
     private Date dateUpToMainSite;
     @Column(name = "date_last_update_to_main_site")
     private Date dateLastUpdateToMainSite;
-    @Column(name = "user_up_to_main_site")
-    private User userUpToMainSite;
-
+//    public final static String TITLE_PARAM = "locales";
     @ElementCollection(targetClass = RealtyLocale.class, fetch = FetchType.EAGER)
     @CollectionTable(name = "realty_locale", joinColumns = @JoinColumn(name = "realty_id"))
     @MapKeyColumn(name = "locale")
@@ -72,23 +67,28 @@ public class Realty extends BaseEntity {
     @JoinColumn(name = "currency_id")
     private DictionaryValue currency;
     @JsonIgnore
-    @OneToMany(fetch = FetchType.EAGER, mappedBy = "realty")
+    @LazyCollection(LazyCollectionOption.FALSE)
+    @OneToMany(mappedBy = "realty")
     private List<RealtyHistoryPrice> realtyHistoryPrices;
     @JsonIgnore
-    @OneToMany(fetch = FetchType.EAGER, mappedBy = "realty")
+    @LazyCollection(LazyCollectionOption.FALSE)
+    @OneToMany(mappedBy = "realty")
     private List<RealtyHistory> realtyHistory;
     @JsonIgnore
-    @OneToMany(fetch = FetchType.LAZY, mappedBy = "realty")
+    @LazyCollection(LazyCollectionOption.FALSE)
+    @OneToMany(mappedBy = "realty")
     private List<RealtyImage> images;
     @JsonIgnore
-    @ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    @LazyCollection(LazyCollectionOption.FALSE)
+    @ManyToMany(cascade = CascadeType.ALL)
     @JoinTable(name = "realty_seller", joinColumns = {@JoinColumn(name = "realty_id", nullable = false, updatable = false)}, inverseJoinColumns = {@JoinColumn(name = "seller_id", nullable = false, updatable = false)})
     private List<Seller> sellers;
     @ManyToOne
     @JoinColumn(name = "realty_seller_id")
     private Seller seller;
     @JsonIgnore
-    @OneToMany(fetch = FetchType.EAGER, mappedBy = "realty")
+    @LazyCollection(LazyCollectionOption.FALSE)
+    @OneToMany(mappedBy = "realty")
     private List<RealtyOptionValue> realtyOptionValues;
 
     public Location getLocation() {
@@ -201,14 +201,6 @@ public class Realty extends BaseEntity {
 
     public void setDateLastUpdateToMainSite(Date dateLastUpdateToMainSite) {
         this.dateLastUpdateToMainSite = dateLastUpdateToMainSite;
-    }
-
-    public User getUserUpToMainSite() {
-        return userUpToMainSite;
-    }
-
-    public void setUserUpToMainSite(User userUpToMainSite) {
-        this.userUpToMainSite = userUpToMainSite;
     }
 
     public Map<String, RealtyLocale> getLocales() {

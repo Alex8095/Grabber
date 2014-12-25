@@ -39,4 +39,7 @@ public class RealtyLocale {
         this.title = title;
         this.description = description;
     }
+
+    public RealtyLocale() {
+    }
 }

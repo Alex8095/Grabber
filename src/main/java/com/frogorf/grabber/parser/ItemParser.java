@@ -6,6 +6,7 @@ import org.jsoup.nodes.Document;
 
 import java.io.IOException;
 import java.net.URI;
+import java.net.URL;
 import java.util.List;
 import java.util.Map;
 
@@ -48,7 +49,7 @@ public interface ItemParser {
 
     Map<String, String> getRealtyOptions();
 
-    URI getPhoneURI();
+    URL getPhoneURL();
 
     String getRealtyContactPhone();
 }

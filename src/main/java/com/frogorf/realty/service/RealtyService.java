@@ -9,6 +9,8 @@ import java.util.Map;
 
 public interface RealtyService {
 
+    Realty findRealty(Map<String, String> params);
+
     Realty findRealtyOr(Map<String, String> params);
 
     public Realty findRealtyById(int id);

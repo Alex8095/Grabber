@@ -40,7 +40,6 @@ public class SellerServiceImpl implements SellerService {
     @Override
     public void delete(int id) {
         sellerDao.delete(id);
-
     }
 
     @Override

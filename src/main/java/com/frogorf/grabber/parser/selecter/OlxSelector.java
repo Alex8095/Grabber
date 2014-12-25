@@ -14,10 +14,10 @@ public final class OlxSelector {
     public final static String PRICE = ".pricelabel .xxxx-large";
     public final static String REALTY_OPTION = ".details .pding5_10";
     public final static String REALTY_OPTION_VALUE = ".block";
+    public final static String DATE_PUBLISHING = ".pdingleft10 .brlefte5";
+    public final static String SELLER = ".userdetails .xx-large";
 
     public final static String PHONE_URI = "http://kiev.ko.olx.ua/ajax/misc/contact/phone/%s/";
     public final static String IMAGE = "#offerdescription img";
     public final static String IMAGE_REMOVE = "#offerbottombar";
-
-
 }

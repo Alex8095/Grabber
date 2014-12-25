@@ -1,20 +1,24 @@
 package com.frogorf.grabber.parser;
 
 import com.frogorf.grabber.domain.Task;
-import com.frogorf.grabber.parser.ItemParser;
 import com.frogorf.grabber.parser.impl.OlxRealtyItemParser;
+import com.frogorf.realty.service.SellerServiceTest;
 import org.junit.Before;
 import org.junit.Test;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
-import java.net.URI;
+import java.net.URL;
 
-import static junit.framework.Assert.*;
 import static junit.framework.Assert.assertEquals;
+import static junit.framework.Assert.assertNotNull;
 
 /**
  * Created by Alex on 21.11.14.
  */
 public class OlxRealtyItemParserTest {
+
+    private static final Logger logger = LoggerFactory.getLogger(SellerServiceTest.class);
 
     private ItemParser realtyParser;
     private final String REALTY_LINK = "http://kiev.ko.olx.ua/obyavlenie/svetlaya-1-komnatnaya-kvartira-v-zhk-panorama-na-pecherske-IDaRzVd.html";
@@ -103,8 +107,8 @@ public class OlxRealtyItemParserTest {
 
     @Test
     public void testGetPhoneURI() throws Exception {
-        URI uri = new URI(REALTY_PHONE_URL);
-        assertEquals(realtyParser.getPhoneURI(), uri);
+        URL url = new URL(REALTY_PHONE_URL);
+        assertEquals(realtyParser.getPhoneURL(), url);
     }
 
     @Test

@@ -26,6 +26,12 @@ public class RealtyServiceImpl implements RealtyService {
 
     @Override
     @Transactional
+    public Realty findRealty(Map<String, String> params) {
+        return realtyDao.findRealty(params);
+    }
+
+    @Override
+    @Transactional
     public Realty findRealtyOr(Map<String, String> params) {
         return realtyDao.findRealtyOr(params);
     }

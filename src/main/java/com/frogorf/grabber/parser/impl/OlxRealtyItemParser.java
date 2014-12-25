@@ -1,6 +1,5 @@
 package com.frogorf.grabber.parser.impl;
 
-import com.frogorf.grabber.domain.RestPhone;
 import com.frogorf.grabber.domain.Task;
 import com.frogorf.grabber.helper.*;
 import com.frogorf.grabber.parser.ItemParser;
@@ -13,11 +12,12 @@ import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.web.client.RestTemplate;
 
+import java.io.BufferedReader;
 import java.io.IOException;
-import java.net.URI;
-import java.net.URISyntaxException;
+import java.io.InputStreamReader;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -60,13 +60,7 @@ public class OlxRealtyItemParser implements ItemParser {
         this.link = link;
         getDocument(link);
         realty = new Realty();
-
-        realtyHelper.init(realty);
-        realtyImageHelper.init(null, realty);
-        realtyLocationHelper.init(null, realty);
-        realtyOptionHelper.init(null, realty);
-        realtyPriceHelper.init(null, realty);
-
+//        realtyHelper.init(realty);
         realty.setPrice(getRealtyPrice());
         realty.setTitle(getRealtyTitle());
         realty.setDescription(getRealtyDescription());
@@ -182,11 +176,11 @@ public class OlxRealtyItemParser implements ItemParser {
     }
 
     @Override
-    public URI getPhoneURI() {
-        URI uri = null;
+    public URL getPhoneURL() {
+        URL uri = null;
         try {
-            uri = new URI(String.format(OlxSelector.PHONE_URI, getRealtySiteCode()));
-        } catch (URISyntaxException e) {
+            uri = new URL(String.format(OlxSelector.PHONE_URI, getRealtySiteCode()));
+        } catch (MalformedURLException e) {
             e.printStackTrace();
         }
         return uri;
@@ -194,8 +188,21 @@ public class OlxRealtyItemParser implements ItemParser {
 
     @Override
     public String getRealtyContactPhone() {
-        RestTemplate restTemplate = new RestTemplate();
-        RestPhone phone = restTemplate.getForObject(getPhoneURI(), RestPhone.class);
-        return phone.getValue();
+        URL url = getPhoneURL();
+        if (url != null) {
+            BufferedReader in = null;
+            try {
+                in = new BufferedReader(new InputStreamReader(url.openStream()));
+                String inputLine;
+                StringBuffer sb = new StringBuffer();
+                while ((inputLine = in.readLine()) != null) {
+                    sb.append(inputLine);
+                }
+                return sb.toString().replace("{\"value\":\"", "").replace("\"}", "");
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+        return null;
     }
 }
