@@ -1,6 +1,7 @@
 package com.frogorf.grabber.helper.impl;
 
 import com.frogorf.grabber.helper.RealtySellerHelper;
+import com.frogorf.grabber.parser.selecter.OlxSelector;
 import com.frogorf.realty.domain.Seller;
 import com.frogorf.realty.service.SellerService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -36,7 +37,7 @@ public class RealtySellerHelperImpl implements RealtySellerHelper {
         if (phoneNumbers == null) {
             phoneNumbers = new ArrayList<>();
             if (sourcePhoneNumbers.length() > 12) {
-                for (String n : sourcePhoneNumbers.split("\\|")) {
+                for (String n : sourcePhoneNumbers.replaceAll("<\\/span><spanclass=\\\"block\\\">", "|").replace("<spanclass=\\\"block\\\">", "").replace("<\\/span>", "").split("\\|")) {
                     phoneNumbers.add(cleanNumber(n));
                 }
             } else {
@@ -145,7 +146,10 @@ public class RealtySellerHelperImpl implements RealtySellerHelper {
     }
 
     private String cleanNumber(String n) {
-        return n.replace(" ", "").replace("-", "");
+        for (String s : OlxSelector.PHONE_CLEANER) {
+            n = n.replace(s, "");
+        }
+        return n;
     }
 
 }

@@ -1,9 +1,10 @@
 package com.frogorf.dictionary.service;
 
+
 import com.frogorf.dictionary.domain.Dictionary;
+import com.frogorf.dictionary.domain.DictionarySync;
+import com.frogorf.dictionary.domain.DictionarySyncResponse;
 import com.frogorf.dictionary.domain.DictionaryValue;
-import com.frogorf.dictionary.domain.sync.DictionarySync;
-import com.frogorf.dictionary.domain.sync.DictionarySyncResponse;
 
 import java.util.List;
 

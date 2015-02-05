@@ -19,8 +19,6 @@ public interface ItemParser {
     static final int NEW = 2;
     static final int UPDATE = 3;
 
-    void setRealtyService(RealtyService realtyService);
-
     void setTask(Task task);
 
     Task getTask();
@@ -29,9 +27,17 @@ public interface ItemParser {
 
     Integer parse(String link) throws IOException;
 
+    String getParseDatePublishing();
+
+    String getRealtySeller();
+
+    String getRealtySellerPhones();
+
+    String getRealtySellerSourceLink();
+
     void getDocument(String link) throws IOException;
 
-    String getRealtyAddress();
+    String getRealtyLocation();
 
     String getRealtySiteCode();
 
@@ -43,13 +49,7 @@ public interface ItemParser {
 
     String getDocumentRealtyPrice();
 
-    String getRealtyCurrency();
-
-    Long getRealtyPrice();
-
     Map<String, String> getRealtyOptions();
 
     URL getPhoneURL();
-
-    String getRealtyContactPhone();
 }

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head th:include="admin/fragments/layout :: head (title=#{grabber.sourceSetting.list.page.title})"></head>
+<body id="grabber">
+<div th:replace="admin/fragments/layout :: sidebar"></div>
+<div th:replace="admin/fragments/layout :: sidebar-launch"></div>
+<div th:replace="admin/fragments/layout :: header"></div>
+<div class="segment no-margin-bottom">
+    <div class="container">
+        <div class="introduction">
+            <h1 class="ui dividing header" th:text="#{grabber.sourceSetting.list.page.title}">users</h1>
+        </div>
+        <div class="ui breadcrumb">
+            <a class="section" th:text="#{menu.home}" th:href="@{/admin/}">home</a>
+            <i class="right arrow icon divider"></i>
+
+            <div class="active section" th:text="#{grabber.sourceSetting.list.page.title}">users</div>
+        </div>
+    </div>
+</div>
+<div class="actions 12 fluid ui right icon buttons">
+    <a class="ui teal medium button" href="/admin/grabber/sourceSetting/new" th:href="@{/admin/grabber/sourceSetting/new}">
+        <i class="add icon"></i>
+    </a>
+</div>
+<div class="main main-grid">
+    <div id="grid"></div>
+</div>
+<script src="/resources/js/grabber/sourceSetting/list.js" th:src="@{/resources/js/grabber/sourceSetting/list.js}"></script>
+</body>
+</html>

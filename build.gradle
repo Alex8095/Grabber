@@ -8,9 +8,7 @@ apply plugin: 'propdeps-eclipse'
 apply plugin: 'eclipse-wtp'
 apply plugin: 'idea'
 
-war { baseName = 'Grabber' }
-
-sourceCompatibility = 1.7
+war { baseName = 'grabber' }
 
 buildscript {
     repositories {
@@ -55,6 +53,8 @@ dependencies {
     compile "org.springframework.security:spring-security-core:$springSecurityVersion"
     compile "org.springframework.security:spring-security-web:$springSecurityVersion"
     compile "org.springframework.security:spring-security-config:$springSecurityVersion"
+
+    compile 'com.googlecode.json-simple:json-simple:1.1.1'
 
 // compile "com.fasterxml.jackson.core:jackson-core:$jacksonVersion"
 // compile "com.fasterxml.jackson.core:jackson-databind:$jacksonVersion"

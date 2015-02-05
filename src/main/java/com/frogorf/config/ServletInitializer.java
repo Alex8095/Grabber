@@ -1,5 +1,6 @@
 package com.frogorf.config;
 
+import com.frogorf.config.filter.CORSFilter;
 import org.springframework.web.filter.CharacterEncodingFilter;
 import org.springframework.web.filter.HiddenHttpMethodFilter;
 import org.springframework.web.filter.HttpPutFormContentFilter;
@@ -35,7 +36,8 @@ public class ServletInitializer extends AbstractAnnotationConfigDispatcherServle
         CharacterEncodingFilter charFilter = new CharacterEncodingFilter();
         charFilter.setEncoding("UTF-8");
         charFilter.setForceEncoding(true);
-        return new Filter[]{new HiddenHttpMethodFilter(), charFilter, new HttpPutFormContentFilter()};
+
+        return new Filter[]{new HiddenHttpMethodFilter(), charFilter, new HttpPutFormContentFilter(), new CORSFilter()};
     }
 
 

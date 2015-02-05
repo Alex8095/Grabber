@@ -36,8 +36,22 @@ public class Realty extends BaseEntity {
     private Boolean isRent;
     @Column(name = "is_change")
     private Boolean isChange;
+    @Column(name = "is_commission")
+    private Boolean isCommission;
     @Column(name = "price")
     private Long price;
+    @Column(name = "total_space")
+    private Double totalSpace;
+    @Column(name = "living_space")
+    private Double livingSpace;
+    @Column(name = "kitchen_space")
+    private Double kitchenSpace;
+    @Column(name = "count_rooms")
+    private Integer countRooms;
+    @Column(name = "floor")
+    private Integer floor;
+    @Column(name = "floors")
+    private Integer floors;
     @Column(name = "date_publishing")
     private Date datePublishing;
     @Column(name = "date_create")
@@ -57,7 +71,7 @@ public class Realty extends BaseEntity {
     private Date dateUpToMainSite;
     @Column(name = "date_last_update_to_main_site")
     private Date dateLastUpdateToMainSite;
-//    public final static String TITLE_PARAM = "locales";
+    //    public final static String TITLE_PARAM = "locales";
     @ElementCollection(targetClass = RealtyLocale.class, fetch = FetchType.EAGER)
     @CollectionTable(name = "realty_locale", joinColumns = @JoinColumn(name = "realty_id"))
     @MapKeyColumn(name = "locale")
@@ -66,15 +80,12 @@ public class Realty extends BaseEntity {
     @ManyToOne
     @JoinColumn(name = "currency_id")
     private DictionaryValue currency;
-    @JsonIgnore
     @LazyCollection(LazyCollectionOption.FALSE)
     @OneToMany(mappedBy = "realty")
     private List<RealtyHistoryPrice> realtyHistoryPrices;
-    @JsonIgnore
     @LazyCollection(LazyCollectionOption.FALSE)
     @OneToMany(mappedBy = "realty")
     private List<RealtyHistory> realtyHistory;
-    @JsonIgnore
     @LazyCollection(LazyCollectionOption.FALSE)
     @OneToMany(mappedBy = "realty")
     private List<RealtyImage> images;
@@ -86,7 +97,6 @@ public class Realty extends BaseEntity {
     @ManyToOne
     @JoinColumn(name = "realty_seller_id")
     private Seller seller;
-    @JsonIgnore
     @LazyCollection(LazyCollectionOption.FALSE)
     @OneToMany(mappedBy = "realty")
     private List<RealtyOptionValue> realtyOptionValues;
@@ -145,6 +155,54 @@ public class Realty extends BaseEntity {
 
     public void setPrice(Long price) {
         this.price = price;
+    }
+
+    public Double getTotalSpace() {
+        return totalSpace;
+    }
+
+    public void setTotalSpace(Double totalSpace) {
+        this.totalSpace = totalSpace;
+    }
+
+    public Double getLivingSpace() {
+        return livingSpace;
+    }
+
+    public void setLivingSpace(Double livingSpace) {
+        this.livingSpace = livingSpace;
+    }
+
+    public Double getKitchenSpace() {
+        return kitchenSpace;
+    }
+
+    public void setKitchenSpace(Double kitchenSpace) {
+        this.kitchenSpace = kitchenSpace;
+    }
+
+    public Integer getCountRooms() {
+        return countRooms;
+    }
+
+    public void setCountRooms(Integer countRooms) {
+        this.countRooms = countRooms;
+    }
+
+    public Integer getFloor() {
+        return floor;
+    }
+
+    public void setFloor(Integer floor) {
+        this.floor = floor;
+    }
+
+    public Integer getFloors() {
+        return floors;
+    }
+
+    public void setFloors(Integer floors) {
+        this.floors = floors;
     }
 
     public Date getDateCreate() {
@@ -227,9 +285,10 @@ public class Realty extends BaseEntity {
     }
 
     public void setTitle(String title) {
-        if (locales.containsKey(getLocaleLanguage())) {
-            locales.get(getLocaleLanguage()).setTitle(title);
+        if (!locales.containsKey(getLocaleLanguage())) {
+            locales.put(getLocaleLanguage(), new RealtyLocale());
         }
+        locales.get(getLocaleLanguage()).setTitle(title);
     }
 
     public String getDescription() {
@@ -240,9 +299,10 @@ public class Realty extends BaseEntity {
     }
 
     public void setDescription(String description) {
-        if (locales.containsKey(getLocaleLanguage())) {
-            locales.get(getLocaleLanguage()).setDescription(description);
+        if (!locales.containsKey(getLocaleLanguage())) {
+            locales.put(getLocaleLanguage(), new RealtyLocale());
         }
+        locales.get(getLocaleLanguage()).setDescription(description);
     }
 
     public List<RealtyHistoryPrice> getRealtyHistoryPrices() {
@@ -299,6 +359,14 @@ public class Realty extends BaseEntity {
 
     public void setDatePublishing(Date datePublishing) {
         this.datePublishing = datePublishing;
+    }
+
+    public Boolean getIsCommission() {
+        return isCommission;
+    }
+
+    public void setIsCommission(Boolean isCommission) {
+        this.isCommission = isCommission;
     }
 
     public Realty() {

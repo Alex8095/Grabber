@@ -3,8 +3,13 @@ package com.frogorf.realty.domain;
 import com.frogorf.core.domain.BaseEntity;
 import com.frogorf.dictionary.domain.Dictionary;
 import com.frogorf.dictionary.domain.DictionaryValue;
+import com.frogorf.utils.Translit;
+import org.hibernate.annotations.LazyCollection;
+import org.hibernate.annotations.LazyCollectionOption;
 
 import javax.persistence.*;
+import javax.transaction.Transaction;
+import java.util.List;
 
 @Entity
 @Table(name = "realty_option")
@@ -31,6 +36,9 @@ public class RealtyOption extends BaseEntity {
     private DictionaryValue site;
     @Column(name = "after_value")
     private String afterValue;
+    @LazyCollection(LazyCollectionOption.FALSE)
+    @OneToMany(mappedBy = "realtyOption")
+    private List<RealtyOptionCompliance> realtyOptionCompliances;
 
     public String getName() {
         return name;
@@ -45,7 +53,7 @@ public class RealtyOption extends BaseEntity {
     }
 
     public void setCode(String code) {
-        this.code = code.toUpperCase();
+        this.code = Translit.toTranslit(code).toUpperCase();
     }
 
     public String getSiteCode() {
@@ -86,6 +94,14 @@ public class RealtyOption extends BaseEntity {
 
     public void setAfterValue(String afterValue) {
         this.afterValue = afterValue;
+    }
+
+    public List<RealtyOptionCompliance> getRealtyOptionCompliances() {
+        return realtyOptionCompliances;
+    }
+
+    public void setRealtyOptionCompliances(List<RealtyOptionCompliance> realtyOptionCompliances) {
+        this.realtyOptionCompliances = realtyOptionCompliances;
     }
 
     public RealtyOption() {

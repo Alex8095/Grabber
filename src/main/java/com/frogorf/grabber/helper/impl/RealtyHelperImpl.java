@@ -56,17 +56,17 @@ public class RealtyHelperImpl implements RealtyHelper {
 
     @Override
     public DictionaryValue getParseOwner(String... collocations) {
-        if (parseOwner(collocations)) {
+        if (parseIsNoCommision(collocations)) {
             return dictionaryService.findDictionaryValueById(RealtySelector.OWNER_DV_ID);
         }
         return null;
     }
 
     @Override
-    public Boolean parseOwner(String... collocations) {
+    public Boolean parseIsNoCommision(String... collocations) {
         for (String collocation : collocations) {
             for (String o : RealtySelector.OWNER_WORDS_ARRAY) {
-                if (collocation.toUpperCase().indexOf(o) != -1) {
+                if (collocation.toUpperCase().indexOf(o.toUpperCase()) != -1) {
                     return true;
                 }
             }

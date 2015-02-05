@@ -47,10 +47,25 @@ public interface RealtyDao {
 
     DataSourceResult getListRealtyHistory(DataSourceRequest request);
 
-    void saveRealtyOptionList(List<RealtyOptionValue> realtyOptionValues);
+    public List<RealtyHistory> findRealtyHistorysByRealtyId(int realtyId);
 
+    /*RealtyOptionValue*/
+
+    void saveRealtyOptionValueList(List<RealtyOptionValue> realtyOptionValues);
+
+    public List<RealtyOptionValue> findRealtyOptionValuesByRealtyId(int realtyId);
+
+    /*RealtyOption*/
+    List<RealtyOption> findRealtyOptionAll();
+
+    /*Price*/
     void saveRealtyHistoryPrices(List<RealtyHistoryPrice> realtyHistoryPrices);
 
+    public List<RealtyHistoryPrice> findRealtyHistoryPricesByRealtyId(int realtyId);
+
+    /*Image*/
     void saveRealtyImages(List<RealtyImage> realtyImages);
+
+    public List<RealtyImage> findRealtyImagesByRealtyId(int realtyId);
 
 }

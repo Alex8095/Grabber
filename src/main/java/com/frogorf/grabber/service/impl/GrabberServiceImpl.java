@@ -4,15 +4,18 @@
 package com.frogorf.grabber.service.impl;
 
 import com.frogorf.grabber.dao.GrabberDao;
+import com.frogorf.grabber.domain.SourceSetting;
 import com.frogorf.grabber.domain.Task;
 import com.frogorf.grabber.domain.TaskHistory;
-import com.frogorf.grabber.domain.TaskSetting;
 import com.frogorf.grabber.service.GrabberService;
 import com.frogorf.kendo.data.source.DataSourceRequest;
 import com.frogorf.kendo.data.source.DataSourceResult;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+
+import java.util.List;
+import java.util.Map;
 
 /**
  * @author Tsurkin Alex
@@ -43,31 +46,49 @@ public class GrabberServiceImpl implements GrabberService {
 
     @Override
     @Transactional
+    public List<Task> findTasks(Map<String, String> params) {
+        return grabberDao.findTasks(params);
+    }
+
+    @Override
+    @Transactional
     public DataSourceResult getListTask(DataSourceRequest request) {
         return grabberDao.getListTask(request);
     }
 
     @Override
     @Transactional
-    public TaskSetting findTaskSettingById(int id) {
-        return grabberDao.findTaskSettingById(id);
+    public SourceSetting findSourceSettingById(int id) {
+        return grabberDao.findSourceSettingById(id);
     }
 
     @Override
     @Transactional
-    public void saveTaskSetting(TaskSetting taskSetting) {
-        grabberDao.saveTaskSetting(taskSetting);
-    }
-
-    @Override
-    public void deleteTaskSetting(int id) {
-        grabberDao.deleteTaskSetting(id);
+    public void saveSourceSetting(SourceSetting sourceSetting) {
+        grabberDao.saveSourceSetting(sourceSetting);
     }
 
     @Override
     @Transactional
-    public DataSourceResult getListTaskSetting(DataSourceRequest request) {
-        return grabberDao.getListTaskSetting(request);
+    public void deleteSourceSetting(int id) {
+        grabberDao.deleteSourceSetting(id);
+    }
+
+    @Override
+    @Transactional
+    public List<SourceSetting> findSourceSettings(Map<String, String> params) {
+        return grabberDao.findSourceSettings(params);
+    }
+
+    @Override
+    @Transactional
+    public DataSourceResult findSourceSettings(DataSourceRequest request) {
+        return grabberDao.findSourceSettings(request);
+    }
+
+    @Override
+    public SourceSetting findSourceSetting(Map<String, String> params) {
+        return grabberDao.findSourceSetting(params);
     }
 
     @Override

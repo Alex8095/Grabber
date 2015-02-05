@@ -6,6 +6,7 @@ import com.frogorf.grabber.parser.CategoryParser;
 import com.frogorf.grabber.parser.ItemParser;
 import com.frogorf.grabber.parser.selecter.OlxSelector;
 import com.frogorf.grabber.service.GrabberService;
+import com.frogorf.utils.exception.GrabberException;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
@@ -34,14 +35,16 @@ public class OlxRealtyCategoryParserImpl implements CategoryParser {
     private Task task;
     private Document currentDocument;
     private int currentPageNumber = 1;
-    public int grabberIteration = 2;
     private TaskHistory taskHistory;
+    private final static int GRABBER_ITERATION = 2;
 
     public OlxRealtyCategoryParserImpl() {
     }
 
-    public void initTask(Integer taskId) {
-        task = grabberService.findTaskById(taskId);
+    public void initTask(Integer taskId, Task task) {
+        this.task = task != null ? task : grabberService.findTaskById(taskId);
+        currentDocument = null;
+        currentPageNumber = 1;
         taskHistory = new TaskHistory();
         taskHistory.setTask(task);
         taskHistory.setStartDate(new Date());
@@ -83,20 +86,28 @@ public class OlxRealtyCategoryParserImpl implements CategoryParser {
     }
 
     @Override
-    public void parseRealty(String url) throws IOException {
+    public void parseRealty(String url) {
         realtyParser.setTask(task);
-        switch (realtyParser.parse(url)) {
-            case ItemParser.NEW:
-                taskHistory.setCountNew(taskHistory.getCountNew() + 1);
-                break;
-            case ItemParser.DUPLICATE:
-                taskHistory.setCountDuplicated(taskHistory.getCountDuplicated() + 1);
-                break;
-            case ItemParser.UPDATE:
-                taskHistory.setCountUpdate(taskHistory.getCountUpdate() + 1);
-                break;
+        try {
+            switch (realtyParser.parse(url)) {
+                case ItemParser.NEW:
+                    taskHistory.setCountNew(taskHistory.getCountNew() + 1);
+                    break;
+                case ItemParser.DUPLICATE:
+                    taskHistory.setCountDuplicated(taskHistory.getCountDuplicated() + 1);
+                    break;
+                case ItemParser.UPDATE:
+                    taskHistory.setCountUpdate(taskHistory.getCountUpdate() + 1);
+                    break;
+            }
+        } catch (Exception e) {
+            String ex = GrabberException.format(e);
+            logger.error(ex);
+            taskHistory.setMessage(String.format("url:%s, ", url) + taskHistory.getMessage() + ex);
+            taskHistory.setCountFailed(taskHistory.getCountFailed() + 1);
+        } finally {
+            taskHistory.setCountFound(taskHistory.getCountFound() + 1);
         }
-        taskHistory.setCountFound(taskHistory.getCountFound() + 1);
     }
 
     @Override
@@ -122,7 +133,7 @@ public class OlxRealtyCategoryParserImpl implements CategoryParser {
 
     @Override
     public void parseCategoryPage(String url) throws IOException {
-        if (currentPageNumber <= grabberIteration) {
+        if (currentPageNumber <= GRABBER_ITERATION) {
             getDocument(url);
             Elements realtyLinks = getRealtyLinks();
             if (realtyLinks.size() > 0) {
@@ -138,5 +149,10 @@ public class OlxRealtyCategoryParserImpl implements CategoryParser {
         } else {
             return;
         }
+    }
+
+    @Override
+    public void finish() {
+        logger.info("finish");
     }
 }

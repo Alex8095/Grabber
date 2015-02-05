@@ -77,6 +77,12 @@ public class AdminGrabberTaskController {
         if (result.hasErrors()) {
             return "admin/grabber/task/edit";
         } else {
+            if (task.getImplementationType().getId() == null) {
+                task.setImplementationType(null);
+            }
+            if (task.getOwnerType().getId() == null) {
+                task.setOwnerType(null);
+            }
             grabberService.saveTask(task);
             status.setComplete();
             return "redirect:/admin/grabber/task/" + task.getId();
@@ -98,6 +104,12 @@ public class AdminGrabberTaskController {
         if (result.hasErrors()) {
             return "admin/task/edit";
         } else {
+            if (task.getImplementationType().getId() == null) {
+                task.setImplementationType(null);
+            }
+            if (task.getOwnerType().getId() == null) {
+                task.setOwnerType(null);
+            }
             grabberService.saveTask(task);
             status.setComplete();
             return "redirect:/admin/grabber/task/" + task.getId();

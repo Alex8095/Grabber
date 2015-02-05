@@ -18,6 +18,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 /**
  * Created by alex on 18.12.14.
@@ -39,6 +40,7 @@ public class RealtySellerHelperTest {
     private final static String PHONE_NUMBER_1 = "0966432892";
     private final static String PHONE_NUMBER_2 = "0966432891";
     private final static String SITE_CODE = "KyPn";
+    private final static String SOURCE_PHONE_NUMBERS_HTML = "<spanclass=\\\"block\\\">0966432892<\\/span><spanclass=\\\"block\\\">0966432891<\\/span>";
 
     private Seller seller;
     private List<String> sellerPhones;
@@ -76,6 +78,16 @@ public class RealtySellerHelperTest {
         assertEquals(phoneNumbers.get(0), PHONE_NUMBER_1);
         assertEquals(phoneNumbers.get(1), PHONE_NUMBER_2);
     }
+
+    @Test
+    public void testGetPhoneNumbersHtml() throws Exception {
+        sellerHelper.init(SOURCE_SELLER_NAME, SOURCE_PHONE_NUMBERS_HTML, SOURCE_LINK);
+        List<String> phoneNumbers = sellerHelper.getPhoneNumbers();
+        assertEquals(phoneNumbers.size(), 2);
+        assertEquals(phoneNumbers.get(0), PHONE_NUMBER_1);
+        assertEquals(phoneNumbers.get(1), PHONE_NUMBER_2);
+    }
+
 
     @Test
     public void testGetLastName() throws Exception {

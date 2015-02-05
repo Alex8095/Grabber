@@ -20,11 +20,12 @@ public interface RealtyHelper {
 
     DictionaryValue getParseOwner(String... collocation);
 
-    Boolean parseOwner(String... collocation);
+    Boolean parseIsNoCommision(String... collocation);
 
     Date getParseDatePublishing(String dateSource);
 
     Realty getRealty();
 
     Realty findRealtyOr(Map<String, String> params);
+
 }

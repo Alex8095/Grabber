@@ -90,8 +90,8 @@ public class RealtyHelperTest {
 
     @Test
     public void testParseOwner() throws Exception {
-        assertTrue(realtyHelper.parseOwner(TITLE_OWNER_TRUE));
-        assertFalse(realtyHelper.parseOwner(TITLE_OWNER_FALSE));
+        assertTrue(realtyHelper.parseIsNoCommision(TITLE_OWNER_TRUE));
+        assertFalse(realtyHelper.parseIsNoCommision(TITLE_OWNER_FALSE));
     }
 
     @Test

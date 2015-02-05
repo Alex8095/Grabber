@@ -115,11 +115,13 @@ public class DictionaryServiceImpl implements DictionaryService {
     }
 
     @Override
+    @Transactional
     public DictionaryValue findDictionaryValue(Map<String, String> params) {
         return dictionaryDao.findDictionaryValue(params);
     }
 
     @Override
+    @Transactional
     public void saveDictionaryValueList(List<DictionaryValue> list) {
         dictionaryDao.saveDictionaryValueList(list);
     }

@@ -21,12 +21,10 @@ public class RealtyOptionValue extends BaseEntity {
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "realty_id", nullable = false)
     private Realty realty;
-    @JsonIgnore
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "realty_option_id", nullable = false)
     private RealtyOption realtyOption;
-    @JsonIgnore
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "dictionary_id")
     private DictionaryValue dictionaryValue;
     @JsonIgnore

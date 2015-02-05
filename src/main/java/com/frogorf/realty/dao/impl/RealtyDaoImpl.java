@@ -119,10 +119,31 @@ public class RealtyDaoImpl implements RealtyDao {
     }
 
     @Override
-    public void saveRealtyOptionList(List<RealtyOptionValue> realtyOptionValues) {
+    public List<RealtyHistory> findRealtyHistorysByRealtyId(int realtyId) {
+        return sessionFactory.getCurrentSession()
+                .createCriteria(RealtyHistory.class)
+                .add(Restrictions.eq("realty.id", realtyId))
+                .list();
+    }
+
+    @Override
+    public void saveRealtyOptionValueList(List<RealtyOptionValue> realtyOptionValues) {
         for (RealtyOptionValue realtyOptionValue : realtyOptionValues) {
             sessionFactory.getCurrentSession().saveOrUpdate(realtyOptionValue);
         }
+    }
+
+    @Override
+    public List<RealtyOptionValue> findRealtyOptionValuesByRealtyId(int realtyId) {
+        return sessionFactory.getCurrentSession()
+                .createCriteria(RealtyOptionValue.class)
+                .add(Restrictions.eq("realty.id", realtyId))
+                .list();
+    }
+
+    @Override
+    public List<RealtyOption> findRealtyOptionAll() {
+        return sessionFactory.getCurrentSession().createQuery("from RealtyOption").list();
     }
 
     @Override
@@ -133,9 +154,25 @@ public class RealtyDaoImpl implements RealtyDao {
     }
 
     @Override
+    public List<RealtyHistoryPrice> findRealtyHistoryPricesByRealtyId(int realtyId) {
+        return sessionFactory.getCurrentSession()
+                .createCriteria(RealtyHistoryPrice.class)
+                .add(Restrictions.eq("realty.id", realtyId))
+                .list();
+    }
+
+    @Override
     public void saveRealtyImages(List<RealtyImage> realtyImages) {
         for (RealtyImage realtyImage : realtyImages) {
             sessionFactory.getCurrentSession().saveOrUpdate(realtyImage);
         }
+    }
+
+    @Override
+    public List<RealtyImage> findRealtyImagesByRealtyId(int realtyId) {
+        return sessionFactory.getCurrentSession()
+                .createCriteria(RealtyImage.class)
+                .add(Restrictions.eq("realty.id", realtyId))
+                .list();
     }
 }

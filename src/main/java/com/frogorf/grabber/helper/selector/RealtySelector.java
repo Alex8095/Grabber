@@ -5,6 +5,6 @@ package com.frogorf.grabber.helper.selector;
  */
 public final class RealtySelector {
     public static final int OWNER_DV_ID = 1;
-    public static final String[] OWNER_WORDS_ARRAY = {"БЕЗ КОМИССИИ", "СОБСТВЕННИК"};
+    public static final String[] OWNER_WORDS_ARRAY = new String[]{"БЕЗ КОМИССИИ", "СОБСТВЕННИК", "Без комісії", "без комис"};
     public static final String DATE_FORMAT = "dd MMM yyyy";
 }

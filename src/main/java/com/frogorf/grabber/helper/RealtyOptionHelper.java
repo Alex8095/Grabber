@@ -19,6 +19,22 @@ public interface RealtyOptionHelper {
 
     int getParserStatus();
 
+    Double getRealtyTotalSpace();
+
+    Double getRealtyLivingSpace();
+
+    Double getRealtyKitchenSpace();
+
+    Integer getRealtyCountRooms();
+
+    Integer getRealtyFloor();
+
+    Integer getRealtyFloors();
+
+    String getRealtyOptionValueByCodeSelector(String[] args);
+
+    RealtyOptionValue getRealtyOptionValue(String code);
+
     void init(Map<String, String> optionSource, Realty realty);
 
     List<RealtyOptionValue> getResult();

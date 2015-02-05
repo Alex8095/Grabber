@@ -93,7 +93,7 @@ public class RealtyOptionHelperTest {
         realty.setId(null);
         realty.setRealtyOptionValues(l);
         realtyService.saveRealty(realty);
-        realtyService.saveRealtyOptionList(l);
+        realtyService.saveRealtyOptionValueList(l);
     }
 
     @Test
@@ -106,7 +106,7 @@ public class RealtyOptionHelperTest {
         l.add(rov);
         realty.setRealtyOptionValues(l);
         realtyService.saveRealty(realty);
-        realtyService.saveRealtyOptionList(l);
+        realtyService.saveRealtyOptionValueList(l);
     }
 
     @Test

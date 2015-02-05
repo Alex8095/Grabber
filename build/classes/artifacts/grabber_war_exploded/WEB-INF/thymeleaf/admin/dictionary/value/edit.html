@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head th:include="admin/fragments/layout :: head (title=${dictionaryValue['new']} ? #{dictionary.value.new.page.title} : #{dictionary.value.edit.page.title})"></head>
+<body id="grabber">
+<div th:replace="admin/fragments/layout :: sidebar"></div>
+<div th:replace="admin/fragments/layout :: sidebar-launch"></div>
+<div th:replace="admin/fragments/layout :: header"></div>
+<div class="segment">
+    <div class="container">
+        <div class="introduction">
+            <h1 class="ui dividing header"
+                th:text="${dictionaryValue['new']} ? #{dictionary.value.new.page.title} : #{dictionary.value.edit.page.title}"></h1>
+
+            <div class="ui breadcrumb">
+                <a class="section" th:text="#{menu.home}" th:href="@{/admin/}">home</a>
+                <i class="right arrow icon divider"></i>
+                <a class="section" th:text="#{dictionary.value.list.page.title}" th:href="@{/admin/dictionary/value/}">dictionary
+                    values</a>
+                <i class="right arrow icon divider"></i>
+
+                <div class="active section" th:if="${dictionaryValue['new']}"
+                     th:text="#{dictionary.value.new.page.title}"></div>
+                <div class="active section" th:unless="${dictionaryValue['new']}"
+                     th:text="#{dictionary.value.edit.page.title}"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="main container">
+    <form th:object="${dictionaryValue}" method="post" action="./dictionary.html"
+          th:action="@{${#httpServletRequest.servletPath}}">
+        <div class="sticky-wrapper">
+            <div class="peek">
+                <button class="ui blue button" type="submit" th:text="#{button.action.save}">save</button>
+            </div>
+        </div>
+        <div class="ui form">
+            <div class="two fields">
+                <div class="field">
+                    <div class="two fields">
+                        <div class="field" th:classappend="${#fields.hasErrors('dictionary.id')} ? error">
+                            <label th:text="#{dictionary.name.full}">name</label>
+
+                            <div class="ui selection dropdown">
+                                <input type="hidden" th:field="*{dictionary.id}"/>
+
+                                <div class="default text" th:text="form.no.selected">no selected</div>
+                                <i class="dropdown icon"></i>
+
+                                <div class="ui corner label">
+                                    <i class="icon asterisk"></i>
+                                </div>
+                                <div class="menu ui transition hidden">
+                                    <div class="item" th:each="dictionary : ${dictionaries}"
+                                         th:attr="data-value=${dictionary.id}"
+                                         th:text="${dictionary.name}">Name
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ui red pointing prompt label transition" th:classappend="${#fields.hasErrors('dictionary.id')} ? visible" th:errors="*{dictionary.id}">
+                                [error]
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <label th:text="#{dictionary.value.parent}">name</label>
+
+                            <div class="ui selection dropdown">
+                                <input type="hidden" th:field="*{parentDictionaryValue.id}"/>
+
+                                <div class="default text" th:text="form.no.selected">no selected</div>
+                                <i class="dropdown icon"></i>
+
+                                <div class="menu ui transition hidden">
+                                    <div class="item" th:each="dictionaryValue : ${dictionaryValues}" th:attr="data-value=${dictionaryValue.id}" th:text="${dictionaryValue.name}">Name
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="field" th:classappend="${#fields.hasErrors('code')} ? error">
+                    <label th:text="#{dictionary.value.code}">code</label>
+
+                    <div class="ui left labeled input">
+                        <input type="text" th:field="*{code}"/>
+
+                        <div class="ui red pointing prompt label transition visible"
+                             th:classappend="${#fields.hasErrors('code')} ? visible" th:errors="*{code}">[error]
+                        </div>
+                        <div class="ui corner label">
+                            <i class="icon asterisk"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div th:each="entry: *{locales}">
+                <h4 class="ui header" th:text="${entry.key}">header</h4>
+
+                <div class="two fields">
+                    <div class="field" th:classappend="${#fields.hasErrors('locales[__${entry.key}__].name')} ? error">
+                        <label th:text="#{dictionary.value.name}">Name</label>
+
+                        <div class="ui left labeled input">
+                            <input type="text" th:field="*{locales[__${entry.key}__].name}" th:classappend="${entry.key} == 'ru' ? translit"/>
+
+                            <div class="ui red pointing prompt label transition visible"
+                                 th:classappend="${#fields.hasErrors('locales[__${entry.key}__].name')} ? visible" th:errors="*{locales[__${entry.key}__].name}">[error]
+                            </div>
+                            <div class="ui corner label">
+                                <i class="icon asterisk"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="field" th:classappend="${#fields.hasErrors('locales[__${entry.key}__].description')} ? error">
+                        <label th:text="#{dictionary.value.description}">description</label>
+
+                        <div class="ui left labeled input">
+                            <input type="text" th:field="*{locales[__${entry.key}__].description}"/>
+
+                            <div class="ui red pointing prompt label transition visible"
+                                 th:classappend="${#fields.hasErrors('locales[__${entry.key}__].description')} ? visible" th:errors="*{locales[__${entry.key}__].description}">
+                                [error]
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(".translit").syncTranslit({
+            destination: "code",
+            caseStyle: "upper",
+            urlSeparator: "_"
+        });
+    });
+</script>
+</body>
+</html>

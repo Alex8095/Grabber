@@ -9,6 +9,7 @@ import org.hibernate.SessionFactory;
 import org.hibernate.criterion.Restrictions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -36,6 +37,7 @@ public class SellerDaoImpl implements SellerDao {
     }
 
     @Override
+    @Transactional(readOnly = true)
     public Seller findBySiteCode(String siteCode) {
         Criteria criteria = sessionFactory.getCurrentSession().createCriteria(Seller.class);
         if (siteCode != null && !siteCode.equals(""))

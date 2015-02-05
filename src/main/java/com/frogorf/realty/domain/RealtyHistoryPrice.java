@@ -1,5 +1,6 @@
 package com.frogorf.realty.domain;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.frogorf.core.domain.BaseEntity;
 import com.frogorf.dictionary.domain.DictionaryValue;
 
@@ -22,6 +23,7 @@ public class RealtyHistoryPrice extends BaseEntity {
     private DictionaryValue currency;
     @Column(name = "date_action")
     private Date dateAction;
+    @JsonIgnore
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "realty_id", nullable = false)
     private Realty realty;

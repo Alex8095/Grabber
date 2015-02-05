@@ -4,7 +4,7 @@
 package com.frogorf.dictionary.dao.impl;
 
 import com.frogorf.dictionary.dao.DictionarySyncDao;
-import com.frogorf.dictionary.domain.sync.DictionarySync;
+import com.frogorf.dictionary.domain.DictionarySync;
 import com.frogorf.kendo.data.source.DataSourceRequest;
 import com.frogorf.kendo.data.source.DataSourceResult;
 import org.hibernate.SessionFactory;

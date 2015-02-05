@@ -96,15 +96,9 @@ public class RealtyLocationHelperImpl implements RealtyLocationHelper {
             return houseNumber;
         }
         if (value != null) {
-            Integer res = null;
             int spaceLastPos = value.lastIndexOf(" ");
             if (spaceLastPos != -1) {
-                try {
-                    res = Integer.parseInt(value.substring(spaceLastPos + 1, value.length()));
-                } catch (NumberFormatException e) {
-                    houseNumber = null;
-                }
-                houseNumber = res.toString();
+                houseNumber = value.substring(spaceLastPos + 1, value.length());
             }
         }
         return houseNumber;

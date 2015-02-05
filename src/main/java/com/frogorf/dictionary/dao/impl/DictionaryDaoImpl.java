@@ -91,6 +91,9 @@ public class DictionaryDaoImpl implements DictionaryDao {
         if (params.containsKey("parent_id")) {
             criteria.add(Restrictions.eq("parent_id", params.get("parent_id")));
         }
+        if (params.containsKey(DictionaryValue.PARAM_SITE_CODE)) {
+            criteria.add(Restrictions.eq(DictionaryValue.PARAM_SITE_CODE, params.get(DictionaryValue.PARAM_SITE_CODE)));
+        }
         return criteria.list();
     }
 

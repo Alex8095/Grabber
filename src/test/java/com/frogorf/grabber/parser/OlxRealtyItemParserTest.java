@@ -1,13 +1,20 @@
 package com.frogorf.grabber.parser;
 
+import com.frogorf.config.HibernateConfigTest;
 import com.frogorf.grabber.domain.Task;
 import com.frogorf.grabber.parser.impl.OlxRealtyItemParser;
 import com.frogorf.realty.service.SellerServiceTest;
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.runner.RunWith;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+import org.springframework.test.context.transaction.TransactionConfiguration;
 
+import javax.transaction.Transactional;
 import java.net.URL;
 
 import static junit.framework.Assert.assertEquals;
@@ -16,10 +23,15 @@ import static junit.framework.Assert.assertNotNull;
 /**
  * Created by Alex on 21.11.14.
  */
+@RunWith(SpringJUnit4ClassRunner.class)
+@ContextConfiguration(classes = {HibernateConfigTest.class})
+@TransactionConfiguration(transactionManager = "transactionManager", defaultRollback = false)
+@Transactional()
 public class OlxRealtyItemParserTest {
 
     private static final Logger logger = LoggerFactory.getLogger(SellerServiceTest.class);
 
+    @Autowired
     private ItemParser realtyParser;
     private final String REALTY_LINK = "http://kiev.ko.olx.ua/obyavlenie/svetlaya-1-komnatnaya-kvartira-v-zhk-panorama-na-pecherske-IDaRzVd.html";
     private final String REALTY_CODE = "aRzVd";
@@ -35,11 +47,11 @@ public class OlxRealtyItemParserTest {
 
     @Before
     public void setUp() throws Exception {
-        realtyParser = new OlxRealtyItemParser();
-        realtyParser.parse(REALTY_LINK);
-
-        task = new Task();
-        task.setUrl("");
+//        realtyParser = new OlxRealtyItemParser();
+//        realtyParser.parse(REALTY_LINK);
+//
+//        task = new Task();
+//        task.setUrl("");
     }
 
     @Test
@@ -49,7 +61,7 @@ public class OlxRealtyItemParserTest {
 
     @Test
     public void testGetRealtyAdress() throws Exception {
-        assertEquals(realtyParser.getRealtyAddress(), REALTY_ADRESS);
+        assertEquals(realtyParser.getRealtyLocation(), REALTY_ADRESS);
     }
 
 
@@ -91,16 +103,6 @@ public class OlxRealtyItemParserTest {
     }
 
     @Test
-    public void testGetRealtyCurrency() throws Exception {
-        assertEquals(realtyParser.getRealtyCurrency(), REALTY_PRICE_CURRENCY);
-    }
-
-    @Test
-    public void testGetRealtyPrice() throws Exception {
-        assertEquals(realtyParser.getRealtyPrice(), Long.valueOf(REALTY_PRICE));
-    }
-
-    @Test
     public void testGetRealtyOptions() throws Exception {
         assertEquals(realtyParser.getRealtyOptions().size(), 8);
     }
@@ -112,7 +114,8 @@ public class OlxRealtyItemParserTest {
     }
 
     @Test
-    public void testGetRealtyContactPhone() throws Exception {
-        assertEquals(realtyParser.getRealtyContactPhone(), PHONE);
+    public void testParser() throws Exception {
+        Integer status = realtyParser.parse(REALTY_LINK);
+        logger.info("status: %s", status);
     }
 }

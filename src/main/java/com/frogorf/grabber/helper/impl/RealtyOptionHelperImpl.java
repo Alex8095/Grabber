@@ -3,6 +3,7 @@ package com.frogorf.grabber.helper.impl;
 import com.frogorf.dictionary.domain.Dictionary;
 import com.frogorf.dictionary.domain.DictionaryValue;
 import com.frogorf.dictionary.service.DictionaryService;
+import com.frogorf.grabber.helper.RealtyOptionCodeReader;
 import com.frogorf.grabber.helper.RealtyOptionHelper;
 import com.frogorf.grabber.helper.selector.OptionSelector;
 import com.frogorf.grabber.parser.ItemParser;
@@ -14,6 +15,7 @@ import com.frogorf.utils.Translit;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.transaction.Transactional;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -29,6 +31,8 @@ public class RealtyOptionHelperImpl implements RealtyOptionHelper {
     private RealtyService realtyService;
     @Autowired
     private DictionaryService dictionaryService;
+    @Autowired
+    private RealtyOptionCodeReader realtyOptionCodeReader;
 
     private Map<String, String> optionSource;
     private Realty realty;
@@ -46,6 +50,69 @@ public class RealtyOptionHelperImpl implements RealtyOptionHelper {
     @Override
     public int getParserStatus() {
         return status;
+    }
+
+    @Override
+    public Double getRealtyTotalSpace() {
+        String v = getRealtyOptionValueByCodeSelector(realtyOptionCodeReader.getItem(OptionSelector.TOTAL_SPACE));
+        return v != null ? Double.valueOf(v) : null;
+    }
+
+    @Override
+    public Double getRealtyLivingSpace() {
+        String v = getRealtyOptionValueByCodeSelector(realtyOptionCodeReader.getItem(OptionSelector.LIVING_SPACE));
+        return v != null ? Double.valueOf(v) : null;
+    }
+
+    @Override
+    public Double getRealtyKitchenSpace() {
+        String v = getRealtyOptionValueByCodeSelector(realtyOptionCodeReader.getItem(OptionSelector.KITCHEN_SPACE));
+        return v != null ? Double.valueOf(v) : null;
+    }
+
+    @Override
+    public Integer getRealtyCountRooms() {
+        String v = getRealtyOptionValueByCodeSelector(realtyOptionCodeReader.getItem(OptionSelector.COUNT_ROOMS));
+        return v != null ? Integer.valueOf(v) : null;
+    }
+
+    @Override
+    public Integer getRealtyFloor() {
+        String v = getRealtyOptionValueByCodeSelector(realtyOptionCodeReader.getItem(OptionSelector.FLOOR));
+        return v != null ? Integer.valueOf(v) : null;
+    }
+
+    @Override
+    public Integer getRealtyFloors() {
+        String v = getRealtyOptionValueByCodeSelector(realtyOptionCodeReader.getItem(OptionSelector.FLOORS));
+        return v != null ? Integer.valueOf(v) : null;
+    }
+
+    @Override
+    public String getRealtyOptionValueByCodeSelector(String[] args) {
+        if (realtyOptionValues != null) {
+            for (String s : args) {
+                RealtyOptionValue value = getRealtyOptionValue(s);
+                if (value != null) {
+                    return value.getValue();
+                }
+            }
+        }
+        return null;
+    }
+
+    @Override
+    public RealtyOptionValue getRealtyOptionValue(String code) {
+        if (realtyOptionValues != null) {
+            for (RealtyOptionValue item : realtyOptionValues) {
+                if (item.getRealtyOption() != null) {
+                    if (item.getRealtyOption().getCode().equals(code.toUpperCase())) {
+                        return item;
+                    }
+                }
+            }
+        }
+        return null;
     }
 
     @Override
@@ -111,7 +178,9 @@ public class RealtyOptionHelperImpl implements RealtyOptionHelper {
     public String getRealtyOptionValueValue(String optionSourceValue) {
         if (isIntegerRealtyOptionValue(optionSourceValue)) {
             int spacePos = optionSourceValue.indexOf(" ");
-            return optionSourceValue.substring(0, spacePos);
+            if (spacePos != -1) {
+                return optionSourceValue.substring(0, spacePos);
+            }
         }
         return optionSourceValue;
     }
@@ -136,7 +205,9 @@ public class RealtyOptionHelperImpl implements RealtyOptionHelper {
     public String getRealtyOptionAfterValue(String optionSourceValue) {
         if (isIntegerRealtyOptionValue(optionSourceValue)) {
             int spacePos = optionSourceValue.indexOf(" ");
-            return optionSourceValue.substring(spacePos + 1, optionSourceValue.length());
+            if (spacePos != -1) {
+                return optionSourceValue.substring(spacePos + 1, optionSourceValue.length());
+            }
         }
         return null;
     }
@@ -180,6 +251,7 @@ public class RealtyOptionHelperImpl implements RealtyOptionHelper {
         return realtyOption;
     }
 
+    @Transactional
     private Dictionary createDictionary(String optionSourceName) {
         Dictionary dictionary = new Dictionary();
         dictionary.setName(optionSourceName);
@@ -195,6 +267,7 @@ public class RealtyOptionHelperImpl implements RealtyOptionHelper {
     }
 
     @Override
+    @Transactional
     public void saveRealtyOption(RealtyOption realtyOption) {
         realtyService.saveRealtyOption(realtyOption);
     }

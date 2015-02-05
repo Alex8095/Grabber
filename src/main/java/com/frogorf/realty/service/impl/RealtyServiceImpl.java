@@ -93,7 +93,7 @@ public class RealtyServiceImpl implements RealtyService {
     @Override
     @Transactional
     public Realty findRealtyHistoryById(int id) {
-        return findRealtyHistoryById(id);
+        return realtyDao.findRealtyHistoryById(id);
     }
 
     @Override
@@ -116,8 +116,26 @@ public class RealtyServiceImpl implements RealtyService {
 
     @Override
     @Transactional
-    public void saveRealtyOptionList(List<RealtyOptionValue> realtyOptionValues) {
-        realtyDao.saveRealtyOptionList(realtyOptionValues);
+    public List<RealtyHistory> findRealtyHistorysByRealtyId(int realtyId) {
+        return realtyDao.findRealtyHistorysByRealtyId(realtyId);
+    }
+
+    @Override
+    @Transactional
+    public List<RealtyOption> findRealtyOptionAll() {
+        return realtyDao.findRealtyOptionAll();
+    }
+
+    @Override
+    @Transactional
+    public void saveRealtyOptionValueList(List<RealtyOptionValue> realtyOptionValues) {
+        realtyDao.saveRealtyOptionValueList(realtyOptionValues);
+    }
+
+    @Override
+    @Transactional
+    public List<RealtyOptionValue> findRealtyOptionValuesByRealtyId(int realtyId) {
+        return realtyDao.findRealtyOptionValuesByRealtyId(realtyId);
     }
 
     @Override
@@ -128,7 +146,19 @@ public class RealtyServiceImpl implements RealtyService {
 
     @Override
     @Transactional
+    public List<RealtyHistoryPrice> findRealtyHistoryPricesByRealtyId(int realtyId) {
+        return realtyDao.findRealtyHistoryPricesByRealtyId(realtyId);
+    }
+
+    @Override
+    @Transactional
     public void saveRealtyImages(List<RealtyImage> realtyImages) {
         realtyDao.saveRealtyImages(realtyImages);
+    }
+
+    @Override
+    @Transactional
+    public List<RealtyImage> findRealtyImagesByRealtyId(int realtyId) {
+        return realtyDao.findRealtyImagesByRealtyId(realtyId);
     }
 }

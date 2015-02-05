@@ -2,11 +2,7 @@ package com.frogorf.dictionary.service.impl;
 
 import com.frogorf.dictionary.data.State;
 import com.frogorf.dictionary.domain.Dictionary;
-import com.frogorf.dictionary.domain.DictionaryValue;
-import com.frogorf.dictionary.domain.DictionaryValueLocale;
-import com.frogorf.dictionary.domain.sync.DictionarySync;
-import com.frogorf.dictionary.domain.sync.DictionarySyncResponse;
-import com.frogorf.dictionary.domain.sync.DictionaryValueResponse;
+import com.frogorf.dictionary.domain.*;
 import com.frogorf.dictionary.service.DictionaryService;
 import com.frogorf.dictionary.service.DictionarySyncService;
 import com.frogorf.dictionary.service.DictionaryValueSynchronize;
@@ -84,7 +80,7 @@ public class DictionaryValueSynchronizeImpl implements DictionaryValueSynchroniz
     @Override
     public DictionaryValue getParentDictionaryValue(String siteCode) {
         Map<String, String> filter = new HashMap<>();
-        filter.put("site_code", siteCode);
+        filter.put(DictionaryValue.PARAM_SITE_CODE, siteCode);
         List<DictionaryValue> list = dictionaryService.findDictionaryValues(filter);
         if (list.size() > 0) {
             return list.get(0);

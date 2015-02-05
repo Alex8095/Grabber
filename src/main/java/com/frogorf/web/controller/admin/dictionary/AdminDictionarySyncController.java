@@ -1,9 +1,9 @@
 package com.frogorf.web.controller.admin.dictionary;
 
 import com.frogorf.dictionary.data.State;
+import com.frogorf.dictionary.domain.DictionarySync;
+import com.frogorf.dictionary.domain.DictionarySyncResponse;
 import com.frogorf.dictionary.domain.DictionaryValue;
-import com.frogorf.dictionary.domain.sync.DictionarySync;
-import com.frogorf.dictionary.domain.sync.DictionarySyncResponse;
 import com.frogorf.dictionary.service.DictionaryService;
 import com.frogorf.dictionary.service.DictionarySyncService;
 import com.frogorf.dictionary.service.DictionaryValueSynchronize;
@@ -125,7 +125,10 @@ public class AdminDictionarySyncController {
         try {
             DictionarySyncResponse response = dictionaryValueSynchronize.execute();
             List<DictionaryValue> list = dictionaryValueSynchronize.parseList(response);
-            dictionaryService.saveDictionaryValueList(list);
+            for(DictionaryValue dv : list) {
+                dictionaryService.saveDictionaryValue(dv);
+            }
+//            dictionaryService.saveDictionaryValueList(list);
             dictionarySync.setState(dictionaryService.findDictionaryValueById(State.COMPLETE));
         } catch (Exception ex) {
             StringWriter sw = new StringWriter();

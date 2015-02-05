@@ -13,7 +13,7 @@ import java.io.IOException;
  */
 public interface CategoryParser {
 
-    void initTask(Integer taskId);
+    void initTask(Integer taskId, Task task);
 
     int getCurrentPageNumber();
 
@@ -38,4 +38,6 @@ public interface CategoryParser {
     Elements getCategoryPagingLinks();
 
     void parseCategoryPage(String url) throws IOException;
+
+    void finish();
 }

@@ -23,7 +23,7 @@ public class DictionaryValue extends BaseEntity {
     public static final String PARAM_CODE = "code";
 
     @NotNull
-    @ManyToOne(fetch = FetchType.EAGER)
+    @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     @JoinColumn(name = "dictionary_id", nullable = false)
     private Dictionary dictionary;
     public static final String PARAM_DICTIONARY_ID = "dictionary_id";
@@ -36,7 +36,7 @@ public class DictionaryValue extends BaseEntity {
     @MapKeyColumn(name = "locale")
     @Fetch(FetchMode.SELECT)
     private Map<String, DictionaryValueLocale> locales;
-    public static final String PARAM_SITE_CODE = "site_code";
+    public static final String PARAM_SITE_CODE = "siteCode";
     @Column(name = "site_code")
     private String siteCode;
 

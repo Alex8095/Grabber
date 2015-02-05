@@ -6,6 +6,7 @@ package com.frogorf.realty.domain;
 
 import javax.persistence.Column;
 import javax.persistence.Embeddable;
+import javax.persistence.Lob;
 import javax.persistence.MappedSuperclass;
 import javax.validation.constraints.NotNull;
 
@@ -17,6 +18,7 @@ public class RealtyLocale {
     @NotNull
     private String title;
     @Column
+    @Lob
     private String description;
 
     public String getTitle() {

@@ -1,5 +1,6 @@
 package com.frogorf.realty.domain;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.frogorf.core.domain.BaseEntity;
 import org.hibernate.annotations.LazyCollection;
 import org.hibernate.annotations.LazyCollectionOption;
@@ -31,8 +32,9 @@ public class Seller extends BaseEntity {
     @CollectionTable(name = "seller_phone_number", joinColumns = @JoinColumn(name = "seller_id"))
     @Column(name = "phone_number")
     public List<String> phoneNumbers;
+    @JsonIgnore
     @LazyCollection(LazyCollectionOption.FALSE)
-    @ManyToMany(mappedBy = "seller")
+    @ManyToMany(mappedBy = "seller", fetch = FetchType.EAGER)
     private List<Realty> realties;
 
     public String getFirstName() {

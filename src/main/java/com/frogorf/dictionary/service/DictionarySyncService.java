@@ -3,7 +3,7 @@
  */
 package com.frogorf.dictionary.service;
 
-import com.frogorf.dictionary.domain.sync.DictionarySync;
+import com.frogorf.dictionary.domain.DictionarySync;
 import com.frogorf.kendo.data.source.DataSourceRequest;
 import com.frogorf.kendo.data.source.DataSourceResult;
 

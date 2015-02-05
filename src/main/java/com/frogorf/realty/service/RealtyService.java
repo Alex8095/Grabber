@@ -21,7 +21,6 @@ public interface RealtyService {
 
     DataSourceResult getListRealty(DataSourceRequest request);
 
-
     /*RealtyOption*/
     public RealtyOption findRealtyOption(Map<String, String> params);
 
@@ -42,12 +41,25 @@ public interface RealtyService {
 
     DataSourceResult getListRealtyHistory(DataSourceRequest request);
 
-    void saveRealtyOptionList(List<RealtyOptionValue> realtyOptionValues);
+    public List<RealtyHistory> findRealtyHistorysByRealtyId(int realtyId);
+
+    /*RealtyOption*/
+    List<RealtyOption> findRealtyOptionAll();
+
+    /*RealtyOptionValue*/
+
+    void saveRealtyOptionValueList(List<RealtyOptionValue> realtyOptionValues);
+
+    public List<RealtyOptionValue> findRealtyOptionValuesByRealtyId(int realtyId);
 
     /*Price*/
     void saveRealtyHistoryPrices(List<RealtyHistoryPrice> realtyHistoryPrices);
 
-    /*Price*/
+    public List<RealtyHistoryPrice> findRealtyHistoryPricesByRealtyId(int realtyId);
+
+    /*Image*/
     void saveRealtyImages(List<RealtyImage> realtyImages);
+
+    public List<RealtyImage> findRealtyImagesByRealtyId(int realtyId);
 
 }

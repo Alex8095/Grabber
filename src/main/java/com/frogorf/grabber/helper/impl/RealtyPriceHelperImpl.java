@@ -78,7 +78,9 @@ public class RealtyPriceHelperImpl implements RealtyPriceHelper {
         } else {
             realtyHistoryPrices = realty.getRealtyHistoryPrices();
         }
-        realtyHistoryPrices.add(getRealtyHistoryPrice());
+        if (getRealtyHistoryPrice() != null) {
+            realtyHistoryPrices.add(getRealtyHistoryPrice());
+        }
         return realtyHistoryPrices;
     }
 

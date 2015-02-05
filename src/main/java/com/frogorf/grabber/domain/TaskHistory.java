@@ -35,6 +35,8 @@ public class TaskHistory extends BaseEntity {
     private int countDuplicated;
     @Column(name = "count_update")
     private int countUpdate;
+    @Column(name = "count_failed")
+    private int countFailed;
     @Column
     @Lob
     private String message;
@@ -109,6 +111,14 @@ public class TaskHistory extends BaseEntity {
 
     public void setMessage(String message) {
         this.message = message;
+    }
+
+    public int getCountFailed() {
+        return countFailed;
+    }
+
+    public void setCountFailed(int countFailed) {
+        this.countFailed = countFailed;
     }
 
     public TaskHistory() {
