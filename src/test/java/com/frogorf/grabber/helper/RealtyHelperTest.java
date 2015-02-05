@@ -1,6 +1,7 @@
 package com.frogorf.grabber.helper;
 
 import com.frogorf.config.HibernateConfigTest;
+import com.frogorf.grabber.helper.selector.RealtySelector;
 import com.frogorf.grabber.parser.ItemParser;
 import com.frogorf.realty.domain.Realty;
 import com.frogorf.realty.service.RealtyService;
@@ -50,6 +51,8 @@ public class RealtyHelperTest {
 
     @Test
     public void testInit() throws Exception {
+        String s = RealtySelector.OWNER_WORDS_ARRAY[0];
+
         assertEquals(realty, realtyHelper.getRealty());
         assertEquals(realtyHelper.getParserStatus(), ItemParser.NEW);
     }

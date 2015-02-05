@@ -5,85 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d9b5d374-f857-4bc3-a8be-81545628c980" name="Default" comment="1. security dao &#10;2. semantic ui">
-      <change type="DELETED" beforePath="D:\java\workspaces\frogorf\Grabber\src\main\java\com\frogorf\dictionary\domain\sync\DictionarySync.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\java\workspaces\frogorf\Grabber\src\main\java\com\frogorf\dictionary\domain\sync\DictionarySyncHistory.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\java\workspaces\frogorf\Grabber\src\main\java\com\frogorf\dictionary\domain\sync\DictionarySyncResponse.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\java\workspaces\frogorf\Grabber\src\main\java\com\frogorf\dictionary\domain\sync\DictionaryValueResponse.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\java\workspaces\frogorf\Grabber\src\main\java\com\frogorf\grabber\domain\TaskSetting.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\java\workspaces\frogorf\Grabber\src\main\java\com\frogorf\web\controller\admin\grabber\AdminGrabberController.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\java\workspaces\frogorf\Grabber\src\main\java\com\frogorf\web\controller\admin\grabber\AdminGrabberSettingController.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\java\workspaces\frogorf\Grabber\src\main\webapp\WEB-INF\thymeleaf\admin\grabber\setting\detail.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\java\workspaces\frogorf\Grabber\src\main\webapp\WEB-INF\thymeleaf\admin\grabber\setting\edit.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\java\workspaces\frogorf\Grabber\src\main\webapp\WEB-INF\thymeleaf\admin\grabber\setting\list.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\java\workspaces\frogorf\Grabber\src\main\webapp\resources\js\grabber\setting\list.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/frogorf/web/controller/admin/dictionary/AdminDictionarySyncController.java" afterPath="$PROJECT_DIR$/src/main/java/com/frogorf/web/controller/admin/dictionary/AdminDictionarySyncController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/frogorf/web/controller/admin/grabber/AdminGrabberTaskController.java" afterPath="$PROJECT_DIR$/src/main/java/com/frogorf/web/controller/admin/grabber/AdminGrabberTaskController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/frogorf/grabber/parser/CategoryParser.java" afterPath="$PROJECT_DIR$/src/main/java/com/frogorf/grabber/parser/CategoryParser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/frogorf/dictionary/dao/impl/DictionaryDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/frogorf/dictionary/dao/impl/DictionaryDaoImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/frogorf/dictionary/service/impl/DictionaryServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/frogorf/dictionary/service/impl/DictionaryServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/frogorf/dictionary/service/impl/DictionarySuncServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/frogorf/dictionary/service/impl/DictionarySuncServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/frogorf/dictionary/dao/DictionarySyncDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/frogorf/dictionary/dao/DictionarySyncDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/frogorf/dictionary/dao/impl/DictionarySyncDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/frogorf/dictionary/dao/impl/DictionarySyncDaoImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/frogorf/dictionary/service/DictionarySyncService.java" afterPath="$PROJECT_DIR$/src/main/java/com/frogorf/dictionary/service/DictionarySyncService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/frogorf/dictionary/domain/DictionaryValue.java" afterPath="$PROJECT_DIR$/src/main/java/com/frogorf/dictionary/domain/DictionaryValue.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/frogorf/dictionary/service/DictionaryValueSynchronize.java" afterPath="$PROJECT_DIR$/src/main/java/com/frogorf/dictionary/service/DictionaryValueSynchronize.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/frogorf/dictionary/service/impl/DictionaryValueSynchronizeImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/frogorf/dictionary/service/impl/DictionaryValueSynchronizeImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/frogorf/grabber/dao/GrabberDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/frogorf/grabber/dao/GrabberDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/frogorf/grabber/dao/impl/GrabberDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/frogorf/grabber/dao/impl/GrabberDaoImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/frogorf/grabber/service/GrabberService.java" afterPath="$PROJECT_DIR$/src/main/java/com/frogorf/grabber/service/GrabberService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/frogorf/grabber/service/impl/GrabberServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/frogorf/grabber/service/impl/GrabberServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/frogorf/grabber/parser/ItemParser.java" afterPath="$PROJECT_DIR$/src/main/java/com/frogorf/grabber/parser/ItemParser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/frogorf/grabber/helper/selector/LocationSelector.java" afterPath="$PROJECT_DIR$/src/main/java/com/frogorf/grabber/helper/selector/LocationSelector.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/frogorf/grabber/parser/impl/OlxRealtyCategoryParserImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/frogorf/grabber/parser/impl/OlxRealtyCategoryParserImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/frogorf/grabber/parser/impl/OlxRealtyItemParser.java" afterPath="$PROJECT_DIR$/src/main/java/com/frogorf/grabber/parser/impl/OlxRealtyItemParser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/frogorf/grabber/parser/OlxRealtyItemParserTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/frogorf/grabber/parser/OlxRealtyItemParserTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/frogorf/grabber/parser/selecter/OlxSelector.java" afterPath="$PROJECT_DIR$/src/main/java/com/frogorf/grabber/parser/selecter/OlxSelector.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/frogorf/grabber/helper/selector/OptionSelector.java" afterPath="$PROJECT_DIR$/src/main/java/com/frogorf/grabber/helper/selector/OptionSelector.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/frogorf/realty/domain/Realty.java" afterPath="$PROJECT_DIR$/src/main/java/com/frogorf/realty/domain/Realty.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/frogorf/realty/dao/RealtyDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/frogorf/realty/dao/RealtyDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/frogorf/realty/dao/impl/RealtyDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/frogorf/realty/dao/impl/RealtyDaoImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/frogorf/grabber/helper/RealtyHelper.java" afterPath="$PROJECT_DIR$/src/main/java/com/frogorf/grabber/helper/RealtyHelper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/frogorf/grabber/helper/impl/RealtyHelperImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/frogorf/grabber/helper/impl/RealtyHelperImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/frogorf/web/controller/admin/grabber/AdminGrabberTestsController.java" afterPath="$PROJECT_DIR$/src/main/java/com/frogorf/web/controller/admin/grabber/AdminGrabberTestsController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/frogorf/grabber/helper/RealtyHelperTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/frogorf/grabber/helper/RealtyHelperTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/frogorf/realty/domain/RealtyHistoryPrice.java" afterPath="$PROJECT_DIR$/src/main/java/com/frogorf/realty/domain/RealtyHistoryPrice.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/frogorf/realty/domain/RealtyLocale.java" afterPath="$PROJECT_DIR$/src/main/java/com/frogorf/realty/domain/RealtyLocale.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/frogorf/grabber/helper/impl/RealtyLocationHelperImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/frogorf/grabber/helper/impl/RealtyLocationHelperImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/frogorf/realty/domain/RealtyOption.java" afterPath="$PROJECT_DIR$/src/main/java/com/frogorf/realty/domain/RealtyOption.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/frogorf/grabber/helper/RealtyOptionHelper.java" afterPath="$PROJECT_DIR$/src/main/java/com/frogorf/grabber/helper/RealtyOptionHelper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/frogorf/grabber/helper/impl/RealtyOptionHelperImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/frogorf/grabber/helper/impl/RealtyOptionHelperImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/frogorf/grabber/helper/RealtyOptionHelperTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/frogorf/grabber/helper/RealtyOptionHelperTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/frogorf/realty/domain/RealtyOptionValue.java" afterPath="$PROJECT_DIR$/src/main/java/com/frogorf/realty/domain/RealtyOptionValue.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/frogorf/grabber/helper/impl/RealtyPriceHelperImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/frogorf/grabber/helper/impl/RealtyPriceHelperImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/frogorf/grabber/helper/selector/RealtySelector.java" afterPath="$PROJECT_DIR$/src/main/java/com/frogorf/grabber/helper/selector/RealtySelector.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/frogorf/grabber/helper/impl/RealtySellerHelperImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/frogorf/grabber/helper/impl/RealtySellerHelperImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/frogorf/grabber/helper/RealtySellerHelperTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/frogorf/grabber/helper/RealtySellerHelperTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/frogorf/realty/service/RealtyService.java" afterPath="$PROJECT_DIR$/src/main/java/com/frogorf/realty/service/RealtyService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/frogorf/realty/service/impl/RealtyServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/frogorf/realty/service/impl/RealtyServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/frogorf/realty/domain/Seller.java" afterPath="$PROJECT_DIR$/src/main/java/com/frogorf/realty/domain/Seller.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/frogorf/realty/dao/impl/SellerDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/frogorf/realty/dao/impl/SellerDaoImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/frogorf/realty/service/impl/SellerServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/frogorf/realty/service/impl/SellerServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/frogorf/config/ServletInitializer.java" afterPath="$PROJECT_DIR$/src/main/java/com/frogorf/config/ServletInitializer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/frogorf/grabber/domain/TaskHistory.java" afterPath="$PROJECT_DIR$/src/main/java/com/frogorf/grabber/domain/TaskHistory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/frogorf/utils/Translit.java" afterPath="$PROJECT_DIR$/src/main/java/com/frogorf/utils/Translit.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/js/app.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/thymeleaf/admin/realty/detail.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/thymeleaf/admin/realty/detail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/thymeleaf/admin/fragments/layout.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/thymeleaf/admin/fragments/layout.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/js/grabber/realty/list.history.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/grabber/realty/list.history.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/js/grabber/dictionary/list.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/grabber/dictionary/list.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/js/grabber/history/list.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/grabber/history/list.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/js/grabber/realty/list.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/grabber/realty/list.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/js/grabber/role/list.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/grabber/role/list.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/js/grabber/task/list.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/grabber/task/list.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/js/grabber/user/list.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/grabber/user/list.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/js/grabber/realty/list.option.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/grabber/realty/list.option.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/js/grabber/dictionary/list.value.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/grabber/dictionary/list.value.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/log4j.xml" afterPath="$PROJECT_DIR$/src/main/resources/log4j.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/persistence-mysql.properties" afterPath="$PROJECT_DIR$/src/main/resources/persistence-mysql.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/resources/persistence-mysql.properties" afterPath="$PROJECT_DIR$/src/test/resources/persistence-mysql.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/some.txt" afterPath="$PROJECT_DIR$/src/main/resources/some.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Grabber.iws" />
@@ -346,6 +269,21 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/test/java/com/frogorf/grabber/helper/RealtyHelperTest.java" line="53" class="com.frogorf.grabber.helper.RealtyHelperTest" package="com.frogorf.grabber.helper">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
     </line_breakpoints>
     <breakpoint_rules />
     <ui_properties />
@@ -386,25 +324,7 @@
       <file leaf-file-name="RealtyRestController.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/web/controller/rest/RealtyRestController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="33" selection-start="1254" selection-end="1280" vertical-scroll-proportion="0.0" vertical-offset="663" max-vertical-offset="1411">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OptionSelector.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/grabber/helper/selector/OptionSelector.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="47" selection-start="465" selection-end="465" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="425">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RealtySelector.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/grabber/helper/selector/RealtySelector.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="1" selection-start="354" selection-end="354" vertical-scroll-proportion="0.2843866" vertical-offset="0" max-vertical-offset="538">
+            <state line="39" column="33" selection-start="1254" selection-end="1280" vertical-scroll-proportion="0.0" vertical-offset="652" max-vertical-offset="1190">
               <folding />
             </state>
           </provider>
@@ -428,10 +348,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AdminGrabberTestsController.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="AdminGrabberTestsController.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/web/controller/admin/grabber/AdminGrabberTestsController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="73" selection-start="1433" selection-end="1433" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="595">
+            <state line="35" column="21" selection-start="1297" selection-end="1297" vertical-scroll-proportion="0.7583643" vertical-offset="0" max-vertical-offset="595">
               <folding />
             </state>
           </provider>
@@ -678,7 +598,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/frogorf/realty/domain/RealtyOptionCompliance.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/frogorf/realty/domain/Realty.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/frogorf/grabber/helper/RealtyOptionHelper.java" />
         <option value="$PROJECT_DIR$/src/main/resources/slando/RealtyOptionSelectorCodes.json" />
@@ -727,8 +646,9 @@
         <option value="$PROJECT_DIR$/src/main/resources/persistence-mysql.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/frogorf/grabber/parser/impl/OlxRealtyCategoryParserImpl.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/thymeleaf/admin/grabber/tests/list.html" />
-        <option value="$PROJECT_DIR$/src/main/java/com/frogorf/web/controller/admin/grabber/AdminGrabberTestsController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/frogorf/grabber/helper/selector/RealtySelector.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/frogorf/grabber/helper/RealtyHelperTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/frogorf/web/controller/admin/grabber/AdminGrabberTestsController.java" />
       </list>
     </option>
   </component>
@@ -982,6 +902,44 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="grabber" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="parser" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Grabber" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Grabber" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frogorf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="grabber" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="helper" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1476,34 +1434,6 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="RealtySellerHelperTest.testGetPhoneNumbersHtml" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.frogorf.grabber.helper.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="Grabber" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.frogorf.grabber.helper" />
-      <option name="MAIN_CLASS_NAME" value="com.frogorf.grabber.helper.RealtySellerHelperTest" />
-      <option name="METHOD_NAME" value="testGetPhoneNumbersHtml" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
     <configuration default="false" name="RealtyOptionCodeReaderTest.testReadFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -1588,6 +1518,40 @@
       </ExternalSystemSettings>
       <RunnerSettings RunnerId="ExternalSystemTaskRunner" />
       <ConfigurationWrapper RunnerId="ExternalSystemTaskRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="RealtyHelperTest.testInit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.frogorf.grabber.helper.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="Grabber" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.frogorf.grabber.helper" />
+      <option name="MAIN_CLASS_NAME" value="com.frogorf.grabber.helper.RealtyHelperTest" />
+      <option name="METHOD_NAME" value="testInit" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
     <configuration default="true" type="GroovyScriptRunConfiguration" factoryName="Groovy">
@@ -1933,18 +1897,18 @@
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Tomcat Server.GrabberTomcatRun" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.OlxRealtyItemParserTest.testParser" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.RealtySellerHelperTest.testGetPhoneNumbersHtml" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.RealtyOptionCodeReaderTest.testReadFile" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.RealtyOptionCodeReaderTest.testGetItem" />
-      <item index="5" class="java.lang.String" itemvalue="Gradle.Grabber [tomcatRunWar]" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.RealtyOptionCodeReaderTest.testReadFile" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.RealtyOptionCodeReaderTest.testGetItem" />
+      <item index="4" class="java.lang.String" itemvalue="Gradle.Grabber [tomcatRunWar]" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.RealtyHelperTest.testInit" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.RealtyOptionCodeReaderTest.testGetItem" />
-        <item index="1" class="java.lang.String" itemvalue="Gradle.Grabber [tomcatRunWar]" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.OlxRealtyItemParserTest.testParser" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.RealtyOptionCodeReaderTest.testReadFile" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.RealtySellerHelperTest.testGetPhoneNumbersHtml" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.RealtyHelperTest.testInit" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.RealtyOptionCodeReaderTest.testGetItem" />
+        <item index="2" class="java.lang.String" itemvalue="Gradle.Grabber [tomcatRunWar]" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.OlxRealtyItemParserTest.testParser" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.RealtyOptionCodeReaderTest.testReadFile" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -2036,7 +2000,7 @@
       <workItem from="1422702669068" duration="1793000" />
       <workItem from="1422706621873" duration="419000" />
       <workItem from="1423161409643" duration="7219000" />
-      <workItem from="1423170192386" duration="389000" />
+      <workItem from="1423170192386" duration="876000" />
     </task>
     <task id="LOCAL-00001" summary="1. security dao &#10;2. semantic ui">
       <created>1414746285026</created>
@@ -2046,7 +2010,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="338083000" />
+    <option name="totallyTimeSpent" value="338570000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -2069,7 +2033,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1696" height="1026" extended-state="0" />
+    <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -2095,7 +2059,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21516165" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2020757" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3478261" sideWeight="0.5567766" order="2" side_tool="false" content_ui="tabs" x="61" y="650" width="1429" height="343" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3478261" sideWeight="0.5567766" order="2" side_tool="false" content_ui="tabs" x="61" y="650" width="1429" height="343" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24969475" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -2159,16 +2123,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/grabber/helper/impl/RealtySellerHelperImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="20" selection-start="1360" selection-end="1360" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="2550" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/web/controller/admin/dictionary/AdminDictionaryController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="172" column="13" selection-start="7020" selection-end="7163" vertical-scroll-proportion="0.0" vertical-offset="2270" max-vertical-offset="3230" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/grabber/parser/impl/OlxRealtyItemParser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="89" column="51" selection-start="2654" selection-end="2789" vertical-scroll-proportion="-1.2281879" vertical-offset="1654" max-vertical-offset="4811" />
@@ -2403,20 +2357,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/web/controller/rest/RealtyRestController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="33" selection-start="1254" selection-end="1280" vertical-scroll-proportion="0.0" vertical-offset="265" max-vertical-offset="1190">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/grabber/helper/selector/OptionSelector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="47" selection-start="465" selection-end="465" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/persistence-mysql.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="6" selection-start="381" selection-end="381" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
@@ -2438,16 +2378,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/web/controller/admin/grabber/AdminGrabberTestsController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/grabber/helper/selector/RealtySelector.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="73" selection-start="1433" selection-end="1433" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="595">
+        <state line="7" column="33" selection-start="200" selection-end="200" vertical-scroll-proportion="0.22118959" vertical-offset="0" max-vertical-offset="538">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/grabber/helper/selector/RealtySelector.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/grabber/helper/selector/OptionSelector.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="1" selection-start="354" selection-end="354" vertical-scroll-proportion="0.2843866" vertical-offset="0" max-vertical-offset="538">
+        <state line="12" column="47" selection-start="465" selection-end="465" vertical-scroll-proportion="0.37918216" vertical-offset="0" max-vertical-offset="538">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/web/controller/rest/RealtyRestController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="33" selection-start="1254" selection-end="1280" vertical-scroll-proportion="0.0" vertical-offset="265" max-vertical-offset="1190">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/frogorf/grabber/helper/RealtyHelperTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="0" selection-start="1934" selection-end="1934" vertical-scroll-proportion="0.33268103" vertical-offset="459" max-vertical-offset="1598">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/artifacts-26/filestore/org.springframework/spring-context/4.0.1.RELEASE/source/148fc52b7d7ac01b5a67642a35d914702385c037/spring-context-4.0.1.RELEASE-sources.jar!/org/springframework/ui/Model.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="77" column="57" selection-start="2777" selection-end="2821" vertical-scroll-proportion="0.6802974" vertical-offset="688" max-vertical-offset="1241">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/frogorf/web/controller/admin/grabber/AdminGrabberTestsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="21" selection-start="1297" selection-end="1297" vertical-scroll-proportion="0.7583643" vertical-offset="0" max-vertical-offset="595">
           <folding />
         </state>
       </provider>

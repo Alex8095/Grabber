@@ -34,7 +34,7 @@ public class AdminGrabberTestsController {
     @RequestMapping(value = {"/"}, method = RequestMethod.GET)
     public String listSourceSetting(Model model) {
         model.addAttribute("realtyOptionCodes", realtyOptionCodeReader.getCodes());
-        model.addAttribute("ownerWordsArrayItem", RealtySelector.OWNER_WORDS_ARRAY[0]);
+        model.addAttribute("ownerWordsArrayItem", 1);
         return "admin/grabber/tests/list";
     }
 }
