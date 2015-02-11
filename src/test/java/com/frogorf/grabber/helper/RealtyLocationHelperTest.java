@@ -8,7 +8,7 @@ import com.frogorf.dictionary.service.DictionaryService;
 import com.frogorf.grabber.helper.selector.LocationSelector;
 import com.frogorf.realty.domain.Realty;
 import com.frogorf.realty.service.RealtyService;
-import com.frogorf.utils.Translit;
+import com.frogorf.utils.Transliterator;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -66,13 +66,13 @@ public class RealtyLocationHelperTest {
         realty = new Realty();
         realtyLocationHelper.init(LOCATION_1, realty);
 
-        countryD = new Dictionary("counryD", Translit.toTranslit("counryD"), null, "ru");
-        regionD = new Dictionary("regionD", Translit.toTranslit("regionD"), null, "ru");
-        districtD = new Dictionary("districtD", Translit.toTranslit("districtD"), null, "ru");
-        cityD = new Dictionary("cityD", Translit.toTranslit("cityD"), null, "ru");
-        cityAreaD = new Dictionary("cityAreaD", Translit.toTranslit("cityAreaD"), null, "ru");
-        cityDistrictD = new Dictionary("cityDistrictD", Translit.toTranslit("cityDistrictD"), null, "ru");
-        streetD = new Dictionary("streetD", Translit.toTranslit("streetD"), null, "ru");
+        countryD = new Dictionary("counryD", Transliterator.transliterate("counryD"), null, "ru");
+        regionD = new Dictionary("regionD", Transliterator.transliterate("regionD"), null, "ru");
+        districtD = new Dictionary("districtD", Transliterator.transliterate("districtD"), null, "ru");
+        cityD = new Dictionary("cityD", Transliterator.transliterate("cityD"), null, "ru");
+        cityAreaD = new Dictionary("cityAreaD", Transliterator.transliterate("cityAreaD"), null, "ru");
+        cityDistrictD = new Dictionary("cityDistrictD", Transliterator.transliterate("cityDistrictD"), null, "ru");
+        streetD = new Dictionary("streetD", Transliterator.transliterate("streetD"), null, "ru");
         dictionaryService.saveDictionary(countryD);
         dictionaryService.saveDictionary(regionD);
         dictionaryService.saveDictionary(districtD);
@@ -207,15 +207,15 @@ public class RealtyLocationHelperTest {
     @Test
     public void testFindLocationDictionaryValue() throws Exception {
         assertNull(realtyLocationHelper.findLocationDictionaryValue("area", LocationSelector.CITY_AREA_D_ID));
-        DictionaryValue city = realtyLocationHelper.findLocationDictionaryValue(Translit.toTranslit(LOCATION_1_CITY).toUpperCase(), LocationSelector.CITY_D_ID);
+        DictionaryValue city = realtyLocationHelper.findLocationDictionaryValue(Transliterator.transliterate(LOCATION_1_CITY).toUpperCase(), LocationSelector.CITY_D_ID);
         assertEquals(cityDV.getCode(), city.getCode());
         assertEquals(cityDV.getId(), city.getId());
 
-        DictionaryValue street = realtyLocationHelper.findLocationDictionaryValue(Translit.toTranslit(LOCATION_1_STREET).toUpperCase(), LocationSelector.STREET_D_ID);
+        DictionaryValue street = realtyLocationHelper.findLocationDictionaryValue(Transliterator.transliterate(LOCATION_1_STREET).toUpperCase(), LocationSelector.STREET_D_ID);
         assertEquals(streetDV.getCode(), street.getCode());
         assertEquals(streetDV.getId(), street.getId());
 
-        assertNull(realtyLocationHelper.findLocationDictionaryValue(Translit.toTranslit(LOCATION_1_STREET).toUpperCase(), LocationSelector.CITY_AREA_D_ID));
+        assertNull(realtyLocationHelper.findLocationDictionaryValue(Transliterator.transliterate(LOCATION_1_STREET).toUpperCase(), LocationSelector.CITY_AREA_D_ID));
     }
 
     @Test

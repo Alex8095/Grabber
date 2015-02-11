@@ -6,7 +6,7 @@ import com.frogorf.dictionary.service.DictionaryService;
 import com.frogorf.grabber.helper.RealtyLocationHelper;
 import com.frogorf.grabber.helper.selector.LocationSelector;
 import com.frogorf.realty.domain.Realty;
-import com.frogorf.utils.Translit;
+import com.frogorf.utils.Transliterator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -120,7 +120,7 @@ public class RealtyLocationHelperImpl implements RealtyLocationHelper {
             return null;
         }
         Map<String, String> params = new HashMap<>();
-        params.put(DictionaryValue.PARAM_CODE, Translit.toTranslit(value).toUpperCase());
+        params.put(DictionaryValue.PARAM_CODE, Transliterator.transliterate(value).toUpperCase());
         params.put(DictionaryValue.PARAM_DICTIONARY_ID, dictionaryId.toString());
         return dictionaryService.findDictionaryValue(params);
     }

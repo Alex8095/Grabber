@@ -4,7 +4,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.frogorf.core.domain.BaseEntity;
 import com.frogorf.core.location.domain.Location;
 import com.frogorf.dictionary.domain.DictionaryValue;
-import com.frogorf.utils.Translit;
+import com.frogorf.utils.Transliterator;
 import org.hibernate.annotations.Fetch;
 import org.hibernate.annotations.FetchMode;
 import org.hibernate.annotations.LazyCollection;
@@ -226,7 +226,7 @@ public class Realty extends BaseEntity {
     }
 
     public void setSiteCode(String siteCode) {
-        this.siteCode = Translit.toTranslit(siteCode).toLowerCase();
+        this.siteCode = Transliterator.transliterate(siteCode).toLowerCase();
     }
 
     public String getSiteUrl() {
@@ -242,7 +242,7 @@ public class Realty extends BaseEntity {
     }
 
     public void setMainSiteCode(String mainSiteCode) {
-        this.mainSiteCode = Translit.toTranslit(mainSiteCode).toLowerCase();
+        this.mainSiteCode = Transliterator.transliterate(mainSiteCode).toLowerCase();
     }
 
     public Date getDateUpToMainSite() {

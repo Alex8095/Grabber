@@ -6,7 +6,7 @@ import com.frogorf.grabber.helper.RealtyPriceHelper;
 import com.frogorf.grabber.parser.ItemParser;
 import com.frogorf.realty.domain.Realty;
 import com.frogorf.realty.domain.RealtyHistoryPrice;
-import com.frogorf.utils.Translit;
+import com.frogorf.utils.Transliterator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -89,7 +89,7 @@ public class RealtyPriceHelperImpl implements RealtyPriceHelper {
         String currencyValue = getCurrencyValue();
         if (currencyDictionaryValue == null && currencyValue != null && !currencyValue.equals("")) {
             Map<String, String> params = new HashMap<>();
-            params.put(DictionaryValue.PARAM_CODE, Translit.toTranslit(currencyValue));
+            params.put(DictionaryValue.PARAM_CODE, Transliterator.transliterate(currencyValue));
             currencyDictionaryValue = dictionaryService.findDictionaryValue(params);
         }
         return currencyDictionaryValue;

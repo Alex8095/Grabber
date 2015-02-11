@@ -3,12 +3,11 @@ package com.frogorf.realty.domain;
 import com.frogorf.core.domain.BaseEntity;
 import com.frogorf.dictionary.domain.Dictionary;
 import com.frogorf.dictionary.domain.DictionaryValue;
-import com.frogorf.utils.Translit;
+import com.frogorf.utils.Transliterator;
 import org.hibernate.annotations.LazyCollection;
 import org.hibernate.annotations.LazyCollectionOption;
 
 import javax.persistence.*;
-import javax.transaction.Transaction;
 import java.util.List;
 
 @Entity
@@ -53,7 +52,7 @@ public class RealtyOption extends BaseEntity {
     }
 
     public void setCode(String code) {
-        this.code = Translit.toTranslit(code).toUpperCase();
+        this.code = Transliterator.transliterate(code).toUpperCase();
     }
 
     public String getSiteCode() {

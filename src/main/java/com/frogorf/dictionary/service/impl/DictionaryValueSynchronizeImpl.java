@@ -8,7 +8,7 @@ import com.frogorf.dictionary.service.DictionarySyncService;
 import com.frogorf.dictionary.service.DictionaryValueSynchronize;
 import com.frogorf.kendo.data.source.DataSourceRequest;
 import com.frogorf.kendo.data.source.DataSourceResult;
-import com.frogorf.utils.Translit;
+import com.frogorf.utils.Transliterator;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -114,7 +114,7 @@ public class DictionaryValueSynchronizeImpl implements DictionaryValueSynchroniz
                 Map<String, DictionaryValueLocale> localeMap = new HashMap<>();
                 localeMap.put("ru", new DictionaryValueLocale(valueResponse.getDict_name(), ""));
                 DictionaryValue dictionaryValue = new DictionaryValue();
-                dictionaryValue.setCode(Translit.toTranslit(valueResponse.getDict_name()).toUpperCase());
+                dictionaryValue.setCode(Transliterator.transliterate(valueResponse.getDict_name()).toUpperCase());
                 dictionaryValue.setLocales(localeMap);
                 dictionaryValue.setSiteCode(valueResponse.getDict_id());
                 dictionaryValue.setDictionary(dictionarySync.getDictionary());

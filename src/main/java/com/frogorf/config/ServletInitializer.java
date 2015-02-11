@@ -37,7 +37,9 @@ public class ServletInitializer extends AbstractAnnotationConfigDispatcherServle
         charFilter.setEncoding("UTF-8");
         charFilter.setForceEncoding(true);
 
-        return new Filter[]{new HiddenHttpMethodFilter(), charFilter, new HttpPutFormContentFilter(), new CORSFilter()};
+        return new Filter[]{charFilter, new CORSFilter()};
+
+//        return new Filter[]{new HiddenHttpMethodFilter(), charFilter, new HttpPutFormContentFilter(), new CORSFilter()};
     }
 
 

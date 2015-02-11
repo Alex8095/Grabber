@@ -9,7 +9,7 @@ import com.frogorf.realty.domain.Realty;
 import com.frogorf.realty.domain.RealtyOption;
 import com.frogorf.realty.domain.RealtyOptionValue;
 import com.frogorf.realty.service.RealtyService;
-import com.frogorf.utils.Translit;
+import com.frogorf.utils.Transliterator;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -101,7 +101,7 @@ public class RealtyOptionHelperTest {
         RealtyOptionValue rov = realtyOptionHelper.getRealtyOptionValue(ROV_1_K, ROV_1_V);
         assertNull(rov.getId());
         assertEquals(rov.getRealty(), realty);
-        assertEquals(rov.getDictionaryValue().getCode(), Translit.toTranslit(ROV_1_V));
+        assertEquals(rov.getDictionaryValue().getCode(), Transliterator.transliterate(ROV_1_V));
         List<RealtyOptionValue> l = new ArrayList<>();
         l.add(rov);
         realty.setRealtyOptionValues(l);
@@ -149,7 +149,7 @@ public class RealtyOptionHelperTest {
     @Test
     public void testFindRealtyOption() throws Exception {
         RealtyOption realtyOption = realtyOptionHelper.findRealtyOption(ROV_3_K, ROV_3_V);
-        assertEquals(realtyOption.getCode(), Translit.toTranslit(ROV_3_K).replace(":", ""));
+        assertEquals(realtyOption.getCode(), Transliterator.transliterate(ROV_3_K).replace(":", ""));
         assertEquals(realtyOption.getAfterValue(), "м2");
         assertEquals(realtyOption.getName(), ROV_3_K.replace(":", ""));
     }

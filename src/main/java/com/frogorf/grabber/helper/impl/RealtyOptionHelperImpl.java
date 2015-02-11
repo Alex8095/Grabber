@@ -11,7 +11,7 @@ import com.frogorf.realty.domain.Realty;
 import com.frogorf.realty.domain.RealtyOption;
 import com.frogorf.realty.domain.RealtyOptionValue;
 import com.frogorf.realty.service.RealtyService;
-import com.frogorf.utils.Translit;
+import com.frogorf.utils.Transliterator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -162,7 +162,7 @@ public class RealtyOptionHelperImpl implements RealtyOptionHelper {
 
     private DictionaryValue createDictionaryValue(Dictionary dictionary, String optionSourceValue) {
         DictionaryValue dictionaryValue = new DictionaryValue();
-        dictionaryValue.setCode(Translit.toTranslit(optionSourceValue));
+        dictionaryValue.setCode(Transliterator.transliterate(optionSourceValue));
         dictionaryValue.setDictionary(dictionary);
         dictionaryValue.setName(optionSourceValue);
         dictionaryService.saveDictionaryValue(dictionaryValue);
@@ -215,7 +215,7 @@ public class RealtyOptionHelperImpl implements RealtyOptionHelper {
     @Override
     public DictionaryValue findDictionaryValue(String optionSourceValue) {
         Map<String, String> params = new HashMap<>();
-        params.put(DictionaryValue.PARAM_CODE, Translit.toTranslit(optionSourceValue));
+        params.put(DictionaryValue.PARAM_CODE, Transliterator.transliterate(optionSourceValue));
         return dictionaryService.findDictionaryValue(params);
     }
 
@@ -233,13 +233,13 @@ public class RealtyOptionHelperImpl implements RealtyOptionHelper {
     public RealtyOption findRealtyOption(String optionSourceName, String optionSourceValue) {
         optionSourceName = optionSourceName.replace(":", "");
         Map<String, String> params = new HashMap<>();
-        params.put(RealtyOption.PARAM_CODE, Translit.toTranslit(optionSourceName));
+        params.put(RealtyOption.PARAM_CODE, Transliterator.transliterate(optionSourceName));
         RealtyOption realtyOption = realtyService.findRealtyOption(params);
         if (realtyOption == null) {
             realtyOption = new RealtyOption();
             realtyOption.setCode(params.get(RealtyOption.PARAM_CODE));
             realtyOption.setName(optionSourceName);
-            Dictionary dictionary = dictionaryService.findDictionaryByCode(Translit.toTranslit(optionSourceName));
+            Dictionary dictionary = dictionaryService.findDictionaryByCode(Transliterator.transliterate(optionSourceName));
             if (!isIntegerRealtyOptionValue(optionSourceValue)) {
                 dictionary = createDictionary(optionSourceName);
             }
@@ -255,7 +255,7 @@ public class RealtyOptionHelperImpl implements RealtyOptionHelper {
     private Dictionary createDictionary(String optionSourceName) {
         Dictionary dictionary = new Dictionary();
         dictionary.setName(optionSourceName);
-        dictionary.setCode(Translit.toTranslit(optionSourceName));
+        dictionary.setCode(Transliterator.transliterate(optionSourceName));
         dictionary.setDictionary(dictionaryService.findDictionaryById(OptionSelector.PARENT_DICTIONARY_ID));
         dictionaryService.saveDictionary(dictionary);
         return dictionary;

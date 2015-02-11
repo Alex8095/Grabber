@@ -22,6 +22,7 @@ import org.springframework.web.bind.support.SessionStatus;
 import javax.validation.Valid;
 import java.io.PrintWriter;
 import java.io.StringWriter;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -119,16 +120,31 @@ public class AdminDictionarySyncController {
     public
     @ResponseBody
     DictionarySync executeDictionarySync(@RequestParam(value = "id") Integer id) {
+        return executeDictionarySyncItem(id);
+    }
+
+    @RequestMapping(value = "/sync/executes", method = {RequestMethod.GET})
+    public
+    @ResponseBody
+    List<DictionarySync> executeDictionarySync() {
+        List<DictionarySync> syncs = dictionarySyncService.findDictionarySyncAll();
+        List<DictionarySync> response = new ArrayList<>();
+        for (DictionarySync dictionarySync : syncs) {
+            response.add(executeDictionarySyncItem(dictionarySync.getId()));
+        }
+        return response;
+    }
+
+    private DictionarySync executeDictionarySyncItem(Integer id) {
         DictionarySync dictionarySync = null;
         dictionaryValueSynchronize.getDictionarySync(id);
         dictionarySync = dictionaryValueSynchronize.getDictionarySync();
         try {
             DictionarySyncResponse response = dictionaryValueSynchronize.execute();
             List<DictionaryValue> list = dictionaryValueSynchronize.parseList(response);
-            for(DictionaryValue dv : list) {
+            for (DictionaryValue dv : list) {
                 dictionaryService.saveDictionaryValue(dv);
             }
-//            dictionaryService.saveDictionaryValueList(list);
             dictionarySync.setState(dictionaryService.findDictionaryValueById(State.COMPLETE));
         } catch (Exception ex) {
             StringWriter sw = new StringWriter();

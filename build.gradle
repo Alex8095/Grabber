@@ -9,6 +9,8 @@ apply plugin: 'eclipse-wtp'
 apply plugin: 'idea'
 
 war { baseName = 'grabber' }
+compileJava.options.encoding = 'UTF-8'
+[ compileJava, compileTestJava ]*.options*.encoding = 'UTF-8'
 
 buildscript {
     repositories {

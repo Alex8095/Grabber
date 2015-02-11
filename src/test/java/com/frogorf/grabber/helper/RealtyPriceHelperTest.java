@@ -7,7 +7,7 @@ import com.frogorf.dictionary.service.DictionaryService;
 import com.frogorf.grabber.parser.ItemParser;
 import com.frogorf.realty.domain.Realty;
 import com.frogorf.realty.service.RealtyService;
-import com.frogorf.utils.Translit;
+import com.frogorf.utils.Transliterator;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -58,7 +58,7 @@ public class RealtyPriceHelperTest {
         realtyPriceHelper.init(PRICE_1, realty);
 
         Map<String, String> params = new HashMap<>();
-        params.put(DictionaryValue.PARAM_CODE, Translit.toTranslit(PRICE_1_C));
+        params.put(DictionaryValue.PARAM_CODE, Transliterator.transliterate(PRICE_1_C));
 
         currencyDictionary = dictionaryService.findDictionaryValue(params);
         if (currencyDictionary == null) {
@@ -66,7 +66,7 @@ public class RealtyPriceHelperTest {
             d.setName("name");
             currencyDictionary = new DictionaryValue();
             currencyDictionary.setDictionary(d);
-            currencyDictionary.setCode(Translit.toTranslit(PRICE_1_C));
+            currencyDictionary.setCode(Transliterator.transliterate(PRICE_1_C));
             currencyDictionary.setName(PRICE_1_C);
             dictionaryService.saveDictionary(d);
             dictionaryService.saveDictionaryValue(currencyDictionary);

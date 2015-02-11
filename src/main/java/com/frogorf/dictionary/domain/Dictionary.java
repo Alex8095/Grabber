@@ -1,7 +1,7 @@
 package com.frogorf.dictionary.domain;
 
 import com.frogorf.core.domain.BaseEntity;
-import com.frogorf.utils.Translit;
+import com.frogorf.utils.Transliterator;
 import org.hibernate.validator.constraints.NotEmpty;
 
 import javax.persistence.*;
@@ -43,7 +43,7 @@ public class Dictionary extends BaseEntity {
     }
 
     public void setCode(String code) {
-        this.code = Translit.toTranslit(code).toUpperCase();
+        this.code = Transliterator.transliterate(code).toUpperCase();
     }
 
     public String getDescription() {
